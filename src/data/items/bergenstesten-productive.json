@@ -1,0 +1,317 @@
+[
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Essay on free education",
+    "prompt": "Write an argumentative essay defending a clear thesis.",
+    "payload": {
+      "stimulus": "Skriv et argumenterende essay der du tar stilling til påstanden: 'Høyere utdanning bør fortsatt være gratis og finansiert over skatten.' Legg fram en klar tese, underbygg den med minst to velbegrunnede argumenter, og trekk inn og imøtegå et motargument.",
+      "criteria": [
+        "Clear thesis and coherent argumentation",
+        "Nuanced treatment of a counterargument",
+        "Academic language with precise vocabulary",
+        "Correct grammar and appropriate text structure"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Debate summary: AI at work",
+    "prompt": "Summarise the two sides of a public debate objectively.",
+    "payload": {
+      "stimulus": "Sammenfatt den pågående debatten om kunstig intelligens i arbeidslivet. Gjør nøytralt rede for både de optimistiske og de kritiske synspunktene, og avslutt med en kort, begrunnet vurdering av hvor den viktigste uenigheten ligger.",
+      "criteria": [
+        "Balanced and faithful rendering of both positions",
+        "Clear separation of summary and own evaluation",
+        "Coherence and logical progression",
+        "Varied and precise academic language"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Essay on the oil transition",
+    "prompt": "Argue a position on the pace of Norway's petroleum transition.",
+    "payload": {
+      "stimulus": "Skriv et essay der du tar stilling til hvor raskt Norge bør trappe ned petroleumsvirksomheten. Argumenter for hvilke hensyn som bør veie tyngst når klimamål og hensynet til arbeidsplasser og statsfinanser står mot hverandre, og underbygg synspunktene dine med konkrete eksempler.",
+      "criteria": [
+        "Independent position with a clear thread",
+        "Relevant and concrete examples",
+        "Weighing of opposing considerations",
+        "Correct language and academic register"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Essay on social media",
+    "prompt": "Discuss the role of social media in public debate.",
+    "payload": {
+      "stimulus": "Diskuter hvilken betydning sosiale medier har for den demokratiske samtalen. Vurder både muligheter og risikoer, og ta stilling til om og hvordan plattformene bør reguleres.",
+      "criteria": [
+        "Nuanced discussion of advantages and disadvantages",
+        "Well-founded position on regulation",
+        "Coherent structure with a clear conclusion",
+        "Precise word choice and correct grammar"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Summary of a research finding",
+    "prompt": "Summarise and comment on a research finding.",
+    "payload": {
+      "stimulus": "En undersøkelse viser at søvn spiller en sentral rolle for læring, og at en god natts søvn etter studier kan være mer gunstig enn ytterligere repetisjon uten søvn. Sammenfatt resultatet med egne ord, og reflekter over hvilke konsekvenser det kan ha for studenters eksamensforberedelse.",
+      "criteria": [
+        "Precise and independent summary",
+        "Relevant reflection on consequences",
+        "Logical connection between summary and evaluation",
+        "Correct and varied language"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Essay on centralisation",
+    "prompt": "Argue whether policy can counter regional imbalance.",
+    "payload": {
+      "stimulus": "Skriv et argumenterende essay om hvorvidt politiske tiltak kan motvirke den geografiske skjevheten der utdanning og arbeidsplasser samles i de største byene, mens distriktene tappes. Ta stilling, og forhold deg kritisk til hvor grensene for politisk styring går.",
+      "criteria": [
+        "Clear thesis and sustained argumentation",
+        "Critical engagement with the limits of governance",
+        "Coherent structure",
+        "Academic and correct language"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Essay on the welfare model",
+    "prompt": "Evaluate the strengths and weaknesses of the welfare model.",
+    "payload": {
+      "stimulus": "Vurder styrker og svakheter ved den nordiske velferdsmodellen. Trekk inn både argumentet om omfordeling og likhet og bekymringen for hvordan skattenivået påvirker motivasjonen til å arbeide, og kom fram til en begrunnet samlet vurdering.",
+      "criteria": [
+        "Balanced weighing of arguments",
+        "Independent, well-founded conclusion",
+        "Precise subject-specific vocabulary",
+        "Correct grammar and structure"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Letter to the editor",
+    "prompt": "Write a reasoned letter to the editor.",
+    "payload": {
+      "stimulus": "Skriv et leserinnlegg der du forholder deg til påstanden om at unge ikke lenger leser. Argumenter for et mer nyansert syn, og kom med et konkret forslag til hvordan man kan styrke den dype, konsentrerte lesingen i utdanningssystemet.",
+      "criteria": [
+        "Appropriate genre features of a letter to the editor",
+        "Clear standpoint and concrete proposal",
+        "Convincing argumentation",
+        "Correct and fluent language"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Defend a viewpoint: tuition",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Legg fram og forsvar synet ditt på om høyere utdanning fortsatt bør være gratis. Presenter minst to argumenter, og vær forberedt på å imøtegå innvendinger.",
+      "criteria": [
+        "Clear and structured presentation",
+        "Well-founded arguments",
+        "Ability to defend the view against objections",
+        "Fluent and precise spoken language"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Present a position: AI",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Legg fram vurderingen din av om kunstig intelligens samlet sett vil gagne eller skade det norske arbeidsmarkedet. Begrunn standpunktet ditt, og trekk inn mulige motargumenter.",
+      "criteria": [
+        "Coherent and logical presentation",
+        "Nuanced inclusion of counterarguments",
+        "Appropriate academic vocabulary",
+        "Good pronunciation and fluent speech"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Defend a viewpoint: climate",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Argumenter muntlig for hvilke hensyn som bør veie tyngst i den grønne omstillingen når klimamål og sosial rettferdighet kommer i konflikt. Forsvar prioriteringen din.",
+      "criteria": [
+        "Clear prioritisation with justification",
+        "Convincing and coherent argumentation",
+        "Ability to add nuance under pressure",
+        "Fluent, correct spoken language"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Discuss social media",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Legg fram synet ditt på om sosiale medier styrker eller svekker den demokratiske samtalen. Kom med et forslag til hvordan eventuelle problemer kan håndteres, og begrunn det.",
+      "criteria": [
+        "Clear standpoint and concrete proposal",
+        "Structured presentation",
+        "Relevant and precise word choice",
+        "Fluent speech with good coherence"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Present a position: welfare",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Legg fram vurderingen din av framtiden til den nordiske velferdsmodellen. Ta stilling til om modellen er bærekraftig, og forsvar vurderingen din med argumenter.",
+      "criteria": [
+        "Well-founded overall assessment",
+        "Coherent argumentation",
+        "Academic register and precise language",
+        "Good pronunciation and flow"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Discuss the right to roam",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Legg fram tankene dine om hvordan allemannsretten bør forvaltes når stadig flere bruker naturen samtidig. Gi konkrete eksempler, og forsvar prioriteringene dine.",
+      "criteria": [
+        "Concrete and relevant examples",
+        "Clear structure and thread",
+        "Precise vocabulary",
+        "Fluent oral presentation"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Defend a viewpoint: research use",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Argumenter muntlig for hvorfor det er viktig å forholde seg kritisk til vitenskapelige resultater, selv når de er publisert i et fagfellevurdert tidsskrift. Forsvar synspunktet ditt med eksempler.",
+      "criteria": [
+        "Clear understanding of source criticism",
+        "Convincing argumentation with examples",
+        "Ability to elaborate on request",
+        "Fluent and correct academic speech"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  }
+]

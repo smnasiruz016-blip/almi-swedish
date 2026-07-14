@@ -8,14 +8,14 @@ import { PricingCheckoutButton } from "./PricingCheckoutButton";
 export const metadata: Metadata = {
   title: "Pricing — 7-day free trial",
   description:
-    "AlmiDanish Pro — $12/month, cancel anytime. 7-day free trial. Honest AI feedback on writing and speaking, full-length practice, and honest readiness estimates across the Prøve i Dansk ladder, Studieprøven and the Danish society knowledge tests.",
+    "AlmiNorwegian Pro — $12/month, cancel anytime. 7-day free trial. Honest AI feedback on writing and speaking, full-length practice, and honest readiness estimates across the Norskprøven ladder, Bergenstesten and the Norwegian society knowledge tests.",
 };
 
 const FEATURES = [
   "Honest AI feedback on writing and speaking",
   "Full-length timed mock across all skills, in exam order",
   "Honest readiness — a per-skill band against the real criteria (never a fabricated official result)",
-  "Every track — Prøve i Dansk 1–3, Studieprøven, and the Indfødsretsprøven / Medborgerskabsprøven knowledge tests",
+  "Every track — Norskprøven A1–A2–3, Bergenstesten, and the Statsborgerprøven / Samfunnskunnskapsprøven knowledge tests",
   "100% original material — never copied from official exam papers",
   "Cancel anytime from your account",
 ];

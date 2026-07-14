@@ -58,7 +58,7 @@ export async function TestimonialsSection() {
                 </span>
                 <span>
                   <span className="block text-sm font-semibold text-almi-ink">{name}</span>
-                  <span className="block text-xs text-almi-text-muted">AlmiDanish user</span>
+                  <span className="block text-xs text-almi-text-muted">AlmiNorwegian user</span>
                 </span>
               </figcaption>
             </figure>

@@ -15,12 +15,12 @@ function getResendClient(): Resend {
 
 // From-address. EMAIL_FROM is OPTIONAL — if unset we use the verified family
 // sender, so the only env var email actually needs is RESEND_API_KEY.
-const DEFAULT_FROM = "AlmiDanish <almiworld@almiworld.com>";
+const DEFAULT_FROM = "AlmiNorwegian <almiworld@almiworld.com>";
 
 function getFromAddress(): string {
   const addr = process.env.EMAIL_FROM?.trim();
   if (!addr) return DEFAULT_FROM;
-  return addr.includes("<") ? addr : `AlmiDanish <${addr}>`;
+  return addr.includes("<") ? addr : `AlmiNorwegian <${addr}>`;
 }
 
 function escapeHtml(s: string): string {
@@ -32,14 +32,14 @@ function escapeHtml(s: string): string {
     .replace(/'/g, "&#39;");
 }
 
-// AlmiDanish palette — mirrors src/lib/brand.ts.
+// AlmiNorwegian palette — mirrors src/lib/brand.ts.
 const COLOR_BG = "#FFFBF5";
 const COLOR_PAPER = "#FFFFFF";
 const COLOR_INK = "#1a1a2e";
 const COLOR_TEXT = "#334155";
 const COLOR_TEXT_MUTED = "#475569";
 const COLOR_CORAL = "#FF7A6B";
-const SITE_URL = "https://almidanish.almiworld.com";
+const SITE_URL = "https://alminorwegian.almiworld.com";
 
 function shell(bodyInner: string): string {
   return `<!DOCTYPE html>
@@ -47,7 +47,7 @@ function shell(bodyInner: string): string {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>AlmiDanish</title>
+    <title>AlmiNorwegian</title>
   </head>
   <body style="margin:0;padding:24px 12px;background-color:${COLOR_BG};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,sans-serif;color:${COLOR_TEXT};">
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color:${COLOR_BG};">
@@ -57,7 +57,7 @@ function shell(bodyInner: string): string {
             <tr>
               <td style="font-size:16px;line-height:1.6;color:${COLOR_TEXT};">
                 ${bodyInner}
-                <p style="margin:24px 0 0 0;color:${COLOR_TEXT_MUTED};font-size:14px;">— AlmiDanish<br /><a href="${SITE_URL}" style="color:${COLOR_TEXT_MUTED};">${SITE_URL}</a></p>
+                <p style="margin:24px 0 0 0;color:${COLOR_TEXT_MUTED};font-size:14px;">— AlmiNorwegian<br /><a href="${SITE_URL}" style="color:${COLOR_TEXT_MUTED};">${SITE_URL}</a></p>
               </td>
             </tr>
           </table>
@@ -85,7 +85,7 @@ function renderPasswordResetHtml(resetUrl: string): string {
   const safe = escapeHtml(resetUrl);
   return shell(`
     <p style="margin:0 0 16px 0;">Assalam o alaikum,</p>
-    <p style="margin:0 0 16px 0;">Someone (hopefully you) requested a password reset for your AlmiDanish account.</p>
+    <p style="margin:0 0 16px 0;">Someone (hopefully you) requested a password reset for your AlmiNorwegian account.</p>
     <p style="margin:0 0 8px 0;">To set a new password, click the button below:</p>
     ${ctaButton(safe, "Reset my password")}
     <p style="margin:0 0 8px 0;font-size:14px;color:${COLOR_TEXT_MUTED};">Or copy and paste this link:</p>
@@ -98,7 +98,7 @@ function renderPasswordResetHtml(resetUrl: string): string {
 function renderPasswordResetText(resetUrl: string): string {
   return `Assalam o alaikum,
 
-Someone (hopefully you) requested a password reset for your AlmiDanish account.
+Someone (hopefully you) requested a password reset for your AlmiNorwegian account.
 
 To set a new password, click this link:
 ${resetUrl}
@@ -107,7 +107,7 @@ This link expires in 1 hour and can only be used once.
 
 If you didn't request this, you can safely ignore this email — your password won't change.
 
-— AlmiDanish
+— AlmiNorwegian
 ${SITE_URL}
 `;
 }
@@ -120,7 +120,7 @@ export async function sendPasswordResetEmail(input: {
   const result = await client.emails.send({
     from: getFromAddress(),
     to: input.to,
-    subject: "Reset your AlmiDanish password",
+    subject: "Reset your AlmiNorwegian password",
     html: renderPasswordResetHtml(input.resetUrl),
     text: renderPasswordResetText(input.resetUrl),
   });
@@ -135,28 +135,28 @@ function renderEmailVerificationHtml(verifyUrl: string): string {
   const safe = escapeHtml(verifyUrl);
   return shell(`
     <p style="margin:0 0 16px 0;">Assalam o alaikum,</p>
-    <p style="margin:0 0 16px 0;">Welcome to AlmiDanish. One more step — please confirm this email address so we know it's really you.</p>
+    <p style="margin:0 0 16px 0;">Welcome to AlmiNorwegian. One more step — please confirm this email address so we know it's really you.</p>
     ${ctaButton(safe, "Verify my email")}
     <p style="margin:0 0 8px 0;font-size:14px;color:${COLOR_TEXT_MUTED};">Or copy and paste this link:</p>
     <p style="margin:0 0 16px 0;font-size:14px;color:${COLOR_TEXT_MUTED};word-break:break-all;"><a href="${safe}" style="color:${COLOR_TEXT_MUTED};">${safe}</a></p>
     <p style="margin:0 0 16px 0;">This link expires in 24 hours.</p>
-    <p style="margin:0;">If you didn't sign up for AlmiDanish, you can safely ignore this email.</p>
+    <p style="margin:0;">If you didn't sign up for AlmiNorwegian, you can safely ignore this email.</p>
   `);
 }
 
 function renderEmailVerificationText(verifyUrl: string): string {
   return `Assalam o alaikum,
 
-Welcome to AlmiDanish. One more step — please confirm this email address so we know it's really you.
+Welcome to AlmiNorwegian. One more step — please confirm this email address so we know it's really you.
 
 Click this link to verify:
 ${verifyUrl}
 
 This link expires in 24 hours.
 
-If you didn't sign up for AlmiDanish, you can safely ignore this email.
+If you didn't sign up for AlmiNorwegian, you can safely ignore this email.
 
-— AlmiDanish
+— AlmiNorwegian
 ${SITE_URL}
 `;
 }
@@ -169,7 +169,7 @@ export async function sendEmailVerification(input: {
   const result = await client.emails.send({
     from: getFromAddress(),
     to: input.to,
-    subject: "Verify your AlmiDanish email",
+    subject: "Verify your AlmiNorwegian email",
     html: renderEmailVerificationHtml(input.verifyUrl),
     text: renderEmailVerificationText(input.verifyUrl),
   });
@@ -189,7 +189,7 @@ function renderWelcomeHtml(name: string | null | undefined): string {
   const practiceUrl = `${SITE_URL}/practice`;
   return shell(`
     <p style="margin:0 0 16px 0;">${greeting(name)}</p>
-    <p style="margin:0 0 16px 0;">Your email is confirmed and your AlmiDanish account is ready.</p>
+    <p style="margin:0 0 16px 0;">Your email is confirmed and your AlmiNorwegian account is ready.</p>
     <p style="margin:0 0 8px 0;">You can start practising exam questions right away. Your readiness score is honest — it reflects only the questions you have actually answered, so what you see is where you really stand.</p>
     ${ctaButton(practiceUrl, "Start practising")}
     <p style="margin:0 0 8px 0;font-size:14px;color:${COLOR_TEXT_MUTED};">Or open <a href="${practiceUrl}" style="color:${COLOR_TEXT_MUTED};">${practiceUrl}</a></p>
@@ -201,7 +201,7 @@ function renderWelcomeText(name: string | null | undefined): string {
   const g = name?.trim() ? `Assalam o alaikum ${name.trim()},` : "Assalam o alaikum,";
   return `${g}
 
-Your email is confirmed and your AlmiDanish account is ready.
+Your email is confirmed and your AlmiNorwegian account is ready.
 
 You can start practising exam questions right away. Your readiness score is honest — it reflects only the questions you have actually answered, so what you see is where you really stand.
 
@@ -209,7 +209,7 @@ Start practising: ${SITE_URL}/practice
 
 If you have any question, just reply to this email.
 
-— AlmiDanish
+— AlmiNorwegian
 ${SITE_URL}
 `;
 }
@@ -222,7 +222,7 @@ export async function sendWelcomeEmail(input: {
   const result = await client.emails.send({
     from: getFromAddress(),
     to: input.to,
-    subject: "Welcome to AlmiDanish",
+    subject: "Welcome to AlmiNorwegian",
     html: renderWelcomeHtml(input.name),
     text: renderWelcomeText(input.name),
   });
@@ -255,14 +255,14 @@ function renderSubscriptionHtml(input: {
   const accountUrl = `${SITE_URL}/account`;
   const plan = input.planLabel?.trim()
     ? escapeHtml(input.planLabel.trim())
-    : "AlmiDanish Premium";
+    : "AlmiNorwegian Premium";
   const trialEndStr = formatDateUTC(input.trialEnd);
 
   const statusBlock = input.isTrial
     ? `<p style="margin:0 0 16px 0;">Your free trial of ${plan} has started, and you now have full access to every practice feature.</p>
        ${
          trialEndStr
-           ? `<p style="margin:0 0 16px 0;">You will not be charged until <strong>${trialEndStr}</strong>. If AlmiDanish isn't right for you, cancel any time before then from your account and you won't pay anything.</p>`
+           ? `<p style="margin:0 0 16px 0;">You will not be charged until <strong>${trialEndStr}</strong>. If AlmiNorwegian isn't right for you, cancel any time before then from your account and you won't pay anything.</p>`
            : `<p style="margin:0 0 16px 0;">You can cancel any time before your trial ends from your account, and you won't be charged.</p>`
        }`
     : `<p style="margin:0 0 16px 0;">Your ${plan} subscription is active, and you now have full access to every practice feature.</p>`;
@@ -285,12 +285,12 @@ function renderSubscriptionText(input: {
   const g = input.name?.trim()
     ? `Assalam o alaikum ${input.name.trim()},`
     : "Assalam o alaikum,";
-  const plan = input.planLabel?.trim() || "AlmiDanish Premium";
+  const plan = input.planLabel?.trim() || "AlmiNorwegian Premium";
   const trialEndStr = formatDateUTC(input.trialEnd);
   const statusBlock = input.isTrial
     ? `Your free trial of ${plan} has started, and you now have full access to every practice feature.\n\n${
         trialEndStr
-          ? `You will not be charged until ${trialEndStr}. If AlmiDanish isn't right for you, cancel any time before then from your account and you won't pay anything.`
+          ? `You will not be charged until ${trialEndStr}. If AlmiNorwegian isn't right for you, cancel any time before then from your account and you won't pay anything.`
           : `You can cancel any time before your trial ends from your account, and you won't be charged.`
       }`
     : `Your ${plan} subscription is active, and you now have full access to every practice feature.`;
@@ -304,7 +304,7 @@ Manage your subscription: ${SITE_URL}/account
 
 Questions? Just reply to this email.
 
-— AlmiDanish
+— AlmiNorwegian
 ${SITE_URL}
 `;
 }
@@ -321,8 +321,8 @@ export async function sendSubscriptionConfirmationEmail(input: {
     from: getFromAddress(),
     to: input.to,
     subject: input.isTrial
-      ? "Your AlmiDanish trial has started"
-      : "Your AlmiDanish subscription is active",
+      ? "Your AlmiNorwegian trial has started"
+      : "Your AlmiNorwegian subscription is active",
     html: renderSubscriptionHtml(input),
     text: renderSubscriptionText(input),
   });

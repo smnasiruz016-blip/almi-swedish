@@ -26,7 +26,7 @@ export default async function AdminLayout({
     <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6">
       <div className="flex items-center justify-between gap-4">
         <div>
-          <p className="text-xs font-bold uppercase tracking-wider text-almi-accent-deep">AlmiDanish</p>
+          <p className="text-xs font-bold uppercase tracking-wider text-almi-accent-deep">AlmiNorwegian</p>
           <h1 className="text-2xl font-semibold text-almi-ink">Admin</h1>
         </div>
         <Link href="/account" className="text-sm font-medium text-almi-coral hover:underline">

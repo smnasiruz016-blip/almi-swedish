@@ -1,0 +1,246 @@
+[
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Phone message from the dentist",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "God dag, dette er tannlegekontoret på Grünerløkka. Vi ringer for å minne deg om timen din på fredag klokka ti. Hvis du ikke kan komme, må du ringe oss på 22 33 44 55 senest torsdag. Husk å pusse tennene før du kommer. Vi ses.",
+      "question": "Når er timen hos tannlegen?",
+      "options": ["Torsdag klokka ti", "Fredag klokka ti", "Fredag klokka fjorten", "Lørdag klokka ni"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Train announcement",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "Vi beklager. Toget mot Bergen er forsinket omtrent tjue minutter på grunn av en feil på skinnene. Toget går nå fra spor tre klokka kvart over ni. Vi ber de reisende om å holde god avstand til kanten av perrongen. Takk for tålmodigheten.",
+      "question": "Hvorfor er toget forsinket?",
+      "options": ["Det er for mange passasjerer", "Det er en feil på skinnene", "Lokføreren er syk", "Det snør mye"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "At the bakery",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "Kunde: Hei, jeg vil gjerne ha to grovbrød og fire rundstykker. Ekspeditør: Ja, det blir sekstito kroner til sammen. Kunde: Kan jeg betale med kort? Ekspeditør: Ja, det går fint. Bare hold kortet mot terminalen.",
+      "question": "Hva kjøper kunden?",
+      "options": ["To grovbrød og fire rundstykker", "Fire grovbrød og to kaker", "Ett grovbrød og en kopp kaffe", "To kaker og fire rundstykker"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Message from school",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "Kjære foreldre. I morgen skal klassen på tur til dyreparken. Barna må møte på skolen klokka åtte som vanlig. Husk å gi dem en stor matpakke og noe å drikke. Vi er tilbake igjen klokka to. Vennlig hilsen, kontaktlæreren.",
+      "question": "Hva må foreldrene huske å gi barna med?",
+      "options": ["Penger til is", "En stor matpakke og noe å drikke", "Ekstra klær og støvler", "En bok og en blyant"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Weather on the radio",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "Og så været. I morgen blir det kjølig med en del regn om formiddagen. Om ettermiddagen klarner det opp, og sola kommer fram. Temperaturen blir rundt tolv grader. Det er frisk vind fra vest, så ta på deg en jakke.",
+      "question": "Hvordan blir været om ettermiddagen?",
+      "options": ["Det regner hele dagen", "Det klarner opp, og sola kommer fram", "Det kommer snø", "Det blir tåke"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Job interview invitation",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "Hei Fatima, dette er Henrik fra renholdsbyrået Rent Hjem. Takk for søknaden din. Vi vil gjerne invitere deg til et intervju på mandag klokka elleve. Kom til kontoret vårt i Industriveien 8. Bare ring hvis tidspunktet ikke passer for deg.",
+      "question": "Hvorfor ringer Henrik til Fatima?",
+      "options": ["For å si at hun har fått jobben", "For å invitere henne til et jobbintervju", "For å avlyse et møte", "For å be om flere papirer"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Call to the kommune",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "Du har ringt til servicetorget i kommunen. Alle medarbeiderne våre er opptatt akkurat nå. Du er nummer tre i køen. Hvis du vil bestille time, kan du også gjøre det på nettsidene våre. Vennligst vent, så kommer du til å snakke med en medarbeider.",
+      "question": "Hva kan man også gjøre i stedet for å vente?",
+      "options": ["Sende et brev", "Bestille time på nettsidene", "Møte opp personlig med en gang", "Ringe et annet nummer"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Voicemail from a friend",
+    "prompt": "Decide if the statement is true (Sant) or false (Usant).",
+    "payload": {
+      "transcript": "Hei, det er Anna. Jeg kan dessverre ikke komme til middag i kveld, fordi jeg må jobbe lenge. Kan vi ikke ses i morgen i stedet? Ring meg når du hører beskjeden. Vi snakkes. Ha det.",
+      "question": "Anna kommer til middag i kveld.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Supermarket announcement",
+    "prompt": "Decide if the statement is true (Sant) or false (Usant).",
+    "payload": {
+      "transcript": "Kjære kunder. Vi stenger om ti minutter. Vennligst ta med dere de siste varene og gå til kassa nå. Vi åpner igjen i morgen klokka åtte. Takk for at dere handlet hos oss i dag. God kveld.",
+      "question": "Butikken åpner igjen klokka åtte i morgen.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Colleague on the phone",
+    "prompt": "Decide if the statement is true (Sant) or false (Usant).",
+    "payload": {
+      "transcript": "Hei Thomas, det er Mads. Jeg kommer litt for sent på jobb i dag, fordi bussen er innstilt. Jeg tar sykkelen i stedet, så jeg er der om cirka en halvtime. Kan du si det til sjefen? Takk.",
+      "question": "Mads kommer tidsnok på jobb i dag.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Health message",
+    "prompt": "Decide if the statement is true (Sant) or false (Usant).",
+    "payload": {
+      "transcript": "God dag, dette er sykepleieren fra legekontoret. Blodprøvene dine ser fine ut, og det er ingenting å være bekymret for. Du trenger ikke å komme innom igjen. Hvis du får spørsmål, er du velkommen til å ringe. Ha en fin dag.",
+      "question": "Personen må komme innom legekontoret igjen.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Match speaker to weekend plan",
+    "prompt": "Match each speaker to their weekend plan.",
+    "payload": {
+      "transcript": "Tre venner forteller om helga. Omar sier: Jeg skal besøke familien min i Trondheim. Lin sier: Jeg blir hjemme og maler soverommet. Nadia sier: Jeg skal løpe et halvmaraton i marka.",
+      "instructions": "Koble hver person til den riktige planen.",
+      "left": ["Omar", "Lin", "Nadia"],
+      "right": ["Maler hjemme", "Løper et løp", "Besøker familien"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Match person to shopping item",
+    "prompt": "Match each person to what they need to buy.",
+    "payload": {
+      "transcript": "Familien skriver en handleliste. Pappa må huske melk og egg til frokosten. Mamma skal kjøpe en ny kjøkkenhåndkle. Sønnen Yusuf skal kjøpe epler og bananer til matpakken sin.",
+      "instructions": "Koble hver person til den riktige varen.",
+      "left": ["Pappa", "Mamma", "Yusuf"],
+      "right": ["Et kjøkkenhåndkle", "Epler og bananer", "Melk og egg"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Match person to appointment",
+    "prompt": "Match each person to their appointment this week.",
+    "payload": {
+      "transcript": "Tre kolleger snakker om uka. Sara skal på møte med veilederen sin på NAV på onsdag. Petter skal til legen for å få en vaksine på torsdag. Mai skal på foreldremøte på skolen på fredag.",
+      "instructions": "Koble hver person til den riktige avtalen.",
+      "left": ["Sara", "Petter", "Mai"],
+      "right": ["Vaksine hos legen", "Foreldremøte på skolen", "Møte på NAV"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Match colleague to room at work",
+    "prompt": "Match each colleague to the room they work in.",
+    "payload": {
+      "transcript": "På sykehjemmet fordeler de oppgavene. Ida jobber på kjøkkenet og lager lunsj til beboerne. Kasper vasker på badene. Lena sitter på kontoret og svarer på telefonen.",
+      "instructions": "Koble hver kollega til det riktige rommet.",
+      "left": ["Ida", "Kasper", "Lena"],
+      "right": ["Badene", "Kontoret", "Kjøkkenet"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  }
+]

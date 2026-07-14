@@ -8,28 +8,28 @@ CREATE TYPE "Locale" AS ENUM ('EN', 'UR', 'AR', 'HI');
 CREATE TYPE "SubscriptionTier" AS ENUM ('FREE', 'PREMIUM');
 
 -- CreateEnum
-CREATE TYPE "IcelandicTrack" AS ENUM ('CITIZENSHIP', 'UNIVERSITY', 'CEFR');
+CREATE TYPE "NorwegianTrack" AS ENUM ('CITIZENSHIP', 'PERMANENT_RESIDENCE', 'GETTING_STARTED', 'UNIVERSITY');
 
 -- CreateEnum
-CREATE TYPE "IcelandicExam" AS ENUM ('RIKISBORGARAPROF_A2', 'HI_ENTRANCE', 'CEFR_A1', 'CEFR_A2', 'CEFR_B1', 'CEFR_B2', 'CEFR_C1');
+CREATE TYPE "NorwegianExam" AS ENUM ('NORSKPROVE_A1A2', 'NORSKPROVE_A2B1', 'NORSKPROVE_B1B2', 'BERGENSTEST', 'STATSBORGERPROVEN', 'SAMFUNNSKUNNSKAP');
 
 -- CreateEnum
-CREATE TYPE "IcelandicSkill" AS ENUM ('READING', 'LISTENING', 'WRITING', 'SPEAKING');
+CREATE TYPE "NorwegianSkill" AS ENUM ('READING', 'LISTENING', 'WRITING', 'SPEAKING', 'KNOWLEDGE');
 
 -- CreateEnum
-CREATE TYPE "IcelandicTaskType" AS ENUM ('MCQ_SINGLE', 'MATCHING', 'CLOZE', 'ORDERING', 'TRUE_FALSE', 'WRITING_PROMPT', 'SPEAKING_PROMPT');
+CREATE TYPE "NorwegianTaskType" AS ENUM ('MCQ_SINGLE', 'MATCHING', 'CLOZE', 'ORDERING', 'TRUE_FALSE', 'WRITING_PROMPT', 'SPEAKING_PROMPT');
 
 -- CreateEnum
-CREATE TYPE "IcelandicDifficulty" AS ENUM ('FOUNDATION', 'CORE', 'STRETCH');
+CREATE TYPE "NorwegianDifficulty" AS ENUM ('FOUNDATION', 'CORE', 'STRETCH');
 
 -- CreateEnum
-CREATE TYPE "IcelandicAttemptStatus" AS ENUM ('PENDING', 'SCORED', 'EVALUATED', 'FAILED');
+CREATE TYPE "NorwegianAttemptStatus" AS ENUM ('PENDING', 'SCORED', 'EVALUATED', 'FAILED');
 
 -- CreateEnum
-CREATE TYPE "IcelandicSessionMode" AS ENUM ('PRACTICE', 'MOCK');
+CREATE TYPE "NorwegianSessionMode" AS ENUM ('PRACTICE', 'MOCK');
 
 -- CreateEnum
-CREATE TYPE "IcelandicSessionStatus" AS ENUM ('IN_PROGRESS', 'COMPLETED', 'ABANDONED');
+CREATE TYPE "NorwegianSessionStatus" AS ENUM ('IN_PROGRESS', 'COMPLETED', 'ABANDONED');
 
 -- CreateTable
 CREATE TABLE "User" (
@@ -56,7 +56,7 @@ CREATE TABLE "User" (
     "compGrantedAt" TIMESTAMP(3),
     "compGrantedBy" TEXT,
     "compReason" TEXT,
-    "targetExam" "IcelandicExam",
+    "targetExam" "NorwegianExam",
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
@@ -136,13 +136,13 @@ CREATE TABLE "AICostLedger" (
 );
 
 -- CreateTable
-CREATE TABLE "IcelandicItem" (
+CREATE TABLE "NorwegianItem" (
     "id" TEXT NOT NULL,
-    "track" "IcelandicTrack" NOT NULL,
-    "exam" "IcelandicExam" NOT NULL,
-    "skill" "IcelandicSkill" NOT NULL,
-    "taskType" "IcelandicTaskType" NOT NULL,
-    "difficulty" "IcelandicDifficulty" NOT NULL DEFAULT 'CORE',
+    "track" "NorwegianTrack" NOT NULL,
+    "exam" "NorwegianExam" NOT NULL,
+    "skill" "NorwegianSkill" NOT NULL,
+    "taskType" "NorwegianTaskType" NOT NULL,
+    "difficulty" "NorwegianDifficulty" NOT NULL DEFAULT 'CORE',
     "title" TEXT NOT NULL,
     "prompt" TEXT NOT NULL,
     "payload" JSONB NOT NULL,
@@ -152,16 +152,16 @@ CREATE TABLE "IcelandicItem" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
-    CONSTRAINT "IcelandicItem_pkey" PRIMARY KEY ("id")
+    CONSTRAINT "NorwegianItem_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable
-CREATE TABLE "IcelandicAttempt" (
+CREATE TABLE "NorwegianAttempt" (
     "id" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
     "itemId" TEXT NOT NULL,
     "sessionId" TEXT,
-    "status" "IcelandicAttemptStatus" NOT NULL DEFAULT 'PENDING',
+    "status" "NorwegianAttemptStatus" NOT NULL DEFAULT 'PENDING',
     "response" JSONB,
     "points" INTEGER,
     "maxPoints" INTEGER,
@@ -170,22 +170,22 @@ CREATE TABLE "IcelandicAttempt" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "submittedAt" TIMESTAMP(3),
 
-    CONSTRAINT "IcelandicAttempt_pkey" PRIMARY KEY ("id")
+    CONSTRAINT "NorwegianAttempt_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable
-CREATE TABLE "IcelandicSession" (
+CREATE TABLE "NorwegianSession" (
     "id" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
-    "track" "IcelandicTrack" NOT NULL,
-    "exam" "IcelandicExam" NOT NULL,
-    "mode" "IcelandicSessionMode" NOT NULL DEFAULT 'PRACTICE',
-    "status" "IcelandicSessionStatus" NOT NULL DEFAULT 'IN_PROGRESS',
+    "track" "NorwegianTrack" NOT NULL,
+    "exam" "NorwegianExam" NOT NULL,
+    "mode" "NorwegianSessionMode" NOT NULL DEFAULT 'PRACTICE',
+    "status" "NorwegianSessionStatus" NOT NULL DEFAULT 'IN_PROGRESS',
     "aggregate" JSONB,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "completedAt" TIMESTAMP(3),
 
-    CONSTRAINT "IcelandicSession_pkey" PRIMARY KEY ("id")
+    CONSTRAINT "NorwegianSession_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateIndex
@@ -258,22 +258,22 @@ CREATE INDEX "AICostLedger_userId_timestamp_idx" ON "AICostLedger"("userId", "ti
 CREATE INDEX "AICostLedger_feature_timestamp_idx" ON "AICostLedger"("feature", "timestamp");
 
 -- CreateIndex
-CREATE INDEX "IcelandicItem_track_exam_skill_active_idx" ON "IcelandicItem"("track", "exam", "skill", "active");
+CREATE INDEX "NorwegianItem_track_exam_skill_active_idx" ON "NorwegianItem"("track", "exam", "skill", "active");
 
 -- CreateIndex
-CREATE INDEX "IcelandicItem_exam_skill_idx" ON "IcelandicItem"("exam", "skill");
+CREATE INDEX "NorwegianItem_exam_skill_idx" ON "NorwegianItem"("exam", "skill");
 
 -- CreateIndex
-CREATE INDEX "IcelandicAttempt_userId_createdAt_idx" ON "IcelandicAttempt"("userId", "createdAt");
+CREATE INDEX "NorwegianAttempt_userId_createdAt_idx" ON "NorwegianAttempt"("userId", "createdAt");
 
 -- CreateIndex
-CREATE INDEX "IcelandicAttempt_itemId_idx" ON "IcelandicAttempt"("itemId");
+CREATE INDEX "NorwegianAttempt_itemId_idx" ON "NorwegianAttempt"("itemId");
 
 -- CreateIndex
-CREATE INDEX "IcelandicAttempt_sessionId_idx" ON "IcelandicAttempt"("sessionId");
+CREATE INDEX "NorwegianAttempt_sessionId_idx" ON "NorwegianAttempt"("sessionId");
 
 -- CreateIndex
-CREATE INDEX "IcelandicSession_userId_createdAt_idx" ON "IcelandicSession"("userId", "createdAt");
+CREATE INDEX "NorwegianSession_userId_createdAt_idx" ON "NorwegianSession"("userId", "createdAt");
 
 -- AddForeignKey
 ALTER TABLE "Session" ADD CONSTRAINT "Session_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
@@ -285,14 +285,14 @@ ALTER TABLE "PasswordResetToken" ADD CONSTRAINT "PasswordResetToken_userId_fkey"
 ALTER TABLE "Review" ADD CONSTRAINT "Review_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "IcelandicAttempt" ADD CONSTRAINT "IcelandicAttempt_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "NorwegianAttempt" ADD CONSTRAINT "NorwegianAttempt_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "IcelandicAttempt" ADD CONSTRAINT "IcelandicAttempt_itemId_fkey" FOREIGN KEY ("itemId") REFERENCES "IcelandicItem"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "NorwegianAttempt" ADD CONSTRAINT "NorwegianAttempt_itemId_fkey" FOREIGN KEY ("itemId") REFERENCES "NorwegianItem"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "IcelandicAttempt" ADD CONSTRAINT "IcelandicAttempt_sessionId_fkey" FOREIGN KEY ("sessionId") REFERENCES "IcelandicSession"("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "NorwegianAttempt" ADD CONSTRAINT "NorwegianAttempt_sessionId_fkey" FOREIGN KEY ("sessionId") REFERENCES "NorwegianSession"("id") ON DELETE SET NULL ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "IcelandicSession" ADD CONSTRAINT "IcelandicSession_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "NorwegianSession" ADD CONSTRAINT "NorwegianSession_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 

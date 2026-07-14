@@ -15,7 +15,7 @@ export const BRAND = {
   coralDeep: "#ff6b5b",   // hover/active state on coral
   teal: "#0d9488",        // secondary CTA + checkmarks + eyebrow labels
   tealLight: "#5EEAD4",   // mint highlights
-  accent: "#F4A340",      // AlmiDanish accent (sunrise amber-honey) secondary accent
+  accent: "#F4A340",      // AlmiNorwegian accent (sunrise amber-honey) secondary accent
   accentDeep: "#e08e2a",  // hover/active on accent
   purple: "#6b46c1",      // small uppercase label text ("PURPOSE")
   purpleDeep: "#2D1B3D",  // deep purple accents

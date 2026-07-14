@@ -4,9 +4,9 @@ import {
   jobsComboAtIndex, studyPath, jobsPath,
 } from "@/lib/seo/axes";
 import { TAUGHT_STUDY_TOTAL, taughtStudyComboAtIndex } from "@/lib/seo/taught-index";
-import { ALL_EXAMS } from "@/lib/dk/registry";
+import { ALL_EXAMS } from "@/lib/no/registry";
 
-const SITE = "https://almidanish.almiworld.com";
+const SITE = "https://alminorwegian.almiworld.com";
 const PER = 50_000; // Google's max URLs per sitemap
 const LASTMOD = "2026-07-12";
 
@@ -31,9 +31,9 @@ function entry(path: string, priority = 0.5): MetadataRoute.Sitemap[number] {
 // makes every comparison fail and each shard emits an empty <urlset> (110 bytes).
 export default async function sitemap({ id }: { id: Promise<string> }): Promise<MetadataRoute.Sitemap> {
   const shard = Number(await id);
-  // Shard 0 — core marketing + auth + Danish-exam hub/levels.
+  // Shard 0 — core marketing + auth + Norwegian-exam hub/levels.
   if (shard === 0) {
-    const core = ["", "/pricing", "/signup", "/login", "/exams", "/study-in-denmark", "/work-in-denmark", "/requirements/denmark/prove-i-dansk-3-citizenship"]
+    const core = ["", "/pricing", "/signup", "/login", "/exams", "/study-in-norway", "/work-in-norway", "/requirements/norway/norskprove-b1b2-citizenship"]
       .map((p) => entry(p, p === "" ? 1 : 0.7));
     const levels = ALL_EXAMS.map((e) => entry(`/exams/${e.slug}`, 0.8));
     return [...core, ...levels];

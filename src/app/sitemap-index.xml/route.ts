@@ -11,7 +11,7 @@ import { TAUGHT_STUDY_TOTAL } from "@/lib/seo/taught-index";
 // tail as empty phantom shards. Keep this total === sitemap.ts's TOTAL_SHARDS.
 export const dynamic = "force-static";
 
-const SITE = "https://almidanish.almiworld.com";
+const SITE = "https://alminorwegian.almiworld.com";
 const PER = 50_000;
 const LASTMOD = "2026-07-10";
 const TOTAL_SHARDS = 1 + Math.ceil(TAUGHT_STUDY_TOTAL / PER) + Math.ceil(JOBS_TOTAL / PER);

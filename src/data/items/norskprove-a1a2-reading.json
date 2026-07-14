@@ -1,0 +1,251 @@
+[
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Introducing Kari",
+    "prompt": "Read the short text and choose the correct answer.",
+    "payload": {
+      "passage": "Hei! Jeg heter Kari. Jeg bor i Bergen. Jeg er tjueåtte år gammel.",
+      "question": "Hvor bor Kari?",
+      "options": ["I Oslo", "I Bergen", "I Trondheim", "I Stavanger"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Ola's family",
+    "prompt": "Read the short text and choose the correct answer.",
+    "payload": {
+      "passage": "Ola har en kone og tre barn. Sønnen heter Jonas, og døtrene heter Nora og Emma.",
+      "question": "Hvor mange barn har Ola?",
+      "options": ["Ett", "To", "Tre", "Fire"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "At the shop",
+    "prompt": "Read the short text and choose the correct answer.",
+    "payload": {
+      "passage": "Jeg kjøper melk, brød og egg i butikken. Brødet koster tjue kroner.",
+      "question": "Hva koster brødet?",
+      "options": ["Ti kroner", "Femten kroner", "Tjue kroner", "Tretti kroner"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Today's weather",
+    "prompt": "Read the short text and choose the correct answer.",
+    "payload": {
+      "passage": "I dag er det kaldt. Det regner, og vinden blåser. Jeg tar på meg en varm jakke.",
+      "question": "Hvordan er været i dag?",
+      "options": ["Varmt og solrikt", "Kaldt og regnfullt", "Varmt og tørt", "Solrikt hele dagen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Morning routine",
+    "prompt": "Read the short text and choose the correct answer.",
+    "payload": {
+      "passage": "Om morgenen står jeg opp klokka sju. Jeg spiser frokost og drikker te. Så tar jeg bussen til jobben.",
+      "question": "Hva drikker personen om morgenen?",
+      "options": ["Kaffe", "Te", "Juice", "Vann"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Nora's job",
+    "prompt": "Read the short text and choose the correct answer.",
+    "payload": {
+      "passage": "Nora jobber på et sykehus. Hun er lege. Hun jobber ofte om kvelden.",
+      "question": "Hva er jobben til Nora?",
+      "options": ["Sykepleier", "Lege", "Lærer", "Kokk"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "title": "Per reads",
+    "prompt": "Read the text. Is the statement true (Sant) or false (Usant)?",
+    "payload": {
+      "passage": "Per liker å lese bøker. Han leser hver kveld før han legger seg.",
+      "question": "Per leser om morgenen.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "title": "The Hansen house",
+    "prompt": "Read the text. Is the statement true (Sant) or false (Usant)?",
+    "payload": {
+      "passage": "Familien Hansen bor i et stort hus. Huset har en hage med mange blomster.",
+      "question": "Familien Hansen har en hage.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Jonas goes to school",
+    "prompt": "Read the text. Is the statement true (Sant) or false (Usant)?",
+    "payload": {
+      "passage": "Jonas tar bussen til skolen hver dag. Bussen kommer klokka åtte.",
+      "question": "Jonas sykler til skolen.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Questions and answers",
+    "prompt": "Match each question with the correct answer.",
+    "payload": {
+      "passage": "To personer snakker sammen for første gang.",
+      "instructions": "Match spørsmålet med det riktige svaret.",
+      "left": ["Hva heter du?", "Hvor gammel er du?", "Hvor bor du?"],
+      "right": ["Jeg er tretti år.", "Jeg bor i Trondheim.", "Jeg heter Mette."]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "FOUNDATION",
+    "title": "Animal words",
+    "prompt": "Match the Norwegian word with its English meaning.",
+    "payload": {
+      "passage": "Les de norske ordene.",
+      "instructions": "Match det norske ordet med den engelske betydningen.",
+      "left": ["hund", "katt", "fugl"],
+      "right": ["cat", "bird", "dog"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Places and activities",
+    "prompt": "Match each place with what you do there.",
+    "payload": {
+      "passage": "Tenk på hva man gjør de forskjellige stedene.",
+      "instructions": "Match stedet med aktiviteten.",
+      "left": ["butikk", "skole", "restaurant"],
+      "right": ["Man spiser mat.", "Man kjøper mat.", "Man lærer."]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 2], [2, 0]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "FOUNDATION",
+    "title": "Name and home",
+    "prompt": "Choose the correct word for each gap.",
+    "payload": {
+      "passage": "Jeg {{1}} Kari. Jeg {{2}} i Norge.",
+      "gaps": [
+        { "id": 1, "options": ["heter", "bor", "spiser"] },
+        { "id": 2, "options": ["heter", "bor", "drikker"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "maxPoints": 2
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "CORE",
+    "title": "Meals of the day",
+    "prompt": "Choose the correct word for each gap.",
+    "payload": {
+      "passage": "Om morgenen drikker jeg {{1}}. Om kvelden spiser jeg {{2}}.",
+      "gaps": [
+        { "id": 1, "options": ["kaffe", "sko", "bord"] },
+        { "id": 2, "options": ["middag", "sykkel", "lampe"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }] },
+    "maxPoints": 2
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "STRETCH",
+    "title": "A cold day",
+    "prompt": "Choose the correct word for each gap.",
+    "payload": {
+      "passage": "Det er {{1}} i dag, så jeg tar på meg en jakke. Jeg går en {{2}} i parken.",
+      "gaps": [
+        { "id": 1, "options": ["varmt", "kaldt", "stort"] },
+        { "id": 2, "options": ["tur", "bil", "bok"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 1 }, { "id": 2, "index": 0 }] },
+    "maxPoints": 2
+  }
+]

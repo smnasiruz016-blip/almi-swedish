@@ -4,15 +4,15 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUser } from "@/lib/auth";
-import { examBySlug, SKILL_LABELS } from "@/lib/dk/registry";
-import { isFreeSkill } from "@/lib/dk/types";
-import type { DanishSkill, DanishTrack } from "@/lib/dk/types";
+import { examBySlug, SKILL_LABELS } from "@/lib/no/registry";
+import { isFreeSkill } from "@/lib/no/types";
+import type { NorwegianSkill, NorwegianTrack } from "@/lib/no/types";
 
-const TRACK_LABEL: Record<DanishTrack, string> = {
-  CITIZENSHIP: "Citizenship — Prøve i Dansk 3 + Indfødsretsprøven",
-  PERMANENT_RESIDENCE: "Permanent residence — Prøve i Dansk 2 + Medborgerskabsprøven",
-  GETTING_STARTED: "Getting started — Prøve i Dansk 1",
-  UNIVERSITY: "University admission — Studieprøven",
+const TRACK_LABEL: Record<NorwegianTrack, string> = {
+  CITIZENSHIP: "Citizenship — Norskprøven B1–B2 + Statsborgerprøven",
+  PERMANENT_RESIDENCE: "Permanent residence — Norskprøven A2–B1 + Samfunnskunnskapsprøven",
+  GETTING_STARTED: "Getting started — Norskprøven A1–A2",
+  UNIVERSITY: "University admission — Bergenstesten",
 };
 
 export default async function ExamPage({
@@ -46,7 +46,7 @@ export default async function ExamPage({
       <section>
         <h2 className="text-lg font-semibold text-almi-ink">Practise by skill</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          {exam.skills.map((skill: DanishSkill) => {
+          {exam.skills.map((skill: NorwegianSkill) => {
             const free = isFreeSkill(skill);
             const label = SKILL_LABELS[skill];
             return (
@@ -90,7 +90,7 @@ export default async function ExamPage({
             </div>
             <p className="mt-2 max-w-xl text-sm text-almi-text">
               All parts in exam order (~{exam.mockMinutes} min), then an honest overall estimate —
-              never an official SIRI or Ministry result.
+              never an official UDI or Ministry result.
             </p>
           </div>
           <span className="text-sm font-semibold text-almi-coral">Start full mock →</span>
@@ -98,7 +98,7 @@ export default async function ExamPage({
       </Link>
 
       <p className="text-xs text-almi-text-muted">
-        Original to AlmiDanish — never copied from official test material. Every readout is a
+        Original to AlmiNorwegian — never copied from official test material. Every readout is a
         practice estimate.
       </p>
     </div>

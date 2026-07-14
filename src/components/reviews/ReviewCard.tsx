@@ -24,7 +24,7 @@ export function ReviewCard({
           ? initial.approved
             ? "Your review is approved and may appear on our homepage. Thank you!"
             : "Your review is awaiting approval."
-          : "Tell other test-takers how AlmiDanish has helped your Danish prep."}
+          : "Tell other test-takers how AlmiNorwegian has helped your Norwegian prep."}
       </p>
       <button
         type="button"

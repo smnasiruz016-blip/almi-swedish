@@ -121,7 +121,7 @@ export function Sidebar({
       {/* Mobile top bar (below the family header) */}
       <div className="flex items-center gap-3 border-b border-almi-bg-peach bg-almi-paper px-4 py-3 md:hidden">
         <HamburgerButton onClick={() => setOpen(true)} />
-        <span className="text-sm font-semibold leading-tight text-almi-ink">AlmiDanish</span>
+        <span className="text-sm font-semibold leading-tight text-almi-ink">AlmiNorwegian</span>
       </div>
 
       {/* Desktop fixed rail. The family header is sticky with a variable
@@ -131,7 +131,7 @@ export function Sidebar({
           to clear the *worst-case* header — hence responsive padding that stays
           modest at md and opens up at lg+ where the header actually grows. */}
       <aside className="fixed bottom-0 left-0 top-16 z-30 hidden w-60 flex-col border-r border-almi-bg-peach bg-almi-paper px-3 pb-4 pt-8 md:flex lg:pt-16">
-        <p className="px-3 pb-4 text-base font-semibold leading-tight text-almi-ink">AlmiDanish</p>
+        <p className="px-3 pb-4 text-base font-semibold leading-tight text-almi-ink">AlmiNorwegian</p>
         <NavBody items={items} active={active} email={email} logout={logout} />
       </aside>
 
@@ -141,7 +141,7 @@ export function Sidebar({
           <div className="tt-fade-in absolute inset-0 bg-almi-ink/40" aria-hidden onClick={() => setOpen(false)} />
           <aside className="tt-slide-in-left absolute inset-y-0 left-0 flex w-64 max-w-[82%] flex-col border-r border-almi-bg-peach bg-almi-paper px-3 pb-4 pt-6 shadow-xl">
             <div className="flex items-center justify-between px-3 pb-4">
-              <span className="text-base font-semibold leading-tight text-almi-ink">AlmiDanish</span>
+              <span className="text-base font-semibold leading-tight text-almi-ink">AlmiNorwegian</span>
               <button
                 type="button"
                 onClick={() => setOpen(false)}

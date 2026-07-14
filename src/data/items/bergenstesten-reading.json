@@ -1,0 +1,293 @@
+[
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Oil wealth and the future",
+    "prompt": "Read the passage and choose the best answer.",
+    "payload": {
+      "passage": "Den norske petroleumsformuen har i flere tiår finansiert et velferdsnivå som få andre land kan vise til, men nettopp denne rikdommen rommer et paradoks. Jo lengre inntektene fra olje og gass fortsetter å strømme inn, desto sterkere blir den politiske fristelsen til å utsette den omstillingen som alle er enige om må komme. Økonomer omtaler fenomenet som en form for avhengighet, der de kortsiktige gevinstene systematisk overskygger de langsiktige kostnadene ved å vente. Enkelte hevder at oljefondet i seg selv fungerer som en buffer som gjør omstillingen lettere, mens andre advarer om at den samme tryggheten kan svekke insentivet til å bygge opp nye næringer i tide. Uenigheten handler dermed mindre om målet enn om hvor mye velstanden i seg selv står i veien for å nå det.",
+      "question": "Hva er kjernen i paradokset teksten beskriver?",
+      "options": [
+        "At oljeinntektene er i ferd med å ta slutt raskere enn ventet",
+        "At selve rikdommen kan gjøre den nødvendige omstillingen vanskeligere å gjennomføre",
+        "At oljefondet er for lite til å finansiere velferden",
+        "At nye næringer allerede har erstattet petroleumssektoren"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Dialects and identity",
+    "prompt": "Read the passage and choose the best answer.",
+    "payload": {
+      "passage": "I motsetning til de fleste europeiske land nyter dialektene i Norge en påfallende høy status, og det er fullt akseptert å bruke sin egen talemåte i alle sammenhenger, også i riksdekkende medier og fra Stortingets talerstol. Sosiolingvister forklarer dette blant annet med at Norge lenge manglet en dominerende hovedstadselite som kunne påtvinge resten av landet en enhetlig standarduttale. Der andre land utviklet en normert talenorm knyttet til prestisje, ble dialekten i Norge i stedet et tegn på tilhørighet og lokal forankring. Enkelte forskere peker likevel på at nyere flyttemønstre og et mer sentralisert arbeidsliv gradvis kan svekke de tydeligste særtrekkene, uten at det er gitt at mangfoldet forsvinner av den grunn.",
+      "question": "Hvorfor har dialektene ifølge teksten fått en så høy status i Norge?",
+      "options": [
+        "Fordi myndighetene tidlig innførte en offisiell talenorm",
+        "Fordi landet manglet en dominerende elite som kunne påtvinge en enhetlig standarduttale",
+        "Fordi dialektene alltid har vært like over hele landet",
+        "Fordi mediene forbød bruk av standardspråk"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "The right to roam",
+    "prompt": "Read the article and choose the best answer.",
+    "payload": {
+      "passage": "Allemannsretten gir alle rett til å ferdes fritt i utmark, uavhengig av hvem som eier grunnen. Retten hviler på en gammel sedvane, men ble lovfestet i friluftsloven for å beskytte den mot press fra økende privatisering av strandsoner og fjellområder. Prinsippet forutsetter en gjensidighet: den som ferdes, skal vise hensyn, ikke forsøple og ikke være til unødig ulempe for grunneieren eller andre. Debatten i dag hander sjelden om selve retten, men om hvordan den skal forvaltes når stadig flere mennesker søker ut i naturen samtidig. Slitasje på sårbare områder og konflikter mellom ulike brukergrupper har gjort spørsmålet om regulering mer påtrengende enn før.",
+      "question": "Hva handler dagens debatt om allemannsretten først og fremst om?",
+      "options": [
+        "Om retten bør avskaffes helt",
+        "Om grunneierne skal få eneretten tilbake",
+        "Om hvordan retten skal forvaltes når stadig flere bruker naturen samtidig",
+        "Om hvorvidt sedvane kan lovfestes"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Trust as capital",
+    "prompt": "Read the passage and choose the best answer.",
+    "payload": {
+      "passage": "De nordiske samfunnene kjennetegnes av et usedvanlig høyt nivå av mellommenneskelig tillit, og forskere har lenge diskutert om denne tilliten er en årsak til eller en følge av velferdsstaten. Én posisjon hevder at omfattende fellesskapsordninger skaper tillit fordi de reduserer usikkerhet og gjør folk mindre avhengige av tilfeldig velvilje. En annen posisjon snur forklaringen om og peker på at det nettopp var en allerede eksisterende tillit som gjorde det mulig å bygge opp så kostbare ordninger uten at de kollapset under mistanke om misbruk. Sannsynligvis virker mekanismene begge veier og forsterker hverandre over tid, noe som gjør det metodisk krevende å isolere hva som kom først.",
+      "question": "Hva gjør det ifølge teksten vanskelig å avgjøre forholdet mellom tillit og velferdsstat?",
+      "options": [
+        "At tillit ikke kan måles i det hele tatt",
+        "At de to størrelsene sannsynligvis påvirker hverandre gjensidig over tid",
+        "At velferdsstaten er for ny til å studeres",
+        "At tilliten i Norden er lavere enn antatt"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Aquaculture dilemmas",
+    "prompt": "Read the passage and choose the best answer.",
+    "payload": {
+      "passage": "Oppdrettsnæringen har vokst til å bli en av Norges viktigste eksportnæringer, men veksten har ikke skjedd uten kostnader. Lakselus, rømming og utslipp fra merdene setter både villaksbestandene og de lokale økosystemene under press, og næringen står dermed overfor et dilemma den ikke selv kan løse alene. Dersom myndighetene strammer inn miljøkravene for raskt, risikerer man å svekke en næring mange kystsamfunn er helt avhengige av. Dersom man venter for lenge, kan skadene bli irreversible og til slutt undergrave selve grunnlaget for produksjonen. Flere forskere argumenterer derfor for at bærekraft i denne sammenhengen ikke er en begrensning på næringen, men en forutsetning for at den skal ha en framtid overhodet.",
+      "question": "Hvorfor omtaler flere forskere bærekraft som en forutsetning for næringen?",
+      "options": [
+        "Fordi miljøkrav gjør laksen billigere å produsere",
+        "Fordi næringens eget grunnlag undergraves dersom skadene på økosystemene blir for store",
+        "Fordi kystsamfunnene ønsker mindre oppdrett",
+        "Fordi villaksen ikke har noen økonomisk verdi"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Digital public services",
+    "prompt": "Read the report summary and choose the best answer.",
+    "payload": {
+      "passage": "Digitaliseringen av offentlige tjenester har gjort mange oppgaver raskere og billigere, både for innbyggerne og for forvaltningen. Samtidig viser en ny utredning at effektiviseringen har en bakside som lett overses. Når skjemaer, søknader og kommunikasjon flyttes over på nett, forutsettes det at alle har både utstyret og de digitale ferdighetene som kreves. For eldre, for enkelte innvandrere og for mennesker med lav digital kompetanse kan overgangen i praksis bety at tjenester de har krav på, blir vanskeligere å nå. Utredningen anbefaler derfor at det digitale aldri gjøres til eneste kanal, men suppleres med alternativer, slik at effektiviseringen ikke skjer på bekostning av likeverdig tilgang.",
+      "question": "Hva advarer utredningen mot?",
+      "options": [
+        "At digitalisering gjør tjenestene dyrere",
+        "At det digitale gjøres til eneste kanal og dermed svekker likeverdig tilgang",
+        "At for få skjemaer er lagt ut på nett",
+        "At de eldre bruker for mye tid på nett"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Volunteering claim",
+    "prompt": "Decide whether the statement matches the passage.",
+    "payload": {
+      "passage": "Den norske dugnadstradisjonen har lenge blitt framhevet som en bærebjelke i sivilsamfunnet, men en fersk kartlegging tegner et mer sammensatt bilde. Deltakelsen er fortsatt høy, men den endrer form. Der tidligere generasjoner ofte forpliktet seg til én forening over mange år, foretrekker yngre frivillige i økende grad korte, avgrensede oppdrag de kan gå inn og ut av. Forfatterne konkluderer med at organisasjonene må tilpasse seg denne fleksibiliteten dersom de vil beholde de unge, men understreker samtidig at lavere lojalitet til enkeltforeninger ikke er det samme som svekket samfunnsengasjement.",
+      "question": "Ifølge teksten betyr yngres lavere lojalitet til enkeltforeninger at samfunnsengasjementet er blitt svekket.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Automation and work",
+    "prompt": "Decide whether the statement matches the passage.",
+    "payload": {
+      "passage": "Frykten for at maskiner skal gjøre menneskelig arbeidskraft overflødig, har fulgt hver eneste teknologiske omveltning siden den industrielle revolusjon. Historisk sett har ny teknologi likevel både fjernet og skapt arbeidsplasser, om enn sjelden i de samme bransjene eller for de samme menneskene. Den sentrale utfordringen er derfor ikke nødvendigvis mangel på arbeid som sådan, men omstillingen av arbeidsstyrken. Uten omfattende satsing på etter- og videreutdanning risikerer man at gevinstene tilfaller de få, mens kostnadene bæres av dem hvis kvalifikasjoner blir foreldet.",
+      "question": "Ifølge teksten har ny teknologi historisk sett utelukkende fjernet arbeidsplasser.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Peer review claim",
+    "prompt": "Decide whether the statement matches the passage.",
+    "payload": {
+      "passage": "Fagfellevurdering regnes ofte som vitenskapens fremste kvalitetsstempel, men systemet er langt fra feilfritt. Vurdererne arbeider som regel anonymt og ulønnet, og de har sjelden mulighet til å etterprøve rådata eller kontrollere at et resultat lar seg gjenta. Prosessen kan snarere luke ut åpenbare svakheter enn garantere at en konklusjon er sann. Derfor advarer metodeforskere mot å oppfatte publisering i et fagfellevurdert tidsskrift som en endelig blåstempling; det er i beste fall et første filter i en løpende kritisk prosess.",
+      "question": "Ifølge teksten garanterer fagfellevurdering at et resultat er sant og lar seg gjenta.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Concepts and definitions",
+    "prompt": "Match each concept to its correct definition.",
+    "payload": {
+      "passage": "I samfunnsvitenskapen brukes en rekke sentrale begreper som ofte blandes sammen i den offentlige debatten. En presis forståelse av dem er en forutsetning for å kunne følge den akademiske argumentasjonen, og forvekslinger fører lett til upresise slutninger.",
+      "instructions": "Koble hvert begrep til definisjonen som passer best.",
+      "left": ["Korrelasjon", "Kausalitet", "Representativitet"],
+      "right": [
+        "At et årsaksforhold faktisk forbinder to fenomener",
+        "At et utvalg speiler den populasjonen det skal beskrive",
+        "At to variabler opptrer sammen uten nødvendig årsakssammenheng"
+      ]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Rhetorical appeals",
+    "prompt": "Match each rhetorical appeal to its description.",
+    "payload": {
+      "passage": "Klassisk retorikk skiller mellom tre grunnleggende appellformer en taler kan ta i bruk for å overbevise tilhørerne sine. En vellykket tale kombinerer dem gjerne, men det er analytisk nyttig å kunne holde dem fra hverandre.",
+      "instructions": "Koble hver appellform til den rette beskrivelsen.",
+      "left": ["Logos", "Etos", "Patos"],
+      "right": [
+        "Appell til mottakerens følelser og stemninger",
+        "Appell gjennom fornuft, argumenter og dokumentasjon",
+        "Appell gjennom talerens troverdighet og karakter"
+      ]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 2], [2, 0]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Parts of a research article",
+    "prompt": "Match each part of a research article to its function.",
+    "payload": {
+      "passage": "En vitenskapelig artikkel følger som regel en fast oppbygning som gjør det mulig for leseren raskt å orientere seg og vurdere holdbarheten i undersøkelsen. Hver del har en klart avgrenset funksjon.",
+      "instructions": "Koble hver del til funksjonen sin.",
+      "left": ["Metode", "Diskusjon", "Sammendrag"],
+      "right": [
+        "En kort oppsummering av hele undersøkelsen",
+        "En redegjørelse for hvordan data er samlet inn og bearbeidet",
+        "En tolkning av resultatene og begrensningene ved dem"
+      ]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 2], [2, 0]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "STRETCH",
+    "title": "Education and democracy",
+    "prompt": "Choose the word that fits each gap.",
+    "payload": {
+      "passage": "Utdanning tillegges ofte en sentral rolle for {{1}} av demokratiet, ettersom opplyste borgere antas å være bedre i stand til å gjennomskue politiske argumenter. Kritikere påpeker likevel at formell skolegang ikke i seg selv {{2}} kritisk sans, dersom undervisningen utelukkende belønner pugging.",
+      "gaps": [
+        { "id": 1, "options": ["oppløsningen", "opprettholdelsen", "avskaffelsen"] },
+        { "id": 2, "options": ["garanterer", "hindrer", "overser"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 1 }, { "id": 2, "index": 0 }] },
+    "maxPoints": 2
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "STRETCH",
+    "title": "Climate models",
+    "prompt": "Choose the word that fits each gap.",
+    "payload": {
+      "passage": "Klimamodeller bygger på et stort antall {{1}} som forskerne løpende justerer i takt med nye målinger. Selv om modellene aldri kan forutsi framtiden med fullstendig {{2}}, gir de likevel et robust grunnlag for å vurdere sannsynlige utviklingstrekk.",
+      "gaps": [
+        { "id": 1, "options": ["antakelser", "tilfeldigheter", "fordommer"] },
+        { "id": 2, "options": ["usikkerhet", "presisjon", "likegyldighet"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "maxPoints": 2
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "CORE",
+    "title": "The welfare model",
+    "prompt": "Choose the word that fits each gap.",
+    "payload": {
+      "passage": "Den nordiske velferdsmodellen hviler på en høy grad av {{1}}, der borgerne gjennom skatten finansierer felles ytelser. Modellens tilhengere framhever at den demper {{2}} mellom samfunnsgrupper, mens kritikere frykter at det høye skattenivået svekker motivasjonen til å arbeide.",
+      "gaps": [
+        { "id": 1, "options": ["omfordeling", "privatisering", "isolasjon"] },
+        { "id": 2, "options": ["likheten", "ulikheten", "enigheten"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "maxPoints": 2
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Formal email to landlord",
+    "prompt": "Write a formal email based on the task.",
+    "payload": {
+      "stimulus": "Skriv en formell e-post til utleieren din. Varmen i leiligheten din har ikke virket på en uke. Forklar problemet, fortell hvordan det påvirker hverdagen din, og be høflig om at det blir ordnet raskt. Foreslå når en håndverker kan komme.",
+      "criteria": ["Clear and polite formal tone", "Problem and request are clearly explained", "Suitable opening and closing", "Correct sentence structure and word choice"],
+      "charBand": { "min": 120, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Complaint about a product",
+    "prompt": "Write a formal complaint based on the task.",
+    "payload": {
+      "stimulus": "Du har kjøpt et par sko på nett, men de gikk i stykker etter kort tid. Skriv en klage til butikken. Beskriv hva som er galt, når du kjøpte skoene, og hva du ønsker at butikken gjør (for eksempel bytte eller pengene tilbake).",
+      "criteria": ["The complaint is factual and polite", "All relevant information is included", "The request to the shop is clear", "Correct use of past tense and connectors"],
+      "charBand": { "min": 120, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Opinion on public transport",
+    "prompt": "Write an opinion text based on the task.",
+    "payload": {
+      "stimulus": "En lokalavis spør leserne: Bør kollektivtrafikken være billigere? Skriv et innlegg der du gir din mening. Kom med minst to argumenter for synspunktet ditt, og nevn også et mulig motargument.",
+      "criteria": ["Clear viewpoint from the start", "At least two supported arguments", "A counter-argument is raised and answered", "Coherent paragraphs and connectors"],
+      "charBand": { "min": 150, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Email to a colleague",
+    "prompt": "Write an informal work email based on the task.",
+    "payload": {
+      "stimulus": "Du blir forsinket til et møte på jobben på grunn av trafikk. Skriv en kort e-post til kollegaen din. Forklar situasjonen, si omtrent når du kommer, og be kollegaen om å starte møtet uten deg.",
+      "criteria": ["Suitably friendly but professional tone", "The reason for being late is clear", "Concrete message about time and next step", "Correct and easy-to-understand language"],
+      "charBand": { "min": 120, "max": 220 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Application for a course",
+    "prompt": "Write a formal application based on the task.",
+    "payload": {
+      "stimulus": "Arbeidsplassen din tilbyr et kurs i førstehjelp, men det er få plasser. Skriv en kort søknad til lederen din. Forklar hvorfor du gjerne vil delta, og hvordan kurset kan være til nytte for deg og arbeidsplassen.",
+      "criteria": ["Formal and motivated tone", "Clear justification for taking part", "Benefits for both you and the workplace", "Correct structure and language"],
+      "charBand": { "min": 130, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Letter to a friend",
+    "prompt": "Write an informal letter based on the task.",
+    "payload": {
+      "stimulus": "En venn fra hjemlandet ditt vurderer å flytte til Norge. Skriv et brev der du forteller om hvordan det er å bo her. Nevn både noe du synes er bra, og noe som kan være vanskelig i starten. Gi et godt råd.",
+      "criteria": ["Personal and friendly tone", "Both advantages and challenges are described", "A concrete piece of advice is given", "Cohesion and variety in the language"],
+      "charBand": { "min": 130, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Opinion on screen time",
+    "prompt": "Write an opinion text based on the task.",
+    "payload": {
+      "stimulus": "Mange mener at barn bruker for mye tid foran skjermen. Skriv et innlegg til en foreldregruppe der du gir din mening om temaet. Forklar argumentene dine, og foreslå hva familier selv kan gjøre.",
+      "criteria": ["Clear viewpoint", "The arguments are logical and supported", "A concrete suggestion for families", "Good text structure and connectors"],
+      "charBand": { "min": 150, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Note to the housing association",
+    "prompt": "Write a short formal note based on the task.",
+    "payload": {
+      "stimulus": "Det er ofte rot i sykkelboden i borettslaget ditt, og det er vanskelig å finne plass til sykkelen. Skriv en beskjed til styret. Beskriv problemet, og kom med et forslag til hvordan det kan bli bedre.",
+      "criteria": ["Factual and constructive tone", "The problem is clearly described", "A realistic suggestion is presented", "Correct and understandable language"],
+      "charBand": { "min": 120, "max": 220 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Present your neighbourhood",
+    "prompt": "Speak on the given topic.",
+    "payload": {
+      "stimulus": "Fortell om området du bor i. Hva kan man gjøre der, og hva liker du best? Er det noe du gjerne skulle ha endret? Begrunn svarene dine.",
+      "criteria": ["Coherent and understandable delivery", "Concrete examples and reasons", "Suitable vocabulary about town and daily life", "Reasonably fluent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Argue a viewpoint on work-life balance",
+    "prompt": "Present and argue a viewpoint.",
+    "payload": {
+      "stimulus": "Noen mener at en firedagers arbeidsuke ville gjort folk mer fornøyde. Argumentér for eller mot dette synspunktet, og forklar grunnene dine. Nevn også hva en ulempe kunne være.",
+      "criteria": ["Clear viewpoint", "At least two arguments", "A drawback is considered", "Fluent and coherent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Describe a tradition",
+    "prompt": "Speak on the given topic.",
+    "payload": {
+      "stimulus": "Fortell om en tradisjon eller en høytid som betyr noe for deg. Hva går den ut på, hvem er du sammen med, og hvorfor er den viktig for deg?",
+      "criteria": ["Clear description with details", "Personal justification", "Varied vocabulary", "Reasonably fluent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Discuss environment and daily life",
+    "prompt": "Present and argue a viewpoint.",
+    "payload": {
+      "stimulus": "Hva kan vanlige folk gjøre for å ta bedre vare på miljøet i hverdagen? Presentér ideene dine, og forklar hvilke av dem du selv synes er lettest å gjennomføre.",
+      "criteria": ["Several concrete suggestions", "Reasons and assessment", "Vocabulary about environment and daily life", "Coherent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Talk about learning Norwegian",
+    "prompt": "Speak on the given topic.",
+    "payload": {
+      "stimulus": "Fortell om hvordan du lærer norsk. Hva er lett, og hva er vanskelig for deg? Hva gjør du for å bli bedre, og hva er målet ditt?",
+      "criteria": ["Personal and concrete delivery", "Describes both easy and difficult aspects", "Mentions goals and strategies", "Reasonably fluent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Argue about city versus countryside",
+    "prompt": "Present and argue a viewpoint.",
+    "payload": {
+      "stimulus": "Er det best å bo i en storby eller på landet? Velg en side, og argumentér for valget ditt. Nevn minst to fordeler ved valget ditt og en ulempe man må være oppmerksom på.",
+      "criteria": ["Clear choice and viewpoint", "At least two advantages are named", "A drawback is considered", "Coherent and fluent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Describe a memorable trip",
+    "prompt": "Speak on the given topic.",
+    "payload": {
+      "stimulus": "Fortell om en reise eller en tur du husker godt. Hvor dro du, hvem var du sammen med, og hvorfor var den spesiell? Skulle du gjerne ha gjort det igjen?",
+      "criteria": ["Clear narrative in the past tense", "Details and reasons", "Varied vocabulary", "Reasonably fluent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "The capital of Norway",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "What is the capital of Norway?",
+      "options": ["Bergen", "Oslo", "Trondheim", "Stavanger"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "The Norwegian constitution",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "In which year was the Norwegian Constitution (Grunnloven) signed at Eidsvoll?",
+      "options": ["1776", "1814", "1849", "1905"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "The Norwegian parliament",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "What is the name of the Norwegian national parliament?",
+      "options": ["Folketinget", "Riksdagen", "Stortinget", "Landstinget"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Seats in the Storting",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "How many representatives are elected to the Norwegian Storting?",
+      "options": ["150", "165", "169", "179"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Form of government",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "What form of government does Norway have?",
+      "options": ["Republic", "Constitutional monarchy", "Absolute monarchy", "Federation"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "The reigning monarch",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Who has been the King of Norway since 1991?",
+      "options": ["Olav V", "Haakon VII", "Harald V", "Crown Prince Haakon"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "National day",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "On which date does Norway celebrate its national day (Constitution Day)?",
+      "options": ["17 May", "1 January", "23 June", "6 February"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Dissolution of the union with Sweden",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "In which year did the union between Norway and Sweden peacefully dissolve, making Norway fully independent?",
+      "options": ["1814", "1884", "1905", "1945"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "The written languages",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Norway has two official written forms of Norwegian. What are they?",
+      "options": ["Bokmal and Nynorsk", "Danish and Swedish", "Sami and Finnish", "Riksmal and Landsmal only"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "The indigenous people",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Which people are recognised as the indigenous people of Norway, with their own parliament (Sametinget)?",
+      "options": ["The Vikings", "The Sami", "The Kven", "The Goths"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Occupation during the Second World War",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Which country occupied Norway from 1940 to 1945 during the Second World War?",
+      "options": ["The Soviet Union", "Germany", "Sweden", "Denmark"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Oil in the North Sea",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "In 1969 a major oil field was discovered in the Norwegian North Sea, transforming the economy. What was it called?",
+      "options": ["Troll", "Ekofisk", "Statfjord", "Johan Sverdrup"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "The national currency",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "What is the official currency of Norway?",
+      "options": ["Euro", "Norwegian krone", "Swedish krona", "Danish krone"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Elections and democracy",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "How often are general elections to the Storting held in Norway?",
+      "options": ["Every year", "Every 4 years", "Every 6 years", "Whenever the King decides"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Norway and the European Union",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "What is Norway's relationship with the European Union (EU)?",
+      "options": ["It is a full member of the EU", "It is not an EU member but takes part in the internal market through the EEA agreement", "It uses the euro as a full member", "It left the EU in 2016"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Head of government",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Who leads the government (the executive) in Norway on a day-to-day basis?",
+      "options": ["The King", "The Prime Minister (statsminister)", "The President of the Storting", "The Chief Justice"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  }
+]

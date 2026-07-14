@@ -1,9 +1,9 @@
 // Practice hub — "Choose a Test". Four goal-based tracks: Citizenship (Prøve i
-// Dansk 3 + Indfødsretsprøven), Permanent residence (Prøve i Dansk 2 +
-// Medborgerskabsprøven), Getting started (Prøve i Dansk 1) and University
-// (Studieprøven). Each card routes to /practice/<slug>. Reading + Listening +
+// Dansk 3 + Statsborgerprøven), Permanent residence (Norskprøven A2–B1 +
+// Samfunnskunnskapsprøven), Getting started (Norskprøven A1–A2) and University
+// (Bergenstesten). Each card routes to /practice/<slug>. Reading + Listening +
 // the knowledge MCQs are free to taste; Writing, Speaking and the timed mock are
-// Pro. Every readout is a practice estimate — never an official SIRI or Ministry
+// Pro. Every readout is a practice estimate — never an official UDI or Ministry
 // result.
 
 import Link from "next/link";
@@ -12,7 +12,7 @@ import {
   TRACKS,
   examsByTrack,
   type ExamMeta,
-} from "@/lib/dk/registry";
+} from "@/lib/no/registry";
 
 function ExamCard({ exam }: { exam: ExamMeta }) {
   return (
@@ -44,13 +44,13 @@ export default async function PracticePage() {
     <div className="space-y-10">
       <header>
         <p className="text-xs font-bold uppercase tracking-wider text-almi-accent-deep">
-          AlmiDanish · practice
+          AlmiNorwegian · practice
         </p>
         <h1 className="mt-1 text-3xl font-semibold text-almi-ink">Choose a test</h1>
         <p className="mt-2 max-w-2xl text-sm text-almi-text">
           Start from your goal. Reading, Listening and the society knowledge questions are auto-marked
           and free to practise. Writing and Speaking are graded with honest AI-style feedback against
-          the level&apos;s criteria. Every readout is a practice estimate — never an official SIRI or
+          the level&apos;s criteria. Every readout is a practice estimate — never an official UDI or
           Ministry result.
         </p>
       </header>
@@ -59,7 +59,7 @@ export default async function PracticePage() {
         <section key={t.track}>
           <h2 className="text-lg font-semibold text-almi-ink">{t.label}</h2>
           <p className="mt-1 text-sm text-almi-text-muted">
-            {t.goal} — commonly requires {t.requires}. Confirm the current rules with SIRI.
+            {t.goal} — commonly requires {t.requires}. Confirm the current rules with UDI.
           </p>
           <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {examsByTrack(t.track).map((exam) => (
@@ -70,9 +70,9 @@ export default async function PracticePage() {
       ))}
 
       <p className="text-xs text-almi-text-muted">
-        Every task here is written from scratch by AlmiDanish. We never copy or reproduce official
+        Every task here is written from scratch by AlmiNorwegian. We never copy or reproduce official
         test material. Estimates are for practice only — confirm the exam you need with the official
-        body (SIRI for residency and citizenship).
+        body (UDI for residency and citizenship).
       </p>
     </div>
   );

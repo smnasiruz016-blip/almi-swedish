@@ -1,0 +1,242 @@
+[
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Complaint about noisy building work",
+    "prompt": "Write a formal complaint based on the task.",
+    "payload": {
+      "stimulus": "Det er byggearbeid i oppgangen din, og håndverkerne begynner allerede klokka sju om morgenen, også i helgene. Skriv en klage til borettslaget. Beskriv hvordan støyen påvirker deg og familien din, og be om at arbeidet først starter senere på dagen.",
+      "criteria": ["Factual and polite complaining tone", "The problem and its consequences are clearly described", "A concrete request to the housing association", "Correct sentence structure and connectors"],
+      "charBand": { "min": 120, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Letter to the municipality",
+    "prompt": "Write a formal letter to an authority based on the task.",
+    "payload": {
+      "stimulus": "Du har søkt om barnehageplass til barnet ditt, men du har ventet lenge uten å høre noe. Skriv et brev til kommunen. Forklar situasjonen din, spør når du kan forvente et svar, og fortell hvorfor det haster for familien din.",
+      "criteria": ["Formal and clear approach", "The situation and need are clearly explained", "A concrete question to the municipality", "Suitable opening and closing"],
+      "charBand": { "min": 130, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Opinion on sorting waste",
+    "prompt": "Write an opinion text based on the task.",
+    "payload": {
+      "stimulus": "I kommunen din skal alle nå sortere avfall i mange ulike beholdere. En lokalavis spør leserne hva de synes om det. Skriv et innlegg med din mening. Kom med minst to argumenter, og nevn også hva som kan gjøre det lettere for folk å være med.",
+      "criteria": ["Clear viewpoint from the start", "At least two supported arguments", "A concrete suggestion for improvement", "Coherent paragraphs and variety in the language"],
+      "charBand": { "min": 150, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Email to your child's teacher",
+    "prompt": "Write a formal email based on the task.",
+    "payload": {
+      "stimulus": "Barnet ditt har vært lei seg på skolen i det siste. Skriv en e-post til kontaktlæreren. Beskriv hva du har lagt merke til hjemme, spør om læreren har sett noe på skolen, og foreslå et kort møte.",
+      "criteria": ["Friendly but clear and formal tone", "The concern is described concretely", "A clear wish for cooperation and a meeting", "Correct and easy-to-understand language"],
+      "charBand": { "min": 120, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Opinion on working from home",
+    "prompt": "Write an opinion text based on the task.",
+    "payload": {
+      "stimulus": "Flere og flere jobber hjemmefra noen dager i uka. En fagforening spør medlemmene om det er en god utvikling. Skriv et innlegg med din mening. Forklar argumentene dine, og nevn både en fordel og en ulempe ved å jobbe hjemme.",
+      "criteria": ["Clear viewpoint", "The arguments are logical and supported", "Both an advantage and a drawback are named", "Good text structure and connectors"],
+      "charBand": { "min": 150, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Complaint to an internet provider",
+    "prompt": "Write a formal complaint based on the task.",
+    "payload": {
+      "stimulus": "Internettforbindelsen din har vært ustabil i flere uker, selv om du betaler for et raskt abonnement. Skriv en klage til teleselskapet ditt. Beskriv problemet, fortell hvordan det påvirker jobben og hverdagen din, og skriv hva du forventer at de gjør.",
+      "criteria": ["Factual and firm but polite tone", "The problem and its impact are clearly described", "A clear demand or request", "Correct use of past tense and connectors"],
+      "charBand": { "min": 120, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Letter to the editor on volunteering",
+    "prompt": "Write an opinion text for a newspaper based on the task.",
+    "payload": {
+      "stimulus": "En lokalavis skriver at det mangler frivillige til foreninger og klubber i byen. Skriv et leserinnlegg der du gir din mening om hvorfor frivillig arbeid er viktig. Kom med argumenter, og foreslå hvordan flere kan få lyst til å melde seg.",
+      "criteria": ["Clear viewpoint and engaged tone", "At least two arguments for volunteering", "A concrete suggestion to attract more people", "Cohesion and variety in the language"],
+      "charBand": { "min": 150, "max": 250 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Argue about phones in schools",
+    "prompt": "Present and argue a viewpoint.",
+    "payload": {
+      "stimulus": "Noen skoler har forbudt mobiltelefoner i skoletiden. Argumentér for eller mot dette synspunktet, og forklar grunnene dine. Nevn også hva en ulempe ved holdningen din kunne være.",
+      "criteria": ["Clear viewpoint", "At least two arguments", "A drawback is considered", "Fluent and coherent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Discuss welcoming newcomers",
+    "prompt": "Present and argue a viewpoint.",
+    "payload": {
+      "stimulus": "Hva kan et lokalsamfunn gjøre for å ta godt imot nye innbyggere som nettopp har flyttet til Norge? Presentér ideene dine, og forklar hvilke av dem du selv tror ville hjulpet mest.",
+      "criteria": ["Several concrete suggestions", "Reasons and assessment", "Vocabulary about society and integration", "Coherent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Talk about healthy food",
+    "prompt": "Speak on the given topic.",
+    "payload": {
+      "stimulus": "Fortell om hva sunn mat betyr for deg. Spiser du annerledes enn du gjorde før? Hva er lett, og hva er vanskelig når man vil spise sunt i hverdagen?",
+      "criteria": ["Personal and concrete delivery", "Describes both easy and difficult aspects", "Suitable vocabulary about food and health", "Reasonably fluent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Talk about news habits",
+    "prompt": "Speak on the given topic.",
+    "payload": {
+      "stimulus": "Fortell om hvordan du følger med på nyhetene. Leser, ser eller lytter du? Hvilke temaer interesserer deg mest, og hvorfor er det viktig for deg å vite hva som skjer?",
+      "criteria": ["Clear description with details", "Personal justification", "Varied vocabulary about media", "Reasonably fluent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Argue about learning Norwegian at work",
+    "prompt": "Present and argue a viewpoint.",
+    "payload": {
+      "stimulus": "Noen mener at arbeidsplasser bør gi ansatte tid i arbeidstiden til å lære norsk. Argumentér for eller mot dette synspunktet, og forklar grunnene dine. Nevn også hva en ulempe kunne være.",
+      "criteria": ["Clear viewpoint", "At least two arguments", "A drawback is considered", "Coherent and fluent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Present your daily routine",
+    "prompt": "Speak on the given topic.",
+    "payload": {
+      "stimulus": "Fortell om en helt vanlig dag i livet ditt. Hva gjør du om morgenen, i løpet av dagen og om kvelden? Hva er favorittdelen av dagen din, og hvorfor?",
+      "criteria": ["Coherent delivery in the present tense", "Concrete details about daily life", "Personal justification", "Reasonably fluent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Discuss saving energy at home",
+    "prompt": "Present and argue a viewpoint.",
+    "payload": {
+      "stimulus": "Hva kan familier gjøre for å bruke mindre strøm hjemme? Presentér ideene dine, og forklar hvilke av dem som er enkle, og hvilke som krever mer av folk. Hva gjør du selv?",
+      "criteria": ["Several concrete suggestions", "Assessment of what is easy and hard", "Vocabulary about energy and daily life", "Coherent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Talk about a person you admire",
+    "prompt": "Speak on the given topic.",
+    "payload": {
+      "stimulus": "Fortell om en person du ser opp til. Det kan være noen i familien din, en venn eller en du kjenner fra jobb. Hvem er personen, og hvorfor betyr han eller hun noe for deg?",
+      "criteria": ["Clear description with details", "Personal justification", "Varied vocabulary", "Reasonably fluent speech"],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 10
+  }
+]

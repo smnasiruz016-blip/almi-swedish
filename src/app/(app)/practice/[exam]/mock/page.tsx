@@ -6,10 +6,10 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { requireUser } from "@/lib/auth";
 import { hasPaidAccess } from "@/lib/billing/plans";
-import { examBySlug } from "@/lib/dk/registry";
-import { isFreeSkill } from "@/lib/dk/types";
-import { pickPractice } from "@/lib/dk/items";
-import { MockRunner, type MockSection } from "@/components/dk/MockRunner";
+import { examBySlug } from "@/lib/no/registry";
+import { isFreeSkill } from "@/lib/no/types";
+import { pickPractice } from "@/lib/no/items";
+import { MockRunner, type MockSection } from "@/components/no/MockRunner";
 
 export default async function MockPage({
   params,
@@ -60,7 +60,7 @@ export default async function MockPage({
         </h1>
         <p className="mt-2 max-w-2xl text-sm text-almi-text">
           All parts in exam order (~{exam.mockMinutes} min). Nothing is marked until the end, then
-          you get an overall estimate — not an official SIRI or Ministry result.
+          you get an overall estimate — not an official UDI or Ministry result.
         </p>
       </header>
 

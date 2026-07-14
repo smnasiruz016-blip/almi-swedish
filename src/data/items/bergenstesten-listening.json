@@ -1,0 +1,297 @@
+[
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Lecture on memory",
+    "prompt": "Listen to the lecture excerpt and choose the best answer.",
+    "payload": {
+      "transcript": "Velkommen til dagens forelesning om hukommelse. Vi snakker gjerne om hukommelsen som om den var et arkiv, der minnene ligger uforandret til vi henter dem fram. Men moderne kognisjonsforskning tegner et ganske annet bilde. Hver gang vi kaller fram en hendelse, bygger hjernen den nærmest opp på nytt, og under den prosessen kan minnet påvirkes av det vi vet og forventer i dag. Det forklarer hvorfor to mennesker kan huske den samme begivenheten svært ulikt, og hvorfor vitneutsagn i rettssaker må behandles med stor varsomhet.",
+      "question": "Hva er forelesernes hovedpoeng om hukommelsen?",
+      "options": [
+        "At minner lagres uforandret slik som i et arkiv",
+        "At minner bygges opp på nytt og kan påvirkes hver gang de kalles fram",
+        "At vitneutsagn alltid er pålitelige",
+        "At hukommelsen ikke lar seg utforske vitenskapelig"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Debate on tuition",
+    "prompt": "Listen to the debate excerpt and choose the best answer.",
+    "payload": {
+      "transcript": "Ordstyrer: Vi diskuterer i dag om høyere utdanning fortsatt bør være gratis. Første debattant, vær så god. Debattant A: Gratis utdanning er en investering, ikke en utgift. Når staten betaler, sikrer vi at det er talent og ikke lommeboka som avgjør hvem som studerer videre. Debattant B: Men vi må erkjenne at en betydelig del av de offentlige midlene tilfaller studenter fra velstående hjem, som ville ha studert uansett. Jeg tar ikke til orde for avgifter, men for en mer målrettet fordeling av støtten. Debattant A: Der er jeg uenig; enhver form for målretting risikerer å stigmatisere og skremme bort nettopp dem vi vil hjelpe.",
+      "question": "Hva er egentlig forslaget til debattant B?",
+      "options": [
+        "Å innføre studieavgifter for alle",
+        "Å avvikle all offentlig støtte",
+        "Å fordele støtten mer målrettet framfor å innføre avgifter",
+        "At bare velstående skal få studere"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Seminar on sleep",
+    "prompt": "Listen to the seminar excerpt and choose the best answer.",
+    "payload": {
+      "transcript": "I dette seminaret ser vi nærmere på hvilken betydning søvn har for læring. Flere studier tyder på at det særlig er under den dype søvnen at hjernen konsoliderer det vi har lært i løpet av dagen. Studenter som nedprioriterer søvn til fordel for nattlesing rett før eksamen, oppnår derfor sjelden den effekten de håper på. Forsøk peker faktisk på at en god natts søvn etter en studieøkt kan være mer gunstig enn flere timer med repetisjon uten søvn. Poenget er ikke at repetisjon er likegyldig, men at hvile er en aktiv del av selve læringsprosessen.",
+      "question": "Hva konkluderer innlederen med om søvn og læring?",
+      "options": [
+        "At nattlesing alltid er den beste forberedelsen",
+        "At søvn er bortkastet tid før eksamen",
+        "At søvn er en aktiv del av læringsprosessen og styrker konsolideringen",
+        "At repetisjon er fullstendig unødvendig"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Lecture on the Sami languages",
+    "prompt": "Listen to the lecture excerpt and choose the best answer.",
+    "payload": {
+      "transcript": "Når vi snakker om samiske språk i dag, er det lett å behandle dem som ett enkelt språk, men det er en forenkling. Det finnes flere samiske språk, og noen av dem er så ulike at de innfødte talerne ikke uten videre forstår hverandre. Enkelte av variantene har svært få gjenlevende talere og regnes som sterkt truet. Fornorskingspolitikken gjennom store deler av det tjuende århundret bidro til at overføringen mellom generasjoner ble brutt mange steder. At noen av språkene i dag likevel opplever en forsiktig revitalisering, skyldes ikke minst målrettet innsats i skole og barnehage, der yngre generasjoner igjen får tilgang til et språk foreldrene ofte mistet.",
+      "question": "Hva framhever foreleseren om de samiske språkene?",
+      "options": [
+        "At de utgjør ett enkelt, enhetlig språk",
+        "At det dreier seg om flere språk, og at fornorsking svekket overføringen mellom generasjoner",
+        "At alle variantene har like mange talere",
+        "At ingen av språkene lenger er i bruk"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Talk on biodiversity",
+    "prompt": "Listen to the talk excerpt and choose the best answer.",
+    "payload": {
+      "transcript": "Tap av naturmangfold omtales sjeldnere enn klimaendringene, men de to krisene henger tett sammen. Sunne økosystemer med mange arter er nemlig mer motstandsdyktige mot forstyrrelser, inkludert et varmere klima. Når vi drenerer våtmarker eller dyrker opp artsrike enger, mister vi ikke bare enkeltarter, men også de tjenestene naturen leverer gratis, som pollinering og rensing av vann. Derfor argumenterer flere forskere for at restaurering av natur bør ses som en integrert del av klimaarbeidet, og ikke som en konkurrerende dagsorden.",
+      "question": "Hva er hovedbudskapet til foredragsholderen?",
+      "options": [
+        "At naturmangfold og klima er to helt atskilte problemer",
+        "At restaurering av natur bør integreres i klimaarbeidet",
+        "At våtmarker bør dreneres for å gagne klimaet",
+        "At naturmangfold er viktigere enn klimaet"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Discussion on statistics",
+    "prompt": "Listen to the discussion excerpt and choose the best answer.",
+    "payload": {
+      "transcript": "Programleder: Du advarer mot det du kaller gjennomsnittets tyranni. Hva mener du med det? Forsker: Jo, når mediene rapporterer et gjennomsnitt, forsvinner all variasjonen. Et land kan ha en pen gjennomsnittsinntekt samtidig som store grupper lever i fattigdom, dersom bare noen få tjener ekstremt mye. Gjennomsnittet er følsomt for ekstreme verdier, og derfor kan medianen ofte gi et mer dekkende bilde av hvordan det står til for den typiske borgeren. Poenget mitt er ikke at gjennomsnitt er ubrukelige, men at de sjelden bør stå alene.",
+      "question": "Hvorfor foretrekker forskeren ofte medianen?",
+      "options": [
+        "Fordi den alltid er høyere enn gjennomsnittet",
+        "Fordi den er mindre følsom for ekstreme verdier",
+        "Fordi den er lettere å regne ut",
+        "Fordi gjennomsnitt aldri bør brukes"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Lecture on urban planning",
+    "prompt": "Listen to the lecture excerpt and choose the best answer.",
+    "payload": {
+      "transcript": "Byplanlegging handler ikke bare om estetikk, men om hvordan de fysiske rammene former menneskers atferd. Når vi anlegger brede veier og legger kjøpesentrene utenfor byen, skaper vi et bilavhengig samfunn nesten uten å merke det. Omvendt kan tette kvartaler med kort avstand mellom bolig, arbeid og butikk fremme både gange, sykling og tilfeldige møter mellom mennesker. Arkitekten former altså ikke bare bygninger, men indirekte også de sosiale mønstrene som utspiller seg mellom dem. Derfor bør planlegging alltid følges av en refleksjon over hva slags liv vi ønsker å gjøre mulig.",
+      "question": "Hva understreker foreleseren om byplanlegging?",
+      "options": [
+        "At den bare handler om hvordan bygninger ser ut",
+        "At fysiske rammer former menneskers atferd og sosiale mønstre",
+        "At brede veier alltid er å foretrekke",
+        "At arkitektur ikke har noen sosial betydning"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Vaccine claim",
+    "prompt": "Decide whether the statement matches the transcript.",
+    "payload": {
+      "transcript": "I dagens innlegg vil jeg snakke om hvordan tillit påvirker folkehelsen. En vaksines effekt avhenger ikke bare av biologien, men også av hvor mange som faktisk lar seg vaksinere. Og den oppslutningen hviler i høy grad på tillit til myndighetene. I samfunn der tilliten er lav, sprer tvil og feilinformasjon seg raskere, og det kan undergrave selv en godt planlagt innsats. Derfor er kommunikasjon ikke en ettertanke, men en sentral del av enhver helsestrategi.",
+      "question": "Ifølge innlederen avhenger vaksinasjonsinnsatsens suksess utelukkende av biologien.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Economics claim",
+    "prompt": "Decide whether the statement matches the transcript.",
+    "payload": {
+      "transcript": "Inflasjon forklares gjerne enkelt som for mye penger som jager for få varer. Men den siste tidens prisvekst skyldes i stor grad forstyrrelser på tilbudssiden, altså flaskehalser i produksjon og transport, snarere enn en overopphetet etterspørsel. Det har betydning for hvilken medisin som virker. Renteøkninger demper etterspørselen, men de kan ikke uten videre løse en knapphet som bunner i brutte forsyningskjeder. Derfor er oppgaven til sentralbanken for tiden uvanlig krevende.",
+      "question": "Ifølge taleren skyldtes den siste tidens prisvekst hovedsakelig forstyrrelser på tilbudssiden.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Reading habits claim",
+    "prompt": "Decide whether the statement matches the transcript.",
+    "payload": {
+      "transcript": "En undersøkelse av unges lesevaner gir et mer nyansert bilde enn overskriftene antyder. Det stemmer at unge leser færre romaner enn tidligere generasjoner, men til gjengjeld leser de enorme mengder tekst på skjerm hver eneste dag. Spørsmålet er derfor ikke om de unge leser, men hva de leser og hvordan. Den dype, konsentrerte lesingen av lange tekster ser ut til å være under press, og nettopp den evnen er avgjørende i en akademisk sammenheng.",
+      "question": "Ifølge undersøkelsen leser unge så godt som ingen tekst i dag.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Ethics claim",
+    "prompt": "Decide whether the statement matches the transcript.",
+    "payload": {
+      "transcript": "Når vi diskuterer kunstig intelligens og etikk, glir samtalen lett over i science fiction om selvbevisste maskiner. Men de mest påtrengende etiske problemene er langt mer jordnære. De handler om hvilke data systemene trenes på, om hvem som holdes ansvarlig når en algoritme svikter, og om hvordan skjevheter i historiske data risikerer å bli kodet inn i framtidige beslutninger. Å fokusere ensidig på fjerne framtidsscenarioer kan faktisk lede oppmerksomheten bort fra de skjevhetene som allerede påvirker mennesker i dag.",
+      "question": "Ifølge taleren er de mest presserende etiske problemene ved kunstig intelligens jordnære og aktuelle.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Speakers and views",
+    "prompt": "Match each speaker to the view they express.",
+    "payload": {
+      "transcript": "Ordstyrer: Vi har tre paneldeltakere i dagens debatt om nettbasert undervisning. Anders: For meg er den store gevinsten fleksibiliteten; studentene kan nå følge undervisning uansett bosted og livssituasjon. Beate: Jeg er mer bekymret for det sosiale. Mye læring skjer jo i de uformelle samtalene, som forsvinner når alle sitter hjemme. Christian: Mitt hovedpoeng er et annet, nemlig at kvaliteten svinger enormt; noe nettundervisning er framragende, mens annet bare er en opptatt forelesning uten samspill.",
+      "instructions": "Koble hver taler til holdningen vedkommende gir uttrykk for.",
+      "left": ["Anders", "Beate", "Christian"],
+      "right": [
+        "Framhever bekymring for det sosiale og de uformelle samtalene",
+        "Framhever fleksibiliteten uansett bosted",
+        "Framhever den svingende kvaliteten på nettundervisning"
+      ]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 0], [2, 2]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Fields and questions",
+    "prompt": "Match each discipline to the question it addresses.",
+    "payload": {
+      "transcript": "I innledningen til studiet vil jeg kort skissere hva tre beslektede fag beskjeftiger seg med. Sosiologien spør hvordan samfunnets strukturer former grupper og individer. Psykologien retter i stedet blikket innover og undersøker den enkeltes tanker, følelser og atferd. Antropologien søker gjennom tett feltarbeid å forstå kultur innenfra, ofte i samfunn som skiller seg markant fra forskerens eget.",
+      "instructions": "Koble hvert fag til spørsmålet det særlig beskjeftiger seg med.",
+      "left": ["Sosiologi", "Psykologi", "Antropologi"],
+      "right": [
+        "Hvordan forstås en kultur innenfra gjennom feltarbeid?",
+        "Hvordan former samfunnets strukturer grupper og individer?",
+        "Hvordan fungerer den enkeltes tanker, følelser og atferd?"
+      ]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 2], [2, 0]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Energy sources",
+    "prompt": "Match each energy source to its characteristic.",
+    "payload": {
+      "transcript": "I denne delen av forelesningen sammenligner vi tre energikilder. Vannkraft har lenge vært ryggraden i norsk kraftforsyning og gir stabil, regulerbar produksjon, men mulighetene for ny utbygging er begrenset av hensyn til vernede vassdrag. Vindkraft er blitt billig, men produksjonen svinger med været og møter ofte motstand knyttet til inngrep i landskapet. Solceller er blitt bemerkelsesverdig rimelige og egner seg godt til desentralisert produksjon på tak, men de yter naturligvis bare når sola skinner.",
+      "instructions": "Koble hver energikilde til det som særlig kjennetegner den.",
+      "left": ["Vannkraft", "Vindkraft", "Solceller"],
+      "right": [
+        "Billig, men svingende produksjon og motstand mot landskapsinngrep",
+        "Stabil, regulerbar produksjon, men begrenset av vern av vassdrag",
+        "Egner seg godt til desentralisert produksjon på tak"
+      ]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 0], [2, 2]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Thinkers and ideas",
+    "prompt": "Match each idea to the description given.",
+    "payload": {
+      "transcript": "I idéhistorien støter vi på en rekke tenkere hvis grunntanker fortsatt preger samfunnsdebatten vår. Én tenker hevdet at samfunnet hviler på en kontrakt der borgerne gir fra seg en del av friheten sin mot til gjengjeld å nyte beskyttelse. En annen framhevet arbeidsdelingen som selve drivkraften bak velstand, ettersom spesialisering gjør produksjonen langt mer effektiv. En tredje rettet en skarp kritikk mot at markedet gjør menneskers arbeid til en vare på linje med alle andre varer.",
+      "instructions": "Koble hver grunntanke til beskrivelsen som passer.",
+      "left": ["Samfunnskontrakten", "Arbeidsdelingen", "Kritikken av markedet"],
+      "right": [
+        "Spesialisering gjør produksjonen mer effektiv og skaper velstand",
+        "Borgerne gir fra seg frihet mot til gjengjeld å få beskyttelse",
+        "Markedet risikerer å gjøre menneskers arbeid til en vare"
+      ]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 0], [2, 2]] },
+    "maxPoints": 3
+  }
+]

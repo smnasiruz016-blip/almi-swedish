@@ -1,0 +1,251 @@
+[
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Library opening hours",
+    "prompt": "Read the notice and choose the correct answer.",
+    "payload": {
+      "passage": "Kjære lånere. Fra og med 1. september endrer biblioteket i Sandnes åpningstidene sine. Vi har nå betjent åpningstid hver ukedag fra klokka 10 til 18. På lørdager kan du komme innom mellom klokka 10 og 15. Utenom disse tidene kan du fortsatt bruke det selvbetjente biblioteket dersom du har lånekort og en firesifret kode. Husk at det ikke er ansatte til stede på søndager.",
+      "question": "Når kan du få hjelp av de ansatte på biblioteket?",
+      "options": ["Bare på søndager", "På ukedager mellom klokka 10 og 18", "Hele døgnet med lånekort", "Aldri på lørdager"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Job advertisement",
+    "prompt": "Read the job ad and choose the correct answer.",
+    "payload": {
+      "passage": "Vi søker en blid og pålitelig medarbeider til dagligvarebutikken vår på Grünerløkka i Oslo. Du må kunne jobbe både i helgene og på hverdager, og det er viktig at du liker å hjelpe kundene. Erfaring fra butikk er en fordel, men det er ikke et krav, for vi lærer deg opp. Vi legger størst vekt på at du møter presis og har godt humør. Send søknaden din innen 20. mars.",
+      "question": "Hva legger arbeidsgiveren størst vekt på?",
+      "options": ["At du har lang erfaring", "At du bare kan jobbe i helgene", "At du er presis og har godt humør", "At du bor på Grünerløkka"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Opinion on cycling",
+    "prompt": "Read the opinion piece and choose the correct answer.",
+    "payload": {
+      "passage": "Mange nordmenn sykler til jobb, uansett om det regner eller snør. Noen mener at kommunen bør bruke enda mer penger på brede sykkelveier, slik at det blir tryggere å sykle om vinteren. Andre mener derimot at pengene heller bør gå til kollektivtrafikken, fordi ikke alle har mulighet til å sykle. Selv er jeg overbevist om at vi trenger begge deler dersom vi vil ha færre biler i sentrum.",
+      "question": "Hva mener skribenten selv?",
+      "options": ["At man bare bør satse på sykkelveier", "At biler er den beste løsningen", "At både sykkelveier og kollektivtrafikk trengs", "At kommunen ikke bør bruke penger på trafikk"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Letter from the municipality",
+    "prompt": "Read the official letter and choose the correct answer.",
+    "payload": {
+      "passage": "Kjære innbygger. Vi skriver til deg fordi du har søkt om nytt helsetrygdekort. Kortet er nå på vei med posten og bør være framme innen ti virkedager. Dersom kortet ikke har kommet etter to uker, ber vi deg kontakte oss på telefon eller møte opp på servicetorget. Det gamle kortet ditt er fortsatt gyldig helt til du får det nye.",
+      "question": "Hva skal innbyggeren gjøre hvis kortet ikke kommer innen to uker?",
+      "options": ["Vente en måned til", "Kontakte kommunen", "Søke om kortet på nytt på nett", "Kaste det gamle kortet"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Working from home",
+    "prompt": "Read the article and choose the correct answer.",
+    "payload": {
+      "passage": "Etter de siste årene har det blitt mer vanlig å jobbe hjemmefra noen dager i uka. En ny undersøkelse viser at mange ansatte føler seg mer effektive når de slipper den lange reisen til og fra jobb. Samtidig peker flere ledere på at det kan være vanskelig å holde et team samlet når kollegene sjelden møtes ansikt til ansikt. Løsningen blir derfor ofte en blanding, der man er på kontoret noen dager og hjemme andre.",
+      "question": "Hvilken ulempe ved hjemmekontor nevner lederne?",
+      "options": ["At de ansatte blir mindre effektive", "At reisen blir lengre", "At det er vanskelig å holde teamet samlet", "At de ansatte jobber for mye"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Recycling rules",
+    "prompt": "Read the information and choose the correct answer.",
+    "payload": {
+      "passage": "I borettslaget vårt sorterer vi nå avfallet i flere dunker. Matrester skal i den grønne beholderen, mens papir og papp skal i den blå. Glass og metall har hver sin container nede ved parkeringsplassen. Vi ber alle beboere om å skylle emballasjen før den kastes, slik at vi unngår lukt og skadedyr. Er du i tvil om hvor noe hører hjemme, henger det en oversikt ved søppelskuret.",
+      "question": "Hvor skal papir og papp kastes?",
+      "options": ["I den grønne beholderen", "I den blå beholderen", "Ved parkeringsplassen sammen med glass", "I søppelskuret"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Parental leave",
+    "prompt": "Decide whether the statement is true or false according to the text.",
+    "payload": {
+      "passage": "I Norge har både mødre og fedre rett til foreldrepermisjon når de får barn. Reglene er laget slik at foreldrene kan dele en stor del av permisjonen mellom seg. Tanken bak ordningen er at begge foreldrene skal få mulighet til å være tett på barnet den første tiden. Mange arbeidsplasser oppfordrer i dag også fedre til å ta ut en lengre del av permisjonen.",
+      "question": "Ifølge teksten har bare mødre rett til foreldrepermisjon i Norge.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Evening class",
+    "prompt": "Decide whether the statement is true or false according to the text.",
+    "payload": {
+      "passage": "Til høsten tilbyr voksenopplæringen et nytt kurs i norsk matlaging. Kurset går over åtte tirsdager, og du trenger ikke å ha erfaring med å lage mat fra før. Deltakerne må selv betale for råvarene, men selve undervisningen er gratis. Det er bare plass til tolv personer, så vi anbefaler at du melder deg på tidlig.",
+      "question": "Deltakerne må selv betale for råvarene.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Volunteering",
+    "prompt": "Decide whether the statement is true or false according to the text.",
+    "payload": {
+      "passage": "Frivillig arbeid spiller en viktig rolle i det norske samfunnet. Rundt om i landet bruker tusenvis av mennesker fritiden sin på å hjelpe andre, for eksempel i idrettslag, på sykehjem eller i ulike foreninger. Selv om de ikke får lønn for det, forteller mange frivillige at de får mye igjen, blant annet nye vennskap og en følelse av å gjøre en forskjell.",
+      "question": "Ifølge teksten får de frivillige lønn for arbeidet sitt.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Match people to courses",
+    "prompt": "Match each person to the most suitable course.",
+    "payload": {
+      "passage": "Språksenteret tilbyr flere korte kurs til våren. «Norsk på jobben» er for deg som vil bli bedre til å snakke med kolleger og kunder. «Skriv en god søknad» hjelper deg som leter etter arbeid. «Forstå nyhetene» er for deg som vil kunne følge med i norske medier og aviser.",
+      "instructions": "Koble hver person til kurset som passer best.",
+      "left": ["Sara vil søke jobb og skrive en sterk søknad.", "Amir snakker norsk, men vil forstå nyhetene på TV bedre.", "Lena vil kunne snakke tryggere med kollegene sine."],
+      "right": ["Norsk på jobben", "Skriv en god søknad", "Forstå nyhetene"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 2], [2, 0]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Match signs to places",
+    "prompt": "Match each sign to the place where you would see it.",
+    "payload": {
+      "passage": "Rundt om i byen møter du mange skilt med korte beskjeder. Noen handler om hvordan du skal oppføre deg, mens andre gir praktiske opplysninger. Det lønner seg å lese dem, slik at du unngår misforståelser.",
+      "instructions": "Koble hvert skilt til stedet der du typisk ser det.",
+      "left": ["Vennligst snakk stille av hensyn til de andre gjestene", "Husk å holde hunden i bånd", "Vask hendene før du går tilbake til arbeidet"],
+      "right": ["I en park", "På kjøkkenet på arbeidsplassen", "På lesesalen på biblioteket"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Match questions to answers",
+    "prompt": "Match each question to the correct answer from the guide.",
+    "payload": {
+      "passage": "På nettsidene til kommunen finner du svar på mange praktiske spørsmål. Under ser du noen av spørsmålene innbyggerne oftest stiller, og svarene kommunen gir.",
+      "instructions": "Koble hvert spørsmål til det riktige svaret.",
+      "left": ["Når henter renovasjonsbilen søpla?", "Hvordan melder jeg flytting?", "Kan jeg få hjelp til å lese et brev fra det offentlige?"],
+      "right": ["Ja, kom innom servicetorget, så hjelper vi deg.", "Det gjør du enkelt på norge.no med BankID.", "Annenhver torsdag i partallsuker."]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 1], [2, 0]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "CORE",
+    "title": "Weather and clothing",
+    "prompt": "Choose the correct word for each gap.",
+    "payload": {
+      "passage": "Været i Norge kan skifte fort, og derfor er det lurt å ha med en jakke, {{1}} sola skinner om morgenen. Om vinteren blir det ofte mørkt tidlig, så mange {{2}} å ha lys på sykkelen.",
+      "gaps": [
+        { "id": 1, "options": ["selv om", "fordi", "hvis ikke"] },
+        { "id": 2, "options": ["glemmer", "husker", "nekter"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "maxPoints": 2
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "STRETCH",
+    "title": "A new colleague",
+    "prompt": "Choose the correct word for each gap.",
+    "payload": {
+      "passage": "Da jeg begynte i den nye jobben, var jeg litt nervøs, {{1}} kollegene tok godt imot meg. Etter et par uker følte jeg meg hjemme, og nå gleder jeg meg faktisk {{2}} å møte på jobb hver dag.",
+      "gaps": [
+        { "id": 1, "options": ["men", "derfor", "fordi"] },
+        { "id": 2, "options": ["på", "til", "av"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "maxPoints": 2
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "STRETCH",
+    "title": "Healthy habits",
+    "prompt": "Choose the correct word for each gap.",
+    "payload": {
+      "passage": "Helsedirektoratet anbefaler at voksne beveger seg minst en halvtime hver dag. Det trenger ikke å være hard trening; en tur i frisk luft {{1}} også. Hvis du gjør det til en vane, blir det lettere å holde ut, {{2}} du har det travelt.",
+      "gaps": [
+        { "id": 1, "options": ["teller", "koster", "mangler"] },
+        { "id": 2, "options": ["så", "selv om", "før"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "maxPoints": 2
+  }
+]

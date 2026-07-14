@@ -1,0 +1,251 @@
+[
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Library opening hours",
+    "prompt": "Read the notice and choose the correct answer.",
+    "payload": {
+      "passage": "Biblioteket på Tøyen har fått nye åpningstider. Fra mandag til fredag er det åpent fra klokka 09 til 20. På lørdag stenger biblioteket allerede klokka 15. På søndag er det stengt hele dagen. Husk lånekortet når du skal låne bøker.",
+      "question": "Når er biblioteket stengt?",
+      "options": ["På mandag", "På søndag", "På fredag om morgenen", "På torsdag om kvelden"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Letter from the barnehage",
+    "prompt": "Read the letter and choose the correct answer.",
+    "payload": {
+      "passage": "Hei Amina. Datteren din Sara begynner i barnehagen Løvetann den 1. august. Den første dagen må du møte klokka 09 sammen med henne. Ta gjerne med skiftetøy og en matpakke. Hvis Sara er syk, må du ringe til barnehagen før klokka 08.",
+      "question": "Hva må Amina gjøre hvis Sara blir syk?",
+      "options": ["Sende en e-post til kommunen", "Møte klokka 09 likevel", "Ringe til barnehagen før klokka 08", "Ta med skiftetøy"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Job advertisement",
+    "prompt": "Read the advertisement and choose the correct answer.",
+    "payload": {
+      "passage": "Kafé Bønna søker en ny medarbeider til kjøkkenet. Du må kunne lage kaffe og hjelpe til med å rydde. Arbeidet er på ettermiddagen fra klokka 14 til 20. Vi ønsker en person som snakker norsk og liker å møte nye mennesker. Send søknaden din til jobb@bonna.no.",
+      "question": "Når skal den nye medarbeideren jobbe?",
+      "options": ["Om morgenen", "På ettermiddagen og kvelden", "Bare på lørdag", "Hele natta"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Message from the fastlege",
+    "prompt": "Read the message and choose the correct answer.",
+    "payload": {
+      "passage": "Hei Petter. Du har bestilt time hos fastlegen tirsdag klokka 11.30. Kom gjerne ti minutter før, så du rekker å melde deg i luka. Hvis du ikke kan komme, må du gi beskjed senest dagen før. Ta med listen over medisinene dine.",
+      "question": "Når må Petter senest gi beskjed hvis han ikke kan komme?",
+      "options": ["Samme dag om morgenen", "Dagen før", "En time før", "Han trenger ikke gi beskjed"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "News snippet on recycling",
+    "prompt": "Read the news text and choose the correct answer.",
+    "payload": {
+      "passage": "Kommunen innfører nye regler for søppel fra neste måned. Beboerne må nå sortere avfallet i fire dunker: mat, plast, papir og restavfall. De grønne posene er bare til matavfall. Hvis noen sorterer feil, får de først en vennlig påminnelse i postkassa.",
+      "question": "Hva skjer første gang noen sorterer feil?",
+      "options": ["De får et gebyr", "De får en påminnelse i postkassa", "Dunken blir fjernet", "De må betale mer i husleie"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Housing cooperative notice",
+    "prompt": "Read the notice and choose the correct answer.",
+    "payload": {
+      "passage": "Til alle beboere i oppgang B. Fellesvaskeriet skal males i neste uke, og derfor er det stengt fra mandag til onsdag. I disse dagene kan dere bruke vaskemaskinene i oppgang A. Husk å bestille tid på skjermen ved inngangen. Vi beklager ulempen dette kan gi.",
+      "question": "Hva skal beboerne gjøre mens fellesvaskeriet er stengt?",
+      "options": ["Vaske for hånd", "Vente til torsdag", "Bruke vaskemaskinene i oppgang A", "Vaske hjemme i leiligheten"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Bus timetable change",
+    "prompt": "Decide if the statement is true (Sant) or false (Usant).",
+    "payload": {
+      "passage": "Buss 21 kjører ikke mellom klokka 23 og 05 i helga på grunn av veiarbeid. I stedet går det en nattbuss fra sentrum. Nattbussen kjører hvert kvarter. Du kan bruke det vanlige reisekortet ditt på nattbussen.",
+      "question": "Du kan bruke det vanlige reisekortet på nattbussen.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Email to a colleague",
+    "prompt": "Decide if the statement is true (Sant) or false (Usant).",
+    "payload": {
+      "passage": "Hei Lars. Jeg er hjemme i dag fordi barnet mitt er sykt. Kan du ta møtet med kunden klokka 13? Jeg har lagt alle papirene på pulten din. Ring meg hvis det er noe du lurer på. På forhånd takk. Hilsen Mette.",
+      "question": "Mette ber Lars om å holde et møte med kunden.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Supermarket offer",
+    "prompt": "Decide if the statement is true (Sant) or false (Usant).",
+    "payload": {
+      "passage": "Denne uka har vi et godt tilbud på ferske epler. En kilo koster bare 19 kroner. Tilbudet gjelder bare til og med søndag. Vi har også norske gulrøtter på tilbud, men bare så lenge lageret rekker. Kom tidlig, for det er ikke mange igjen.",
+      "question": "Tilbudet på epler gjelder hele neste uke.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Match person to activity",
+    "prompt": "Match each person on the left to the correct activity on the right.",
+    "payload": {
+      "passage": "Familien planlegger helga. Jonas har lyst til å spille fotball i parken med vennene sine. Sofie må lese til norskprøven, fordi hun har eksamen på mandag. Bestemor vil gjerne passe barna, slik at foreldrene kan gå på kino.",
+      "instructions": "Koble hver person til den riktige aktiviteten.",
+      "left": ["Jonas", "Sofie", "Bestemor"],
+      "right": ["Leser til prøven", "Passer barna", "Spiller fotball"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Match sign to place",
+    "prompt": "Match each sign on the left to the place where you would see it on the right.",
+    "payload": {
+      "passage": "I byen ser man mange skilt. Noen steder er det forbudt å røyke, andre steder må man være stille, og noen steder er det ikke lov å parkere bilen.",
+      "instructions": "Koble hvert skilt til det riktige stedet.",
+      "left": ["Røyking forbudt", "Vennligst vær stille", "Parkering forbudt"],
+      "right": ["På lesesalen på biblioteket", "Foran innkjørselen til garasjen", "På sykehuset"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Match need to service",
+    "prompt": "Match each person's need on the left to the right service in the kommune.",
+    "payload": {
+      "passage": "På servicetorget i kommunen får man hjelp med mange ting. Noen skal søke om et nytt helsetrygdkort, andre skal fornye passet sitt, og noen trenger hjelp til å melde flytting når de har fått ny bolig.",
+      "instructions": "Koble hver persons behov til den riktige hjelpen.",
+      "left": ["Har mistet helsetrygdkortet", "Skal reise til utlandet", "Har flyttet til ny leilighet"],
+      "right": ["Fornyer passet", "Melder flytting", "Bestiller nytt helsetrygdkort"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "CORE",
+    "title": "Note to the landlord",
+    "prompt": "Choose the correct word for each gap.",
+    "payload": {
+      "passage": "Hei, huseier. Det er et problem i leiligheten min. Kranen på kjøkkenet {{1}} hele tiden, og gulvet har blitt vått. Kan du sende en {{2}}, så det kan bli reparert? Med vennlig hilsen, Karim.",
+      "gaps": [
+        { "id": 1, "options": ["drypper", "spiser", "sover"] },
+        { "id": 2, "options": ["lærer", "rørlegger", "gjest"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "maxPoints": 2
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "CORE",
+    "title": "At the pharmacy",
+    "prompt": "Choose the correct word for each gap.",
+    "payload": {
+      "passage": "Jeg hadde vondt i halsen, så jeg gikk på {{1}} for å kjøpe litt medisin. Kvinnen bak disken sa at jeg måtte ta tablettene to {{2}} om dagen etter maten.",
+      "gaps": [
+        { "id": 1, "options": ["apoteket", "postkontoret", "stasjonen"] },
+        { "id": 2, "options": ["uker", "ganger", "måneder"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "maxPoints": 2
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "STRETCH",
+    "title": "Planning a course",
+    "prompt": "Choose the correct word for each gap.",
+    "payload": {
+      "passage": "Jeg vil gjerne bli bedre i norsk, så jeg har {{1}} meg på et kurs på voksenopplæringen. Undervisningen er om kvelden, fordi jeg {{2}} på dagtid. Jeg gleder meg til å møte de andre kursdeltakerne.",
+      "gaps": [
+        { "id": 1, "options": ["meldt", "solgt", "glemt"] },
+        { "id": 2, "options": ["sover", "jobber", "reiser"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "maxPoints": 2
+  }
+]

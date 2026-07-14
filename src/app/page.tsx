@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { TRACKS, examsByTrack } from "@/lib/dk/registry";
+import { TRACKS, examsByTrack } from "@/lib/no/registry";
 import { TestimonialsSection } from "@/components/reviews/TestimonialsSection";
 
 // Re-render hourly so newly approved testimonials appear without a redeploy.
@@ -8,27 +8,27 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "AlmiDanish | Practise Danish Exams with Honest Readiness",
+    absolute: "AlmiNorwegian | Practise Norwegian Exams with Honest Readiness",
   },
   description:
-    "Stop guessing your Danish level for SIRI or ministry requirements. Practise real Prøve i Dansk 1, 2, 3, Studieprøven and the citizenship tests with honest AI readiness bands.",
+    "Stop guessing your Norwegian level for UDI or ministry requirements. Practise real Norskprøven A1–A2, A2–B1, B1–B2, Bergenstesten and the citizenship tests with honest AI readiness bands.",
   openGraph: {
-    title: "AlmiDanish — honest Danish exam practice",
+    title: "AlmiNorwegian — honest Norwegian exam practice",
     description:
-      "Original practice for the Prøve i Dansk ladder, Studieprøven and the Danish society knowledge tests — a readiness estimate shown honestly, not an inflated score.",
+      "Original practice for the Norskprøven ladder, Bergenstesten and the Norwegian society knowledge tests — a readiness estimate shown honestly, not an inflated score.",
   },
 };
 
 const PROMISES = [
   {
-    title: "Every Danish goal",
+    title: "Every Norwegian goal",
     detail:
-      "Citizenship (Prøve i Dansk 3 + Indfødsretsprøven), permanent residence (Prøve i Dansk 2 + Medborgerskabsprøven), getting started (Prøve i Dansk 1) and university (Studieprøven) — the language exams across Reading, Listening, Writing and Speaking, plus the society knowledge tests.",
+      "Citizenship (Norskprøven B1–B2 + Statsborgerprøven), permanent residence (Norskprøven A2–B1 + Samfunnskunnskapsprøven), getting started (Norskprøven A1–A2) and university (Bergenstesten) — the language exams across Reading, Listening, Writing and Speaking, plus the society knowledge tests.",
   },
   {
     title: "Honest readiness, not a fake score",
     detail:
-      "Objective Reading and Listening are auto-marked to a clear readiness band. Writing and Speaking get AI feedback labelled an estimate. We never invent an official SIRI or Ministry result.",
+      "Objective Reading and Listening are auto-marked to a clear readiness band. Writing and Speaking get AI feedback labelled an estimate. We never invent an official UDI or Ministry result.",
   },
   {
     title: "100% original material",
@@ -45,34 +45,34 @@ const PROMISES = [
 const PRICING_LINES = [
   "Full access to Writing & Speaking AI-evaluation modules across every track",
   "Free, unlimited auto-marked Reading, Listening and knowledge-test practice",
-  "AI analysis modelled on the real task formats and criteria — always an estimate, never an official SIRI result",
+  "AI analysis modelled on the real task formats and criteria — always an estimate, never an official UDI result",
   "Full timed mock for your chosen exam, with per-skill readiness and progress tracking",
   "Flat $12/month with one-click cancellation inside your account",
 ] as const;
 
 const FAQ = [
   {
-    q: "Which Danish exams does AlmiDanish cover?",
-    a: "The Prøve i Dansk ladder — Prøve i Dansk 1 (A1–A2), 2 (A2–B1, permanent residence) and 3 (B1–B2, citizenship) — plus Studieprøven (≈C1, university admission), all across Reading, Listening, Writing and Speaking. And the two Danish society knowledge tests: the Indfødsretsprøven (citizenship) and the Medborgerskabsprøven (permanent residence). The exams sit under the Ministry of Immigration and Integration. You pick your exam in your account, and your practice and full mock run for it.",
+    q: "Which Norwegian exams does AlmiNorwegian cover?",
+    a: "The Norskprøven ladder — Norskprøven A1–A2, A2–B1 (permanent residence) and B1–B2 (citizenship) — plus Bergenstesten (≈C1, university admission), all across Reading, Listening, Writing and Speaking. And the two Norwegian society knowledge tests: the Statsborgerprøven (citizenship) and the Samfunnskunnskapsprøven (permanent residence). The exams sit under the HK-dir (the Directorate for Higher Education and Skills). You pick your exam in your account, and your practice and full mock run for it.",
   },
   {
-    q: "What do I need for Danish citizenship?",
-    a: "Danish citizenship commonly requires Prøve i Dansk 3 (B1–B2) and the Indfødsretsprøven, alongside residency and other conditions. The rules change over time — so we don't state a fixed number of years or a fixed step. Always confirm the current requirement with SIRI (Styrelsen for International Rekruttering og Integration) before you rely on it. We help you prepare fairly; we never claim to help anyone shortcut the process.",
+    q: "What do I need for Norwegian citizenship?",
+    a: "Norwegian citizenship commonly requires Norskprøven B1–B2 (B1–B2) and the Statsborgerprøven, alongside residency and other conditions. The rules change over time — so we don't state a fixed number of years or a fixed step. Always confirm the current requirement with UDI (Utlendingsdirektoratet) before you rely on it. We help you prepare fairly; we never claim to help anyone shortcut the process.",
   },
   {
-    q: "Is my AlmiDanish estimate my real exam result?",
+    q: "Is my AlmiNorwegian estimate my real exam result?",
     a: "No. It's a practice readiness estimate to guide your prep — a per-skill band (Clear or Borderline) against the real criteria. Only the official assessments issue real results.",
   },
   {
     q: "How does the citizenship track work?",
-    a: "You practise the four skills — Reading, Listening, Writing and Speaking — at the Prøve i Dansk 3 level (B1–B2), and you can practise the Indfødsretsprøven society questions too. Reading, Listening and the knowledge MCQs are auto-marked; Writing and Speaking get honest AI feedback. It's preparation, not the official test, and it points you to what to work on next.",
+    a: "You practise the four skills — Reading, Listening, Writing and Speaking — at the Norskprøven B1–B2 level (B1–B2), and you can practise the Statsborgerprøven society questions too. Reading, Listening and the knowledge MCQs are auto-marked; Writing and Speaking get honest AI feedback. It's preparation, not the official test, and it points you to what to work on next.",
   },
   {
     q: "Is the practice copied from a real exam?",
     a: "No. Every text, audio transcript, writing task, speaking prompt and knowledge question is original, written from scratch to mirror the real task types. We never copy or reproduce the official question banks or Ministry material.",
   },
   {
-    q: "How much does AlmiDanish cost?",
+    q: "How much does AlmiNorwegian cost?",
     a: "$12 per month with a 7-day free trial, monthly only, cancel anytime. Reading, Listening and knowledge-test practice are free; AI feedback on Writing and Speaking and the full timed mock are part of the subscription.",
   },
 ] as const;
@@ -100,7 +100,7 @@ function ReadinessMockup() {
     <div className="relative mx-auto w-full max-w-sm">
       <div className="rounded-3xl border border-almi-bg-peach bg-almi-paper p-6 shadow-xl">
         <div className="flex items-center justify-between">
-          <p className="text-xs font-bold uppercase tracking-wider text-almi-text-muted">Sample readiness · Prøve i Dansk 3 (B1–B2)</p>
+          <p className="text-xs font-bold uppercase tracking-wider text-almi-text-muted">Sample readiness · Norskprøven B1–B2 (B1–B2)</p>
           <span className="rounded-full bg-almi-bg-peach px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-almi-ink">Sample</span>
         </div>
         <ul className="mt-4 space-y-3">
@@ -145,12 +145,12 @@ export default function Home() {
         <div aria-hidden className="pointer-events-none absolute -bottom-16 -left-16 z-0 h-80 w-80 rounded-full bg-almi-coral/10 blur-3xl" />
         <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
           <div>
-            <p className="text-sm font-bold uppercase tracking-widest text-almi-accent-deep">AlmiDanish · Danish exam practice</p>
+            <p className="text-sm font-bold uppercase tracking-widest text-almi-accent-deep">AlmiNorwegian · Norwegian exam practice</p>
             <h1 className="mt-4 text-balance text-4xl font-semibold leading-[1.08] text-almi-ink sm:text-5xl">
-              Practise Danish with <span className="text-almi-coral">honest readiness.</span>
+              Practise Norwegian with <span className="text-almi-coral">honest readiness.</span>
             </h1>
             <p className="mt-5 text-lg text-almi-text">
-              Original practice for the Prøve i Dansk ladder (PD1–PD3), Studieprøven and the Danish
+              Original practice for the Norskprøven ladder (A1–A2 to B1–B2), Bergenstesten and the Norwegian
               society knowledge tests — with an honest readiness estimate against each exam's real
               criteria, so you know exactly what to work on next.
             </p>
@@ -178,16 +178,16 @@ export default function Home() {
         <div className="mx-auto max-w-3xl">
           <h2 className="text-center text-3xl font-semibold text-almi-ink">An honest estimate, not a fake score</h2>
           <p className="mt-5 text-base text-almi-text">
-            The real exams are set and marked by their official bodies — the Prøve i Dansk exams and
-            the knowledge tests sit under the Ministry of Immigration and Integration — so anyone
-            promising you a precise official result from practice is guessing. AlmiDanish does the
+            The real exams are set and marked by their official bodies — the Norskprøven exams and
+            the knowledge tests sit under the HK-dir (the Directorate for Higher Education and Skills) — so anyone
+            promising you a precise official result from practice is guessing. AlmiNorwegian does the
             honest thing instead: we estimate your readiness from your practice and show it plainly —
             a per-skill band (Clear or Borderline) against each exam's real criteria.
           </p>
           <p className="mt-4 text-base text-almi-text">
             One principle runs through it: <strong className="text-almi-ink">tell you the truth.</strong> Honest,
             level-aware feedback, 100% original material, and a clear read on what to work on next — then
-            confirm the requirement you need with the relevant authority (SIRI for residency and citizenship).
+            confirm the requirement you need with the relevant authority (UDI for residency and citizenship).
           </p>
         </div>
       </section>
@@ -198,20 +198,20 @@ export default function Home() {
           <span className="inline-flex items-center rounded-full bg-almi-coral/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-almi-coral-deep">
             Citizenship route
           </span>
-          <h2 className="mt-4 text-3xl font-semibold text-almi-ink">Prøve i Dansk 3 + Indfødsretsprøven — the citizenship path. Start here.</h2>
+          <h2 className="mt-4 text-3xl font-semibold text-almi-ink">Norskprøven B1–B2 + Statsborgerprøven — the citizenship path. Start here.</h2>
           <p className="mt-4 text-base text-almi-text">
-            Danish citizenship commonly requires Prøve i Dansk 3 — the B1–B2 Danish-language exam — and
-            the Indfødsretsprøven, a Danish society knowledge test. Practise the four language skills and
+            Norwegian citizenship commonly requires Norskprøven B1–B2 — the B1–B2 Norwegian-language exam — and
+            the Statsborgerprøven, a Norwegian society knowledge test. Practise the four language skills and
             the society questions, and get an honest read on whether you're ready. There are also
             residency and other conditions, and rules change, so always confirm the current requirement
-            with SIRI. We help you prepare fairly — never to shortcut the process.
+            with UDI. We help you prepare fairly — never to shortcut the process.
           </p>
           <div className="mt-8">
             <Link
               href="/signup"
               className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-almi-coral px-7 py-3 text-base font-semibold text-almi-ink hover:bg-almi-coral-deep"
             >
-              Practise Prøve i Dansk 3 — free trial
+              Practise Norskprøven B1–B2 — free trial
             </Link>
           </div>
         </div>
@@ -282,7 +282,7 @@ export default function Home() {
             ))}
           </ul>
           <p className="mx-auto mt-6 max-w-xl text-sm text-almi-text-muted">
-            25% of AlmiDanish proceeds fund the Shamool Foundation&apos;s social mission — free primary-school education and daily hot meals for underprivileged children in Lahore, Pakistan.
+            25% of AlmiNorwegian proceeds fund the Shamool Foundation&apos;s social mission — free primary-school education and daily hot meals for underprivileged children in Lahore, Pakistan.
           </p>
           <div className="mt-8">
             <Link href="/signup" className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-almi-coral px-7 py-3 text-base font-semibold text-almi-ink hover:bg-almi-coral-deep">
@@ -317,7 +317,7 @@ export default function Home() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-semibold text-almi-ink">Practise honestly. Walk in ready.</h2>
           <p className="mt-3 text-base text-almi-text">
-            Every Danish exam at your level, honest readiness estimates, 100% original material — for
+            Every Norwegian exam at your level, honest readiness estimates, 100% original material — for
             $12/month with a 7-day free trial.
           </p>
           <div className="mt-8">

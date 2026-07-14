@@ -10,9 +10,9 @@ type FooterColumn = { title: string; links: FooterLink[] };
 
 const FOOTER_COLUMNS: FooterColumn[] = [
   {
-    // This site's own pages — internal nav. Honest Prøve i Dansk 3, University of
-    // Denmark & CEFR Danish practice; 25% of proceeds support the Shamool Foundation.
-    title: "AlmiDanish",
+    // This site's own pages — internal nav. Honest Norskprøven B1–B2, University of
+    // Norway & CEFR Norwegian practice; 25% of proceeds support the Shamool Foundation.
+    title: "AlmiNorwegian",
     links: [
       { label: "Practice", href: "/practice" },
       { label: "Pricing", href: "/pricing" },
@@ -29,7 +29,7 @@ const FOOTER_COLUMNS: FooterColumn[] = [
   {
     // Every family product except this site's own — from the canonical single source.
     title: "Products",
-    links: footerProducts("danish"),
+    links: footerProducts("norwegian"),
   },
   {
     title: "Legal & Contact",

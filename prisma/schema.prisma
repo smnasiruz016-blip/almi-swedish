@@ -70,17 +70,17 @@ model User {
   compGrantedBy String?
   compReason    String?
 
-  // Which Danish exam the user is preparing for (Prøve i Dansk / Studieprøven / knowledge tests).
+  // Which Norwegian exam the user is preparing for (Norskprøven / Bergenstesten / knowledge tests).
   // Drives the default mock and which practice content is surfaced. Null = not chosen.
-  targetExam DanishExam?
+  targetExam NorwegianExam?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   sessions            Session[]
   passwordResetTokens PasswordResetToken[]
-  daAttempts          DanishAttempt[]
-  daSessions          DanishSession[]
+  daAttempts          NorwegianAttempt[]
+  daSessions          NorwegianSession[]
   reviews             Review[]
 
   @@index([email])
@@ -164,49 +164,49 @@ model AICostLedger {
 }
 
 
-// ===================== Danish practice item-bank =====================
+// ===================== Norwegian practice item-bank =====================
 // AlmiDanish covers FOUR goal tracks via ONE item-bank, all administered under
-// the Ministry of Immigration and Integration:
-//   • Prøve i Dansk 3 (the citizenship language exam) — B1–B2 across Reading,
+// the HK-dir (the Directorate for Higher Education and Skills):
+//   • Norskprøven B1–B2 (the citizenship language exam) — B1–B2 across Reading,
 //     Listening, Writing, Speaking. It is the language exam commonly required
-//     for Danish citizenship, alongside the Indfødsretsprøven. Scored per skill
+//     for Norwegian citizenship, alongside the Statsborgerprøven. Scored per skill
 //     as an honest readiness estimate vs the level's real criteria — never an
-//     official SIRI/Ministry result.
-//   • Prøve i Dansk 1 (A1–A2) and Prøve i Dansk 2 (A2–B1, permanent residence).
-//   • Studieprøven — the advanced (≈C1) Danish exam for Danish-taught study.
-//   • Indfødsretsprøven / Medborgerskabsprøven — Danish society knowledge tests
+//     official UDI/Ministry result.
+//   • Norskprøven A1–A2 (A1–A2) and Norskprøven A2–B1 (A2–B1, permanent residence).
+//   • Bergenstesten — the advanced (≈C1) Norwegian exam for Norwegian-taught study.
+//   • Statsborgerprøven / Samfunnskunnskapsprøven — Norwegian society knowledge tests
 //     (multiple-choice), not language proficiency.
-// One DanishItem/DanishAttempt pair serves every task type via a typed
+// One NorwegianItem/NorwegianAttempt pair serves every task type via a typed
 // `payload` Json. All content is original; results are practice estimates —
-// confirm the real residency/citizenship requirement with SIRI.
+// confirm the real residency/citizenship requirement with UDI.
 
-enum DanishTrack {
-  CITIZENSHIP // Prøve i Dansk 3 (B1–B2) + Indfødsretsprøven
-  PERMANENT_RESIDENCE // Prøve i Dansk 2 (A2–B1) + Medborgerskabsprøven
-  GETTING_STARTED // Prøve i Dansk 1 (A1–A2)
-  UNIVERSITY // Studieprøven (≈C1)
+enum NorwegianTrack {
+  CITIZENSHIP // Norskprøven B1–B2 (B1–B2) + Statsborgerprøven
+  PERMANENT_RESIDENCE // Norskprøven A2–B1 (A2–B1) + Samfunnskunnskapsprøven
+  GETTING_STARTED // Norskprøven A1–A2 (A1–A2)
+  UNIVERSITY // Bergenstesten (≈C1)
 }
 
-// Exam axis. The Prøve i Dansk language ladder (PD1–PD3 + Studieprøven) plus the
-// two society knowledge tests (Indfødsretsprøven / Medborgerskabsprøven).
-enum DanishExam {
-  PD1 // Prøve i Dansk 1 — A1–A2
-  PD2 // Prøve i Dansk 2 — A2–B1 (permanent residence)
-  PD3 // Prøve i Dansk 3 — B1–B2 (citizenship, lead)
-  STUDIEPROVEN // Studieprøven — ≈C1 (university)
-  INDFODSRETSPROVEN // Danish citizenship knowledge test
-  MEDBORGERSKABSPROVEN // Active-citizenship / PR knowledge test
+// Exam axis. The Norskprøven language ladder (NORSKPROVE_A1A2–NORSKPROVE_B1B2 + Bergenstesten) plus the
+// two society knowledge tests (Statsborgerprøven / Samfunnskunnskapsprøven).
+enum NorwegianExam {
+  NORSKPROVE_A1A2 // Norskprøven A1–A2 — A1–A2
+  NORSKPROVE_A2B1 // Norskprøven A2–B1 — A2–B1 (permanent residence)
+  NORSKPROVE_B1B2 // Norskprøven B1–B2 — B1–B2 (citizenship, lead)
+  BERGENSTEST // Bergenstesten — ≈C1 (university)
+  STATSBORGERPROVEN // Norwegian citizenship knowledge test
+  SAMFUNNSKUNNSKAP // Active-citizenship / PR knowledge test
 }
 
-enum DanishSkill {
-  READING // Læseforståelse (objective)
+enum NorwegianSkill {
+  READING // Leseforståelse (objective)
   LISTENING // Lytteforståelse (objective)
-  WRITING // Skriftlig fremstilling (AI-graded)
-  SPEAKING // Mundtlig kommunikation (AI-graded)
-  KNOWLEDGE // Samfundskundskab — society knowledge MCQ (objective)
+  WRITING // Skriftlig framstilling (AI-graded)
+  SPEAKING // Muntlig (AI-graded)
+  KNOWLEDGE // Samfunnskunnskap — society knowledge MCQ (objective)
 }
 
-enum DanishTaskType {
+enum NorwegianTaskType {
   MCQ_SINGLE // objective single-answer multiple choice (Reading/Listening)
   MATCHING // objective matching
   CLOZE // objective gap-fill (option-per-gap)
@@ -216,37 +216,37 @@ enum DanishTaskType {
   SPEAKING_PROMPT // productive speaking (criteria)
 }
 
-enum DanishDifficulty {
+enum NorwegianDifficulty {
   FOUNDATION
   CORE
   STRETCH
 }
 
-enum DanishAttemptStatus {
+enum NorwegianAttemptStatus {
   PENDING
   SCORED // objective auto-graded
   EVALUATED // productive AI-graded
   FAILED
 }
 
-enum DanishSessionMode {
+enum NorwegianSessionMode {
   PRACTICE
   MOCK
 }
 
-enum DanishSessionStatus {
+enum NorwegianSessionStatus {
   IN_PROGRESS
   COMPLETED
   ABANDONED
 }
 
-model DanishItem {
+model NorwegianItem {
   id         String          @id @default(cuid())
-  track      DanishTrack
-  exam       DanishExam
-  skill      DanishSkill
-  taskType   DanishTaskType
-  difficulty DanishDifficulty @default(CORE)
+  track      NorwegianTrack
+  exam       NorwegianExam
+  skill      NorwegianSkill
+  taskType   NorwegianTaskType
+  difficulty NorwegianDifficulty @default(CORE)
   title      String
   // Instruction / stem shown to the candidate (NL).
   prompt     String
@@ -260,18 +260,18 @@ model DanishItem {
   active     Boolean         @default(true)
   createdAt  DateTime        @default(now())
   updatedAt  DateTime        @updatedAt
-  attempts   DanishAttempt[]
+  attempts   NorwegianAttempt[]
 
   @@index([track, exam, skill, active])
   @@index([exam, skill])
 }
 
-model DanishAttempt {
+model NorwegianAttempt {
   id        String             @id @default(cuid())
   userId    String
   itemId    String
   sessionId String?
-  status    DanishAttemptStatus @default(PENDING)
+  status    NorwegianAttemptStatus @default(PENDING)
   // User response: objective → selected answer(s); productive → { text } or { audioKey }.
   response  Json?
   // Objective scoring.
@@ -285,28 +285,28 @@ model DanishAttempt {
   submittedAt DateTime?
 
   user    User          @relation(fields: [userId], references: [id], onDelete: Cascade)
-  item    DanishItem     @relation(fields: [itemId], references: [id], onDelete: Cascade)
-  session DanishSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+  item    NorwegianItem     @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  session NorwegianSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
 
   @@index([userId, createdAt])
   @@index([itemId])
   @@index([sessionId])
 }
 
-model DanishSession {
+model NorwegianSession {
   id        String             @id @default(cuid())
   userId    String
-  track     DanishTrack
-  exam      DanishExam
-  mode      DanishSessionMode   @default(PRACTICE)
-  status    DanishSessionStatus @default(IN_PROGRESS)
+  track     NorwegianTrack
+  exam      NorwegianExam
+  mode      NorwegianSessionMode   @default(PRACTICE)
+  status    NorwegianSessionStatus @default(IN_PROGRESS)
   // Aggregate readout: { perSkill: {skill: {points,max,readiness}}, overall }.
   aggregate Json?
   createdAt   DateTime  @default(now())
   completedAt DateTime?
 
   user     User           @relation(fields: [userId], references: [id], onDelete: Cascade)
-  attempts DanishAttempt[]
+  attempts NorwegianAttempt[]
 
   @@index([userId, createdAt])
 }

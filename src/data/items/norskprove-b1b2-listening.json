@@ -1,0 +1,246 @@
+[
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Train announcement",
+    "prompt": "Listen to the announcement and choose the correct answer.",
+    "payload": {
+      "transcript": "Vi vil gjerne informere om at toget mot Oslo S er omtrent ti minutter forsinket. Årsaken er en feil på signalanlegget lenger fram på strekningen. Vi beklager de ulempene dette måtte skape. Passasjerer som skal videre med et annet tog fra Oslo S, bes henvende seg til personalet dersom de er usikre på den videre reisen.",
+      "question": "Hvorfor er toget forsinket?",
+      "options": ["På grunn av dårlig vær", "På grunn av en feil på signalanlegget", "Fordi det mangler personale", "Fordi det er for mange passasjerer"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Doctor's appointment",
+    "prompt": "Listen to the conversation and choose the correct answer.",
+    "payload": {
+      "transcript": "God morgen, dette er legekontoret. Jeg ringer fordi du har bestilt time til torsdag klokka elleve. Dessverre har legen blitt syk, så vi må flytte timen din. Kan du i stedet komme mandag klokka ni? Passer ikke det, finner vi selvsagt en annen dag som passer bedre for deg.",
+      "question": "Hvorfor ringer legekontoret?",
+      "options": ["For å avlyse timen helt", "For å flytte timen fordi legen er syk", "For å minne om en regning", "For å bestille en ny prøve"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Radio interview on food waste",
+    "prompt": "Listen to the interview and choose the correct answer.",
+    "payload": {
+      "transcript": "I studio har vi i dag en kokk som jobber med å redusere matsvinn. Hun forteller at norske husholdninger hvert år kaster store mengder god mat, ofte fordi folk ikke vet hvordan de skal bruke opp rester. Det beste rådet hennes er å planlegge ukas måltider før du drar i butikken, og å fryse ned mat før den blir for gammel.",
+      "question": "Hva er kokkens beste råd mot matsvinn?",
+      "options": ["Å kjøpe mer mat om gangen", "Å spise ute oftere", "Å planlegge måltidene før man handler", "Å unngå å fryse ned mat"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Message about a package",
+    "prompt": "Listen to the voicemail and choose the correct answer.",
+    "payload": {
+      "transcript": "Hei, dette er Post i Butikk på hjørnet. Vi har fått inn en pakke til deg, og den ligger klar til henting. Husk å ta med legitimasjon og hentekoden du har fått på SMS. Vi har åpent alle hverdager til klokka tjue og på lørdager til klokka atten. Pakken ligger hos oss i sju dager før den blir sendt i retur.",
+      "question": "Hva må du huske å ta med for å hente pakken?",
+      "options": ["Bare kontanter", "Legitimasjon og hentekode", "En underskrift fra naboen", "Den gamle kvitteringen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Colleague asks a favour",
+    "prompt": "Listen to the workplace conversation and choose the correct answer.",
+    "payload": {
+      "transcript": "Du, jeg lurte på om du kunne ta vakta mi på fredag? Datteren min har fri fra skolen, og jeg har veldig lyst til å bruke dagen sammen med henne. Jeg skal gjerne ta en av vaktene dine til gjengjeld hvis du trenger det senere. Bare si ifra hvis det ikke passer, så finner jeg en annen løsning.",
+      "question": "Hva ber kollegaen om?",
+      "options": ["Å låne penger", "Å bytte kontor", "Å ta over en vakt på fredag", "Å bli kjørt hjem"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Weather forecast",
+    "prompt": "Listen to the forecast and choose the correct answer.",
+    "payload": {
+      "transcript": "Og så til været. I morgen starter dagen grått med litt regn i de vestlige delene av landet. Utover ettermiddagen trekker skyene bort, og sola kommer fram de fleste steder. Det blir opptil atten grader, men det kan blåse en frisk vind ute ved kysten. Til kvelden blir det kjøligere, så ta med deg en genser hvis du skal ut.",
+      "question": "Hvordan blir været om ettermiddagen?",
+      "options": ["Regnfullt hele dagen", "Sola kommer fram de fleste steder", "Det kommer snø ved kysten", "Det blir veldig varmt om kvelden"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Interview about learning Norwegian",
+    "prompt": "Listen to the interview and choose the correct answer.",
+    "payload": {
+      "transcript": "Jeg flyttet til Norge for fem år siden, og i begynnelsen var det vanskelig å forstå folk på gata. Det som virkelig hjalp meg, var å bli med i et løpelag. Der måtte jeg snakke norsk hver uke, og litt etter litt turte jeg mer. I dag jobber jeg som barnehagelærer, og jeg snakker norsk hele dagen uten å tenke over det.",
+      "question": "Hva hjalp personen mest med å lære norsk?",
+      "options": ["Å se på norsk TV", "Å lese mange bøker", "Å være med i et løpelag", "Å ta privatundervisning"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "School information meeting",
+    "prompt": "Decide whether the statement is true or false according to the recording.",
+    "payload": {
+      "transcript": "Velkommen til foreldremøtet. I kveld skal vi fortelle om det nye skoleåret og om turen klassen skal på til våren. Turen går til en leirskole ved kysten, der barna skal overnatte i tre dager. Det er viktig at dere husker å skrive under på tillatelsen, ellers kan dessverre ikke barnet deres bli med.",
+      "question": "Barna skal overnatte på leirskolen i tre dager.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Gym membership",
+    "prompt": "Decide whether the statement is true or false according to the recording.",
+    "payload": {
+      "transcript": "Hei, og takk for at du ringer treningssenteret. Jeg kan fortelle at vi akkurat nå har et tilbud til nye medlemmer. Du betaler ikke innmeldingsavgift dersom du melder deg inn før slutten av måneden. Selve medlemskapet koster tre hundre og førti kroner i måneden, og du kan når som helst si det opp med én måneds varsel.",
+      "question": "Man må betale innmeldingsavgift hvis man melder seg inn denne måneden.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Podcast on sleep",
+    "prompt": "Decide whether the statement is true or false according to the recording.",
+    "payload": {
+      "transcript": "I dagens episode snakker vi om søvn. En forsker forklarer at voksne i gjennomsnitt trenger mellom sju og åtte timer søvn hver natt for å fungere godt. Hun understreker at det ikke bare handler om hvor lenge du sover, men også om kvaliteten. Ser du på skjermen rett før du legger deg, kan det bli vanskeligere å sovne.",
+      "question": "Ifølge forskeren betyr kvaliteten på søvnen ingenting, bare antallet timer.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Neighbour's request",
+    "prompt": "Decide whether the statement is true or false according to the recording.",
+    "payload": {
+      "transcript": "Hei nabo, det er Mette i nummer tolv. Vi skal ha en liten fest på lørdag, og det kommer nok en del gjester utover kvelden. Jeg ville bare si ifra på forhånd, så dere ikke blir overrasket over litt musikk. Vi lover å skru ned ved midnatt, og dere er selvsagt hjertelig velkomne til å stikke innom hvis dere har lyst.",
+      "question": "Mette inviterer naboene til å stikke innom festen.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Match speakers to opinions",
+    "prompt": "Match each speaker to the opinion they express.",
+    "payload": {
+      "transcript": "Tre kolleger snakker om hvordan de helst kommer seg på jobb. Jonas sier: Jeg tar alltid sykkelen, for da får jeg litt mosjon før dagen begynner. Priya sier: Jeg foretrekker bussen, fordi jeg kan slappe av og lese underveis. Og Tom sier: Jeg må kjøre bil, fordi jeg skal hente barna etterpå.",
+      "instructions": "Koble hver taler til meningen personen gir uttrykk for.",
+      "left": ["Jonas", "Priya", "Tom"],
+      "right": ["Foretrekker bussen for å kunne slappe av", "Må kjøre bil på grunn av barna", "Sykler for å få mosjon"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Match departments to tasks",
+    "prompt": "Match each person to the department that can help them.",
+    "payload": {
+      "transcript": "Velkommen til kommunens sentralbord. Vi hjelper deg videre. Har du spørsmål om skatt og betaling, skal du snakke med økonomiavdelingen. Handler det om boligen din og husleie, hjelper boligkontoret deg. Og trenger du hjelp til å søke jobb, setter vi deg over til NAV.",
+      "instructions": "Koble hver innbygger til den riktige avdelingen.",
+      "left": ["En innbygger som har spørsmål om husleia si", "En innbygger som leter etter arbeid", "En innbygger som har et spørsmål om skatt"],
+      "right": ["NAV", "Økonomiavdelingen", "Boligkontoret"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Match hobbies to reasons",
+    "prompt": "Match each person to the reason they give for their hobby.",
+    "payload": {
+      "transcript": "Tre venner forteller om fritidsinteressene sine. Sofie sier: Jeg synger i et kor, fordi jeg får så mye energi av å være sammen med de andre. Karim sier: Jeg driver med hagearbeid, fordi jeg liker å være ute og se ting gro. Og Ida sier: Jeg maler bilder, fordi det hjelper meg å slappe av etter en travel dag.",
+      "instructions": "Koble hver person til grunnen til hobbyen.",
+      "left": ["Sofie", "Karim", "Ida"],
+      "right": ["Liker å være ute og se ting gro", "Slapper av etter en travel dag", "Får energi av fellesskapet"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "NORSKPROVE_B1B2",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Match announcements to places",
+    "prompt": "Match each announcement to the place where you would hear it.",
+    "payload": {
+      "transcript": "Du hører tre korte beskjeder i løpet av en dag. Den første lyder: Kjære kunder, vi stenger om ti minutter, så ta med de siste varene til kassa nå. Den andre lyder: Neste stopp er Jernbanetorget, bytt her til T-bane og trikk. Og den tredje lyder: Legen er klar til å ta imot deg nå, gå inn på rom tre.",
+      "instructions": "Koble hver beskjed til stedet der du hører den.",
+      "left": ["Kjære kunder, vi stenger om ti minutter", "Neste stopp er Jernbanetorget", "Legen er klar til å ta imot deg nå"],
+      "right": ["På et tog", "På et venterom", "I en dagligvarebutikk"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  }
+]

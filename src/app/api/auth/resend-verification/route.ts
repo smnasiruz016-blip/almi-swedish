@@ -7,7 +7,7 @@ const VERIFY_TTL_MS = 24 * 60 * 60 * 1000;
 const RESEND_COOLDOWN_MS = 60 * 1000;
 
 function getBaseUrl(): string {
-  return process.env.NEXT_PUBLIC_APP_URL ?? "https://almidanish.almiworld.com";
+  return process.env.NEXT_PUBLIC_APP_URL ?? "https://alminorwegian.almiworld.com";
 }
 
 export async function POST(): Promise<Response> {

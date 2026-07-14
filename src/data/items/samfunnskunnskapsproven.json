@@ -1,0 +1,242 @@
+[
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Emergency services",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "In Norway, which number do you call for the police in an emergency?",
+      "options": ["110", "112", "113", "116117"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Fire and ambulance numbers",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Which emergency number do you call in Norway for a serious medical emergency (ambulance)?",
+      "options": ["110", "112", "113", "911"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Local government",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "What is the Norwegian word for the local municipality that provides many everyday public services?",
+      "options": ["Fylke", "Kommune", "Sogn", "Landsdel"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "The welfare state",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "How is the Norwegian welfare state (velferdsstaten) mainly financed?",
+      "options": ["Private insurance only", "Taxes and public revenues", "Foreign aid", "Church donations"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "National insurance scheme",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "What is 'folketrygden' in Norway?",
+      "options": ["A private pension company", "The national insurance scheme covering pensions, sickness and unemployment benefits", "A trade union", "A type of bank account"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Labour and welfare administration",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Which public agency administers unemployment benefits, pensions and many welfare payments in Norway?",
+      "options": ["NAV", "Skatteetaten", "UDI", "Politiet"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "The tax authority",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "What is the name of the Norwegian tax authority?",
+      "options": ["NAV", "Skatteetaten", "UDI", "Folkeregisteret"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Healthcare access",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "In the Norwegian health system, who is usually your first point of contact when you are ill?",
+      "options": ["A hospital specialist", "Your regular general practitioner (fastlege)", "The pharmacy", "The police"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Compulsory education",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "How many years does compulsory schooling (grunnskole) last in Norway?",
+      "options": ["7 years", "9 years", "10 years", "13 years"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Gender equality",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Which statement best reflects the principle of gender equality (likestilling) in Norwegian society?",
+      "options": ["Only men may vote", "Women and men have equal rights and opportunities", "Women may not work outside the home", "Only men may hold public office"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Local elections",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Foreign nationals who have lived legally in Norway for a required period may usually vote in which type of election?",
+      "options": ["National parliamentary (Storting) elections", "Municipal and county council elections", "Only referendums on the constitution", "European Parliament elections"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "The labour market model",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "In Norwegian working life, pay and working conditions are largely agreed through what?",
+      "options": ["Orders from the King", "Collective agreements between trade unions and employers", "Decisions of the European Commission", "Individual customer demands"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Personal identification",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "What is the Norwegian 'fodselsnummer' (national identity number) used for?",
+      "options": ["A driving licence class", "A personal identity number for residents used with public services", "A type of bank card", "A bus travel pass"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Freedom of expression",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Which fundamental right is protected by the Norwegian Constitution and central to its democracy?",
+      "options": ["The right to avoid all taxes", "Freedom of expression (ytringsfrihet)", "The right to ignore court rulings", "The right to a state-provided car"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Regional government",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "What is a 'fylke' in Norway?",
+      "options": ["A national ministry", "A county (regional administrative area)", "A local police station", "A church parish"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Paying tax",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Which statement about income tax in Norway is correct?",
+      "options": ["No one pays income tax in Norway", "People who work and earn an income are generally required to pay income tax", "Only foreigners pay income tax", "Income tax is voluntary"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  }
+]

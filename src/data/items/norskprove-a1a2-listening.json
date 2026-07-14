@@ -1,0 +1,246 @@
+[
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Where is Thomas from",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "Hei, jeg heter Thomas. Jeg kommer fra Sverige, men jeg bor i Norge nå.",
+      "question": "Hvor kommer Thomas fra?",
+      "options": ["Norge", "Sverige", "Danmark", "Tyskland"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Shop opening time",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "Klokka er ni nå. Butikken åpner klokka ti.",
+      "question": "Når åpner butikken?",
+      "options": ["Klokka ni", "Klokka ti", "Klokka elleve", "Klokka åtte"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Ordering at a café",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "Jeg vil gjerne ha en kopp te og et stykke kake, takk.",
+      "question": "Hva bestiller personen?",
+      "options": ["Kaffe og brød", "Te og kake", "Vann og egg", "Brus og pizza"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Train platform",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "Toget til Trondheim går fra spor tre klokka halv to.",
+      "question": "Fra hvilket spor går toget?",
+      "options": ["Spor én", "Spor to", "Spor tre", "Spor fire"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "My brother's age",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "Broren min heter Mikkel. Han er ti år eldre enn meg. Jeg er tjue år.",
+      "question": "Hvor gammel er Mikkel?",
+      "options": ["Ti år", "Tjue år", "Tretti år", "Førti år"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Weekend visit",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "I helgen besøker vi bestemoren min. Hun bor på landet.",
+      "question": "Hvem besøker de i helgen?",
+      "options": ["Bestemor", "Bestefar", "En venn", "Læreren"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Weather tomorrow",
+    "prompt": "Listen and choose the correct answer.",
+    "payload": {
+      "transcript": "Det blir solrikt og varmt i morgen. Temperaturen blir tjuefem grader.",
+      "question": "Hvordan blir været i morgen?",
+      "options": ["Regnfullt", "Solrikt og varmt", "Kaldt", "Snø"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "title": "Shop hours",
+    "prompt": "Listen. Is the statement true (Sant) or false (Usant)?",
+    "payload": {
+      "transcript": "Butikken har åpent fra mandag til fredag. I helgen er det stengt.",
+      "question": "Butikken er åpen på lørdag.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "title": "Kari at work",
+    "prompt": "Listen. Is the statement true (Sant) or false (Usant)?",
+    "payload": {
+      "transcript": "Kari jobber på et kontor. Hun begynner klokka åtte om morgenen.",
+      "question": "Kari begynner på jobb klokka åtte.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "The apartment",
+    "prompt": "Listen. Is the statement true (Sant) or false (Usant)?",
+    "payload": {
+      "transcript": "Det er tre soverom i leiligheten og et stort kjøkken.",
+      "question": "Leiligheten har to soverom.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "The bus to the centre",
+    "prompt": "Listen. Is the statement true (Sant) or false (Usant)?",
+    "payload": {
+      "transcript": "Buss nummer fem kjører til sentrum hvert tiende minutt.",
+      "question": "Bussen kjører til sentrum.",
+      "options": ["Sant", "Usant"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "People and jobs",
+    "prompt": "Listen and match each person with their job.",
+    "payload": {
+      "transcript": "Ola er kokk. Nora er lærer. Per er bussjåfør.",
+      "instructions": "Match personen med jobben.",
+      "left": ["Ola", "Nora", "Per"],
+      "right": ["lærer", "bussjåfør", "kokk"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Food and prices",
+    "prompt": "Listen and match each item with its price.",
+    "payload": {
+      "transcript": "En kaffe koster tjue kroner. En baguette koster førti kroner. Et eple koster fem kroner.",
+      "instructions": "Match maten med prisen.",
+      "left": ["kaffe", "baguette", "eple"],
+      "right": ["fem kroner", "tjue kroner", "førti kroner"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 2], [2, 0]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Events and times",
+    "prompt": "Listen and match each event with its time.",
+    "payload": {
+      "transcript": "Middagen er klokka seks. Bussen kommer klokka fem. Filmen begynner klokka sju.",
+      "instructions": "Match hendelsen med tidspunktet.",
+      "left": ["Middag", "Buss", "Film"],
+      "right": ["Klokka fem", "Klokka seks", "Klokka sju"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 0], [2, 2]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "GETTING_STARTED",
+    "exam": "NORSKPROVE_A1A2",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Days and weather",
+    "prompt": "Listen and match each day with the weather.",
+    "payload": {
+      "transcript": "På mandag regner det. På tirsdag er det solrikt. På onsdag snør det.",
+      "instructions": "Match dagen med været.",
+      "left": ["mandag", "tirsdag", "onsdag"],
+      "right": ["solrikt", "snø", "regn"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
+    "maxPoints": 3
+  }
+]

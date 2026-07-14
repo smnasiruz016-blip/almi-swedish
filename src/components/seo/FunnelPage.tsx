@@ -48,7 +48,7 @@ export function FunnelPage({ page }: { page: SeoPage }) {
 
         {/* Trial CTA band */}
         <section className="mt-10 rounded-2xl border border-almi-bg-peach bg-almi-paper p-6 text-center shadow-sm">
-          <p className="text-base font-semibold text-almi-ink">Practise Danish with honest readiness.</p>
+          <p className="text-base font-semibold text-almi-ink">Practise Norwegian with honest readiness.</p>
           <Link
             href="/signup"
             className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded-full bg-almi-coral px-7 py-3 text-base font-semibold text-almi-ink hover:bg-almi-coral-deep"

@@ -4,15 +4,15 @@ import {
   LANGUAGE_EXAMS,
   KNOWLEDGE_EXAMS,
   type ExamMeta,
-} from "@/lib/dk/registry";
+} from "@/lib/no/registry";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Danish exams — Prøve i Dansk 1–3, Studieprøven & knowledge tests | AlmiDanish",
+      "Norwegian exams — Norskprøven A1–A2–3, Bergenstesten & knowledge tests | AlmiNorwegian",
   },
   description:
-    "The Danish exams for citizenship, permanent residence, getting started and university — Prøve i Dansk 1, 2 and 3, Studieprøven, plus the Indfødsretsprøven and Medborgerskabsprøven knowledge tests. Honest per-skill readiness practice.",
+    "The Norwegian exams for citizenship, permanent residence, getting started and university — Norskprøven A1–A2, A2–B1 and B1–B2, Bergenstesten, plus the Statsborgerprøven and Samfunnskunnskapsprøven knowledge tests. Honest per-skill readiness practice.",
   alternates: { canonical: "/exams" },
 };
 
@@ -38,37 +38,37 @@ function ExamList({ exams }: { exams: ExamMeta[] }) {
   );
 }
 
-export default function DanishExamsHub() {
+export default function NorwegianExamsHub() {
   return (
     <main className="bg-almi-bg text-almi-text">
       <div className="mx-auto max-w-4xl px-6 py-12">
         <h1 className="text-3xl font-semibold text-almi-ink sm:text-4xl">
-          Danish exams — citizenship, residence, study &amp; getting started
+          Norwegian exams — citizenship, residence, study &amp; getting started
         </h1>
         <p className="mt-3 max-w-2xl text-base text-almi-text">
-          The Prøve i Dansk ladder (PD1–PD3 and Studieprøven), administered under the Ministry of
-          Immigration and Integration, plus the two Danish society knowledge tests. Each language
+          The Norskprøven ladder (A1–A2 to B1–B2 and Bergenstesten), administered under HK-dir
+          (the Directorate for Higher Education and Skills), plus the two Norwegian society knowledge tests. Each language
           exam tests Reading, Listening, Writing and Speaking. Pick a level for an honest readiness
           estimate — never a fabricated official result.
         </p>
 
         <section className="mt-10">
-          <h2 className="text-xl font-semibold text-almi-ink">Prøve i Dansk ladder</h2>
+          <h2 className="text-xl font-semibold text-almi-ink">Norskprøven ladder</h2>
           <p className="mt-1 text-sm text-almi-text-muted">
-            The core Danish-language exams. Prøve i Dansk 3 (B1–B2) is commonly required for Danish
-            citizenship; Prøve i Dansk 2 (A2–B1) for permanent residence; Prøve i Dansk 1 (A1–A2) to
-            get started; and Studieprøven (≈C1) for admission to Danish-taught university programmes.
-            Confirm the current residency and citizenship rules with SIRI.
+            The core Norwegian-language exams. Norskprøven B1–B2 (B1–B2) is commonly required for Norwegian
+            citizenship; Norskprøven A2–B1 (A2–B1) for permanent residence; Norskprøven A1–A2 (A1–A2) to
+            get started; and Bergenstesten (≈C1) for admission to Norwegian-taught university programmes.
+            Confirm the current residency and citizenship rules with UDI.
           </p>
           <ExamList exams={LANGUAGE_EXAMS} />
         </section>
 
         <section className="mt-10">
-          <h2 className="text-xl font-semibold text-almi-ink">Danish society knowledge tests</h2>
+          <h2 className="text-xl font-semibold text-almi-ink">Norwegian society knowledge tests</h2>
           <p className="mt-1 text-sm text-almi-text-muted">
-            Multiple-choice tests about Danish society, history and culture — not language
-            proficiency. The Indfødsretsprøven is required for citizenship in addition to Prøve i
-            Dansk 3; the Medborgerskabsprøven is used on the permanent-residence path. Our questions
+            Multiple-choice tests about Norwegian society, history and culture — not language
+            proficiency. The Statsborgerprøven is required for citizenship in addition to Prøve i
+            Dansk 3; the Samfunnskunnskapsprøven is used on the permanent-residence path. Our questions
             are original practice, not the official question bank.
           </p>
           <ExamList exams={KNOWLEDGE_EXAMS} />

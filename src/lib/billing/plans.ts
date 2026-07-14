@@ -2,7 +2,7 @@ import type { User } from "@prisma/client";
 import { isOwner } from "@/lib/auth/owner-check";
 
 // Price IDs are sourced from env — founder sets them in Vercel after creating
-// the "AlmiDanish Pro" product in the shared AlmiWorld Stripe account.
+// the "AlmiNorwegian Pro" product in the shared AlmiWorld Stripe account.
 // Until set, billing is disabled at runtime by isBillingEnabled().
 export const STRIPE_PRICE_MONTHLY = process.env.STRIPE_PRICE_ID_MONTHLY ?? "";
 export const STRIPE_PRICE_YEARLY = process.env.STRIPE_PRICE_ID_YEARLY ?? "";
@@ -124,7 +124,7 @@ export function priceIdToPlanLabel(
  * the build-cache trap. Dropping it removes that footgun: set the Stripe env
  * vars and any redeploy turns billing on.)
  *
- * AlmiDanish ships a single $12/month plan — there is no yearly price, so the
+ * AlmiNorwegian ships a single $12/month plan — there is no yearly price, so the
  * yearly scaffolding stays dormant (STRIPE_PRICE_YEARLY === "" makes
  * priceIdToPlanLabel + the checkout allowlist reject any "yearly" request).
  */

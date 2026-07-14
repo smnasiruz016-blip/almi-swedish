@@ -22,7 +22,7 @@ export interface SeoHub { slug: string; name: string; region: string; profile: s
 
 export const UNIVERSITIES = universitiesJson as SeoUniversity[];
 export const ROLES = rolesJson as SeoRole[];
-export const COUNTRIES = countriesJson as SeoCountry[]; // origins only (Denmark excluded)
+export const COUNTRIES = countriesJson as SeoCountry[]; // origins only (Norway excluded)
 export const SUBJECTS = subjectsJson as SeoSubject[];
 export const HUBS = hubsJson as SeoHub[];
 
@@ -82,6 +82,6 @@ export function jobsComboAtIndex(i: number): { role: SeoRole; country: SeoCountr
 }
 
 export const studyPath = (subjectSlug: string, countrySlug: string, uniSlug: string) =>
-  `/study-in-denmark/${subjectSlug}/from/${countrySlug}/${uniSlug}`;
+  `/study-in-norway/${subjectSlug}/from/${countrySlug}/${uniSlug}`;
 export const jobsPath = (roleSlug: string, countrySlug: string, hubSlug: string) =>
-  `/work-in-denmark/${roleSlug}/from/${countrySlug}/${hubSlug}`;
+  `/work-in-norway/${roleSlug}/from/${countrySlug}/${hubSlug}`;

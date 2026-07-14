@@ -6,12 +6,12 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { requireUser } from "@/lib/auth";
 import { hasPaidAccess } from "@/lib/billing/plans";
-import { examBySlug, SKILL_LABELS } from "@/lib/dk/registry";
-import { isFreeSkill } from "@/lib/dk/types";
-import type { DanishSkill } from "@/lib/dk/types";
-import { pickPractice } from "@/lib/dk/items";
-import { PracticeRunner } from "@/components/dk/PracticeRunner";
-import { ProductiveComposer } from "@/components/dk/ProductiveComposer";
+import { examBySlug, SKILL_LABELS } from "@/lib/no/registry";
+import { isFreeSkill } from "@/lib/no/types";
+import type { NorwegianSkill } from "@/lib/no/types";
+import { pickPractice } from "@/lib/no/items";
+import { PracticeRunner } from "@/components/no/PracticeRunner";
+import { ProductiveComposer } from "@/components/no/ProductiveComposer";
 
 export default async function SkillRunnerPage({
   params,
@@ -26,7 +26,7 @@ export default async function SkillRunnerPage({
 
   const skill = exam.skills.find(
     (s) => s.toLowerCase() === skillParam.toLowerCase(),
-  ) as DanishSkill | undefined;
+  ) as NorwegianSkill | undefined;
   if (!skill) notFound();
 
   // SKILL-SPLIT GUARD: objective skills (Reading/Listening) are free to taste;
@@ -91,8 +91,8 @@ export default async function SkillRunnerPage({
       )}
 
       <p className="text-xs text-almi-text-muted">
-        Original to AlmiDanish. Every readout is a practice estimate, not an official Directorate
-        of Education or Ministry of Immigration and Integration result.
+        Original to AlmiNorwegian. Every readout is a practice estimate, not an official Directorate
+        of Education or HK-dir (the Directorate for Higher Education and Skills) result.
       </p>
     </div>
   );

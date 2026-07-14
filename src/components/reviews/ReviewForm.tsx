@@ -73,7 +73,7 @@ export function ReviewForm({
           onChange={(e) => setText(e.target.value)}
           rows={5}
           maxLength={TEXT_MAX}
-          placeholder="How has AlmiDanish helped your Danish preparation?"
+          placeholder="How has AlmiNorwegian helped your Norwegian preparation?"
           className="w-full rounded-xl border border-almi-bg-peach bg-almi-bg px-4 py-3 text-sm text-almi-ink"
         />
         <p className="mt-1 text-xs text-almi-text-muted">

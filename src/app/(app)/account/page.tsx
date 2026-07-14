@@ -1,11 +1,11 @@
-// Account page — plan + email status + target Danish exam.
+// Account page — plan + email status + target Norwegian exam.
 
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import type { DanishExam } from "@prisma/client";
+import type { NorwegianExam } from "@prisma/client";
 import { requireUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
-import { ALL_EXAMS } from "@/lib/dk/registry";
+import { ALL_EXAMS } from "@/lib/no/registry";
 import {
   getUserPlan,
   PLAN_DISPLAY_NAME,
@@ -25,7 +25,7 @@ async function setExam(formData: FormData) {
   const valid = EXAM_VALUES.includes(value);
   await prisma.user.update({
     where: { id: user.id },
-    data: { targetExam: valid ? (value as DanishExam) : null },
+    data: { targetExam: valid ? (value as NorwegianExam) : null },
   });
   redirect("/account?saved=1");
 }
@@ -142,7 +142,7 @@ export default async function AccountPage({
       <section className="rounded-2xl border border-almi-bg-peach bg-almi-paper p-6 shadow-sm">
         <h2 className="text-lg font-semibold text-almi-ink">Which exam are you preparing for?</h2>
         <p className="mt-1 text-sm text-almi-text-muted">
-          Pick Prøve i Dansk 3 (citizenship, B1–B2), Prøve i Dansk 2 (residence, A2–B1), Prøve i Dansk 1 (getting started), Studieprøven (university), or a knowledge test. This sets the default for your practice and full mock. You can
+          Pick Norskprøven B1–B2 (citizenship, B1–B2), Norskprøven A2–B1 (residence, A2–B1), Norskprøven A1–A2 (getting started), Bergenstesten (university), or a knowledge test. This sets the default for your practice and full mock. You can
           change it any time.
         </p>
         <form action={setExam} className="mt-4 flex flex-wrap items-center gap-3">
@@ -152,28 +152,28 @@ export default async function AccountPage({
             className="min-h-[40px] rounded-md border border-almi-bg-peach bg-almi-bg px-3 py-2 text-sm text-almi-ink"
           >
             <option value="">Not set</option>
-            <optgroup label="Citizenship — Prøve i Dansk 3 + Indfødsretsprøven">
+            <optgroup label="Citizenship — Norskprøven B1–B2 + Statsborgerprøven">
               {ALL_EXAMS.filter((e) => e.track === "CITIZENSHIP").map((e) => (
                 <option key={e.exam} value={e.exam}>
                   {e.name} · {e.cefr}
                 </option>
               ))}
             </optgroup>
-            <optgroup label="Permanent residence — Prøve i Dansk 2 + Medborgerskabsprøven">
+            <optgroup label="Permanent residence — Norskprøven A2–B1 + Samfunnskunnskapsprøven">
               {ALL_EXAMS.filter((e) => e.track === "PERMANENT_RESIDENCE").map((e) => (
                 <option key={e.exam} value={e.exam}>
                   {e.name} · {e.cefr}
                 </option>
               ))}
             </optgroup>
-            <optgroup label="Getting started — Prøve i Dansk 1">
+            <optgroup label="Getting started — Norskprøven A1–A2">
               {ALL_EXAMS.filter((e) => e.track === "GETTING_STARTED").map((e) => (
                 <option key={e.exam} value={e.exam}>
                   {e.name} · {e.cefr}
                 </option>
               ))}
             </optgroup>
-            <optgroup label="University admission — Studieprøven">
+            <optgroup label="University admission — Bergenstesten">
               {ALL_EXAMS.filter((e) => e.track === "UNIVERSITY").map((e) => (
                 <option key={e.exam} value={e.exam}>
                   {e.name} · {e.cefr}
@@ -189,15 +189,15 @@ export default async function AccountPage({
           </button>
         </form>
         <p className="mt-2 text-xs text-almi-text-muted">
-          Not sure which exam you need? Confirm citizenship requirements with SIRI, and
-          study-programme requirements with the specific Danish university.
+          Not sure which exam you need? Confirm citizenship requirements with UDI, and
+          study-programme requirements with the specific Norwegian university.
         </p>
       </section>
 
       <ReviewCard initial={myReview} />
 
       <section className="rounded-2xl border border-almi-bg-peach bg-almi-bg p-6 text-center">
-        <p className="text-sm text-almi-text">Ready to practise Danish?</p>
+        <p className="text-sm text-almi-text">Ready to practise Norwegian?</p>
         <Link
           href="/practice"
           className="mt-3 inline-flex min-h-[44px] items-center justify-center rounded-full bg-almi-coral px-6 py-3 text-sm font-semibold text-almi-ink hover:bg-almi-coral-deep"

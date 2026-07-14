@@ -1,0 +1,317 @@
+[
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Analyse integration data",
+    "prompt": "Analyse a data description and draw a conclusion.",
+    "payload": {
+      "stimulus": "En oversikt viser at andelen etterkommere av innvandrere som fullfører høyere utdanning, har økt markant i løpet av de to siste tiårene, men fortsatt ligger under gjennomsnittet for befolkningen som helhet. Analyser hva tallene kan fortelle om integrering gjennom utdanning, og forhold deg kritisk til hvilke forklaringer som er nærliggende, og hvilke som bør tas med forbehold.",
+      "criteria": [
+        "Precise and independent account of the data",
+        "Nuanced interpretation with reservations",
+        "Separation of description and evaluation",
+        "Academic register and correct language"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Essay on gene technology",
+    "prompt": "Argue a position on the ethics of gene editing.",
+    "payload": {
+      "stimulus": "Skriv et argumenterende essay om hvor grensene bør gå for bruk av genredigering på mennesker. Legg fram en klar tese om når teknologien er etisk forsvarlig, underbygg den med argumenter, og imøtegå bekymringen for at behandling gradvis kan gli over i forbedring av friske mennesker.",
+      "criteria": [
+        "Clear thesis and sustained argumentation",
+        "Ethical nuance in drawing the boundary",
+        "Faithful treatment of a counterargument",
+        "Precise vocabulary and correct grammar"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Essay on English in academia",
+    "prompt": "Discuss the use of English as the language of research.",
+    "payload": {
+      "stimulus": "Diskuter hvilke konsekvenser det har at engelsk i økende grad blir forsknings- og undervisningsspråk ved norske universiteter. Vurder både hensynet til internasjonal utveksling og risikoen for at det norske fagspråket svekkes, og kom fram til en begrunnet stillingtaking.",
+      "criteria": [
+        "Balanced weighing of considerations",
+        "Independent and well-founded conclusion",
+        "Coherent structure with a clear thread",
+        "Precise and varied academic language"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Summarise a debate: health data",
+    "prompt": "Summarise and evaluate a public debate.",
+    "payload": {
+      "stimulus": "Sammenfatt debatten om deling av nordmenns helsedata til forskning. Gjør nøytralt rede for både argumentet om at data kan redde liv og fremme forskning, og bekymringen for personvernet, og avslutt med en kort, begrunnet vurdering av hvor den sentrale uenigheten ligger.",
+      "criteria": [
+        "Faithful rendering of both positions",
+        "Clear separation of summary and evaluation",
+        "Logical progression and coherence",
+        "Correct and precise language"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Essay on economic growth",
+    "prompt": "Argue for or against continued growth as a goal.",
+    "payload": {
+      "stimulus": "Skriv et essay der du tar stilling til påstanden: 'Fortsatt økonomisk vekst er en forutsetning for velstand og bør forbli et sentralt politisk mål.' Legg fram en klar tese, underbygg den, og forhold deg kritisk til synspunktet om at veksten bør erstattes av et mål om bærekraftig balanse.",
+      "criteria": [
+        "Clear thesis and coherent argumentation",
+        "Critical engagement with the opposing view",
+        "Concrete and relevant examples",
+        "Academic register and correct grammar"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Essay on the humanities",
+    "prompt": "Evaluate the value of the humanities in society.",
+    "payload": {
+      "stimulus": "Vurder hvilken verdi de humanistiske fagene har i et samfunn der utdanning ofte måles på direkte økonomisk avkastning. Avvei argumentet om sysselsetting og produktivitet mot argumentet om dannelse og kritisk tenkning, og kom fram til en begrunnet samlet vurdering.",
+      "criteria": [
+        "Balanced weighing of arguments",
+        "Independent, well-founded conclusion",
+        "Precise subject-specific vocabulary",
+        "Correct structure and grammar"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Summary of a research finding",
+    "prompt": "Summarise and comment on a research finding.",
+    "payload": {
+      "stimulus": "En undersøkelse peker på at studenter som tar håndskrevne notater, husker og forstår stoffet bedre enn de som noterer på bærbar datamaskin. Sammenfatt resultatet med egne ord, og reflekter over hvilke forbehold man bør ta før man trekker bastante konklusjoner for undervisningen.",
+      "criteria": [
+        "Precise and independent summary",
+        "Relevant reflection on reservations",
+        "Logical connection between summary and evaluation",
+        "Correct and varied language"
+      ],
+      "charBand": { "min": 200, "max": 450 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Defend a viewpoint: basic income",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Legg fram og forsvar synet ditt på om en borgerlønn ville være en gunstig reform av det norske velferdssystemet. Presenter minst to argumenter, og vær forberedt på å imøtegå innvendingen om at det kan svekke motivasjonen til å arbeide.",
+      "criteria": [
+        "Clear and structured presentation",
+        "Well-founded arguments",
+        "Ability to defend the view against objections",
+        "Fluent and precise spoken language"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Present a position: space funding",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Legg fram vurderingen din av om store offentlige investeringer i romforskning kan forsvares når mange andre samfunnsoppgaver mangler ressurser. Begrunn standpunktet ditt, og trekk inn mulige motargumenter.",
+      "criteria": [
+        "Coherent and logical presentation",
+        "Nuanced inclusion of counterarguments",
+        "Appropriate academic vocabulary",
+        "Good pronunciation and fluent speech"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Defend a viewpoint: animal testing",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Argumenter muntlig for under hvilke betingelser dyreforsøk i medisinsk forskning kan forsvares etisk. Forsvar grensedragningen din, og vær klar til å nyansere den overfor bekymringen for dyrenes velferd.",
+      "criteria": [
+        "Clear ethical boundary with justification",
+        "Convincing and coherent argumentation",
+        "Ability to add nuance under pressure",
+        "Fluent, correct spoken language"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Discuss privacy and surveillance",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Legg fram synet ditt på hvordan man bør avveie hensynet til personvern mot ønsket om økt trygghet gjennom overvåking i det offentlige rom. Kom med et konkret forslag til hvor grensen bør gå, og begrunn det.",
+      "criteria": [
+        "Clear standpoint and concrete proposal",
+        "Structured presentation",
+        "Relevant and precise word choice",
+        "Fluent speech with good coherence"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Present a position: art funding",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Legg fram vurderingen din av om staten fortsatt bør gi offentlig støtte til kunst og kultur, eller om kulturlivet i større grad bør finansiere seg selv. Ta stilling, og forsvar vurderingen din med argumenter.",
+      "criteria": [
+        "Well-founded overall assessment",
+        "Coherent argumentation",
+        "Academic register and precise language",
+        "Good pronunciation and flow"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Discuss studying abroad",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Legg fram tankene dine om hvilken verdi et studieopphold i utlandet har for den enkelte studenten og for samfunnet. Gi konkrete eksempler, og forsvar prioriteringene dine.",
+      "criteria": [
+        "Concrete and relevant examples",
+        "Clear structure and thread",
+        "Precise vocabulary",
+        "Fluent oral presentation"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Defend a viewpoint: press freedom",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Argumenter muntlig for hvorfor en uavhengig og godt finansiert journalistikk er viktig for et demokrati, og ta stilling til om det offentlige bør bidra til å sikre den. Forsvar synspunktet ditt med eksempler.",
+      "criteria": [
+        "Clear understanding of the role of the press",
+        "Convincing argumentation with examples",
+        "Ability to elaborate on request",
+        "Fluent and correct academic speech"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "UNIVERSITY",
+    "exam": "BERGENSTEST",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Present a position: work-life balance",
+    "prompt": "Present and defend an academic viewpoint.",
+    "payload": {
+      "stimulus": "Legg fram vurderingen din av om en firedagers arbeidsuke ville være til gagn for både produktivitet og trivsel i det norske samfunnet. Begrunn standpunktet ditt, og forhold deg til mulige innvendinger.",
+      "criteria": [
+        "Clear assessment with justification",
+        "Nuanced inclusion of objections",
+        "Appropriate academic vocabulary",
+        "Fluent and coherent speech"
+      ],
+      "minSeconds": 120
+    },
+    "answer": null,
+    "maxPoints": 10
+  }
+]

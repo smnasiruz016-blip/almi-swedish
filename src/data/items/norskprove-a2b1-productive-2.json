@@ -1,0 +1,242 @@
+[
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Cancel a doctor's appointment",
+    "prompt": "Write a short message in Norwegian based on the situation.",
+    "payload": {
+      "stimulus": "Du har en time hos legen i morgen, men du kan ikke komme. Skriv en kort melding til legekontoret. Forklar at du må avlyse, og spør om du kan få en ny time i neste uke.",
+      "criteria": ["Si tydelig at du avlyser timen din", "Be om en ny time og nevn når du kan", "Skriv en høflig innledning og avslutning"],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Note to a neighbour about noise",
+    "prompt": "Write a short note in Norwegian based on the situation.",
+    "payload": {
+      "stimulus": "Naboen din spiller høy musikk sent om kvelden, og du får ikke sove. Skriv en vennlig melding til naboen. Fortell om problemet, og be pent om at det blir roligere etter klokka 22.",
+      "criteria": ["Beskriv problemet uten å være uhøflig", "Kom med et konkret ønske om tidspunkt", "Hold en rolig og vennlig tone"],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Ask the library for help",
+    "prompt": "Write a short email in Norwegian based on the situation.",
+    "payload": {
+      "stimulus": "Du har lånt en bok på biblioteket, men du kan ikke levere den til rett tid, fordi du er bortreist. Skriv en e-post til biblioteket. Forklar situasjonen, og spør om du kan forlenge lånet.",
+      "criteria": ["Forklar hvorfor du ikke kan levere til rett tid", "Spør konkret om å forlenge lånet", "Skriv høflig og med korrekt tiltale"],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Message to your child's school",
+    "prompt": "Write a short message in Norwegian based on the situation.",
+    "payload": {
+      "stimulus": "Barnet ditt skal til tannlegen onsdag formiddag og kan ikke være på skolen. Skriv en kort melding til kontaktlæreren. Fortell hvorfor barnet er borte, og når det kommer tilbake.",
+      "criteria": ["Nevn navnet på barnet ditt og dagen", "Forklar årsaken til fraværet", "Skriv en kort og klar melding"],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Swap a work shift",
+    "prompt": "Write a short message in Norwegian based on the situation.",
+    "payload": {
+      "stimulus": "Du skal jobbe på lørdag, men du trenger å bytte vakt med en kollega. Skriv en melding til en kollega. Spør om han kan ta vakten din, og tilby å ta en av vaktene hans i stedet.",
+      "criteria": ["Spør tydelig om å bytte vakt", "Nevn den konkrete dagen", "Tilby noe tilbake"],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Report a problem to the housing cooperative",
+    "prompt": "Write a short email in Norwegian based on the situation.",
+    "payload": {
+      "stimulus": "I oppgangen der du bor, har lyset i trappa sluttet å virke, og det er mørkt om kvelden. Skriv en e-post til borettslaget. Beskriv problemet, forklar hvorfor det er farlig, og be om at det blir ordnet snart.",
+      "criteria": ["Beskriv problemet tydelig og hvor det er", "Forklar hvorfor det bør ordnes raskt", "Bruk en høflig, men bestemt tone"],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Apply for a volunteer position",
+    "prompt": "Write a short email in Norwegian based on the situation.",
+    "payload": {
+      "stimulus": "En lokal forening søker frivillige til å hjelpe til på et arrangement. Skriv en e-post der du melder deg. Fortell kort om deg selv, hvorfor du har lyst til å hjelpe, og når du har tid.",
+      "criteria": ["Presenter deg selv kort", "Forklar hvorfor du vil være frivillig", "Fortell når du kan hjelpe"],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Shop at the pharmacy",
+    "prompt": "Speak in Norwegian for at least one minute.",
+    "payload": {
+      "stimulus": "Du er på apoteket fordi du er forkjølet. Forklar hva som feiler deg, og spør om noe som kan hjelpe. Spør også hvordan du skal ta medisinen, og hva den koster.",
+      "criteria": ["Forklar symptomene dine i hele setninger", "Still relevante spørsmål til personalet", "Bruk høflige uttrykk (kan jeg spørre, kan du anbefale)"],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Talk about a Norwegian tradition",
+    "prompt": "Speak in Norwegian for at least one minute.",
+    "payload": {
+      "stimulus": "Fortell om en tradisjon eller en høytid i Norge som du kjenner, for eksempel 17. mai, jul eller bursdag. Fortell hva man gjør, og hva du selv synes om den.",
+      "criteria": ["Beskriv tradisjonen med konkrete detaljer", "Fortell hva man vanligvis gjør og spiser", "Si din egen mening om den"],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Describe your family",
+    "prompt": "Speak in Norwegian for at least one minute.",
+    "payload": {
+      "stimulus": "Fortell om familien din. Hvem er med i familien din, og hvor bor de? Fortell også litt om hva dere liker å gjøre sammen.",
+      "criteria": ["Presenter familiemedlemmene", "Bruk riktige familieord (mor, bror, svigermor)", "Gi minst ett konkret eksempel på noe dere gjør"],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Handle a problem at the supermarket",
+    "prompt": "Speak in Norwegian for at least one minute.",
+    "payload": {
+      "stimulus": "Du har kjøpt en vare i dagligvarebutikken, men når du kommer hjem, ser du at den er for gammel. Forklar til en ansatt hva som har skjedd, og si hva du gjerne vil ha.",
+      "criteria": ["Forklar problemet rolig og tydelig", "Si hva du ønsker (ny vare eller pengene tilbake)", "Bruk en høflig, men bestemt tone"],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Explain how you learn Norwegian",
+    "prompt": "Speak in Norwegian for at least one minute.",
+    "payload": {
+      "stimulus": "Fortell om hvordan du lærer norsk. Hva gjør du for å bli bedre, for eksempel på skolen, på jobb eller hjemme? Fortell også hva som er lett og vanskelig for deg.",
+      "criteria": ["Beskriv dine egne metoder", "Nevn hva som er lett og hva som er vanskelig", "Snakk i sammenhengende setninger"],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Give advice to a newcomer",
+    "prompt": "Speak in Norwegian for at least one minute.",
+    "payload": {
+      "stimulus": "En person har nettopp flyttet til Norge og kjenner ikke landet. Gi noen gode råd. Fortell hva man bør vite om hverdagen, transporten eller det å møte nye mennesker.",
+      "criteria": ["Gi minst tre konkrete råd", "Begrunn hvorfor rådene er nyttige", "Bruk rådgivende uttrykk (du bør, det er lurt å)"],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Discuss public transport",
+    "prompt": "Speak in Norwegian for at least one minute.",
+    "payload": {
+      "stimulus": "Fortell om hvordan du bruker kollektivtransport, for eksempel buss, tog eller trikk. Hva er bra, og hva kunne vært bedre? Si også hva du ville endret hvis du kunne.",
+      "criteria": ["Beskriv hvordan du bruker transporten", "Nevn både fordeler og problemer", "Formuler et forslag til forbedring"],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 10
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "NORSKPROVE_A2B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Tell about a memorable day",
+    "prompt": "Speak in Norwegian for at least one minute.",
+    "payload": {
+      "stimulus": "Fortell om en dag du husker godt. Det kan være en fin eller en vanskelig dag. Hva skjedde, hvem var du sammen med, og hvorfor husker du akkurat den dagen?",
+      "criteria": ["Fortell historien i fortid", "Sett hendelsene i rekkefølge", "Forklar hvorfor dagen var viktig for deg"],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 10
+  }
+]

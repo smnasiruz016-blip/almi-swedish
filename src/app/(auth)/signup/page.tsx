@@ -8,7 +8,7 @@ import { sendEmailVerification } from "@/lib/email";
 const VERIFY_TTL_MS = 24 * 60 * 60 * 1000;
 
 function getBaseUrl(): string {
-  return process.env.NEXT_PUBLIC_APP_URL ?? "https://almidanish.almiworld.com";
+  return process.env.NEXT_PUBLIC_APP_URL ?? "https://alminorwegian.almiworld.com";
 }
 
 async function signupAction(formData: FormData) {
@@ -69,7 +69,7 @@ export default async function SignupPage({
     <div className="rounded-2xl border border-almi-bg-peach bg-almi-paper p-8 shadow-sm">
       <h1 className="text-2xl font-semibold text-almi-ink">Create your account</h1>
       <p className="mt-2 text-sm text-almi-text-muted">
-        Practise the Prøve i Dansk exams, Studieprøven and the Danish society knowledge tests with honest AI feedback and per-skill readiness estimates.
+        Practise the Norskprøven exams, Bergenstesten and the Norwegian society knowledge tests with honest AI feedback and per-skill readiness estimates.
       </p>
 
       {error === "taken" && (
