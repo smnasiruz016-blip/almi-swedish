@@ -10,21 +10,21 @@ const SITE = "https://almidanish.almiworld.com";
 const PATH = "/requirements/denmark/prove-i-dansk-3-citizenship";
 
 export const metadata: Metadata = {
-  title: { absolute: "What Danish do you need for citizenship? Prøve i Dansk 3 at B1–B2 | AlmiDanish" },
+  title: { absolute: "Prøve i Dansk 3 for Citizenship: Honest Readiness Check" },
   description:
-    "The Danish-language requirement for citizenship is Prøve i Dansk 3 at CEFR B1–B2, across Reading, Listening, Writing and Speaking. An honest explainer, and how to practise the four skills fairly. Residency and other conditions are decided by SIRI — confirm your own situation with them.",
+    "Stop risking residency or citizenship on inflated mock marks. Prøve i Dansk 3 passes on a combined average (speaking counts double) — test your real readiness with AlmiDanish.",
   alternates: { canonical: PATH },
   openGraph: {
-    title: "What Danish do you need for citizenship? Prøve i Dansk 3 at B1–B2",
+    title: "Prøve i Dansk 3 for citizenship — an honest readiness check",
     description:
-      "Honest guide to the Danish citizenship language requirement (Prøve i Dansk 3, B1–B2) and how to prepare. Confirm residency and other conditions with SIRI.",
+      "Honest guide to the Danish citizenship language requirement (Prøve i Dansk 3, B1–B2) and how it is passed. Confirm residency and other conditions with SIRI.",
   },
 };
 
 const FAQ = [
   {
     q: "What Danish level do I need for citizenship?",
-    a: "The language requirement for Danish citizenship is Prøve i Dansk 3, a Danish-language test set at CEFR B1–B2 across Reading, Listening, Writing and Speaking. The exam is overseen by the Ministry of Immigration and Integration and delivered by the Ministry of Immigration and Integration. Passing it demonstrates the language proof — the rest of the application is decided separately.",
+    a: "The language requirement for Danish citizenship is Prøve i Dansk 3, a Danish-language test set at CEFR B1–B2 across Reading, Listening, Writing and Speaking. The exam is administered under the Ministry of Immigration and Integration. It passes on a combined average (with the oral exam weighted double), not a floor in every section. Passing it demonstrates the language proof — the rest of the application, handled by SIRI, is decided separately.",
   },
   {
     q: "Is passing Prøve i Dansk 3 enough for citizenship?",
@@ -77,9 +77,10 @@ export default function Page() {
           </h1>
           <p className="mt-3 text-base text-almi-text">
             The Danish-language requirement for citizenship is <strong>Prøve i Dansk 3</strong>, a test set at CEFR{" "}
-            <strong>B1–B2</strong> across Reading, Listening, Writing and Speaking. It is overseen by the Ministry of Immigration and Integration
-            and delivered by the Ministry of Immigration and Integration.
-            Here&apos;s an honest read on what it covers, and how to prepare for it fairly.
+            <strong>B1–B2</strong> across Reading, Listening, Writing and Speaking. It sits under the{" "}
+            <strong>Ministry of Immigration and Integration</strong>; residency and citizenship itself are handled by{" "}
+            <strong>SIRI</strong> (Styrelsen for International Rekruttering og Integration).
+            Here&apos;s an honest read on what it covers, how it is passed, and how to prepare for it fairly.
           </p>
         </header>
 
@@ -94,12 +95,22 @@ export default function Page() {
           </p>
         </section>
 
+        <section className="mt-10 rounded-2xl border border-almi-bg-peach bg-almi-paper p-6">
+          <h2 className="text-xl font-semibold text-almi-ink">How Prøve i Dansk 3 is passed</h2>
+          <p className="mt-3 text-base text-almi-text">
+            Prøve i Dansk 3 passes on a <strong>combined average (≥2.0, with the oral exam weighted double)</strong> — not
+            per-section floors. A strong overall result, with speaking carrying extra weight, matters more than clearing a
+            fixed minimum in every single paper. Marking and pass rules can change, so always{" "}
+            <strong>confirm current rules with SIRI.</strong>
+          </p>
+        </section>
+
         <section className="mt-10">
           <h2 className="text-xl font-semibold text-almi-ink">The language requirement is only one part</h2>
           <p className="mt-3 text-base text-almi-text">
             Passing Prøve i Dansk 3 proves the <strong>language</strong> requirement for citizenship. It does not decide
             your application on its own — citizenship also depends on <strong>residency and other conditions</strong>, and
-            those are set by <strong>SIRI</strong> (the Directorate of Immigration). Those rules change over
+            those are set by <strong>SIRI</strong>. Those rules change over
             time, so we don&apos;t state a fixed number of years or a fixed step. The reliable move is to check your own
             situation directly with SIRI rather than assuming.
           </p>

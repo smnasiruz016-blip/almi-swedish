@@ -8,10 +8,10 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Danish Citizenship Test Practice (Prøve i Dansk 3) | AlmiDanish",
+    absolute: "AlmiDanish | Practise Danish Exams with Honest Readiness",
   },
   description:
-    "Practise Prøve i Dansk 1–3, Studieprøven and the Indfødsretsprøven — honest per-skill readiness bands against each exam's real criteria, never a fake score. Confirm rules with SIRI.",
+    "Stop guessing your Danish level for SIRI or ministry requirements. Practise real Prøve i Dansk 1, 2, 3, Studieprøven and the citizenship tests with honest AI readiness bands.",
   openGraph: {
     title: "AlmiDanish — honest Danish exam practice",
     description:
