@@ -123,6 +123,46 @@ for (const dir of SCAN_DIRS) {
   }
 }
 
+// ── Structural audit of countries.json ────────────────────────────────────────
+// The noun-ban above allowlists this file, because Norway/Denmark ARE valid origins
+// for a Swedish product. That allowlist was a hole: on 2026-07-15 the file itself was
+// found corrupted by a blind Denmark→Norway find-replace inherited from almi-norwegian —
+// the Denmark row renamed to slug "norway"/name "Norway" (its 🇩🇰 flag the only tell),
+// Iceland's name overwritten with "Norway", and two rows slugged "norway". Denmark had
+// silently vanished as an origin. A noun grep can never catch that: the label said
+// Norway and the fact was a flag.
+//
+// So audit the DATA, not the prose: flag emoji encode ISO-3166 alpha-2 (regional
+// indicators U+1F1E6–U+1F1FF → A–Z), which makes every row self-checking.
+const SELF_ISO = "SE"; // this product's own country — never a valid origin of itself
+function isoFromFlag(flag) {
+  const cp = [...flag];
+  if (cp.length < 2) return "??";
+  const a = cp[0].codePointAt(0) - 0x1f1e6;
+  const b = cp[1].codePointAt(0) - 0x1f1e6;
+  if (a < 0 || a > 25 || b < 0 || b > 25) return "??";
+  return String.fromCharCode(65 + a) + String.fromCharCode(65 + b);
+}
+try {
+  const countries = JSON.parse(readFileSync(join(ROOT, "src/data/seo/countries.json"), "utf8"));
+  const seenSlug = new Map();
+  const seenIso = new Map();
+  for (const row of countries) {
+    const iso = isoFromFlag(row.flag ?? "");
+    if (iso === "??") violations.push(`countries.json: ${row.slug} has an unreadable flag`);
+    if (iso === SELF_ISO)
+      violations.push(`countries.json: ${row.slug} (${iso}) is THIS product's own country — you cannot come from where you already are`);
+    if (seenSlug.has(row.slug))
+      violations.push(`countries.json: duplicate slug "${row.slug}" (${seenSlug.get(row.slug)} and ${iso}) — bySlug is last-wins, so one row silently shadows the other while still emitting URLs`);
+    if (seenIso.has(iso))
+      violations.push(`countries.json: duplicate flag ${iso} on "${seenIso.get(iso)}" and "${row.slug}" — one of them was renamed`);
+    seenSlug.set(row.slug, iso);
+    seenIso.set(iso, row.slug);
+  }
+} catch (e) {
+  violations.push(`countries.json: could not audit — ${e.message}`);
+}
+
 if (violations.length) {
   console.error("\n✗ FORK HYGIENE GATE FAILED — ancestor-country content found.\n");
   console.error("  Sweden must read as Sweden. These are leaks from the fork lineage");
