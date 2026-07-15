@@ -22,7 +22,12 @@ export interface SeoHub { slug: string; name: string; region: string; profile: s
 
 export const UNIVERSITIES = universitiesJson as SeoUniversity[];
 export const ROLES = rolesJson as SeoRole[];
-export const COUNTRIES = countriesJson as SeoCountry[]; // origins only (Sweden excluded — it is the destination)
+// Origins only: 196 = the 197-country axis minus Sweden itself (it is the destination).
+// Sweden's exclusion was always right, but Portugal was missing until 2026-07-15 —
+// inherited from almi-portuguese's copy, where dropping PT was correct because PT was
+// its own self. fork-hygiene-gate.mjs could not catch that: it checks for BAD rows,
+// and this bug is an ABSENCE. See scripts/seo/countries-axis-gate.mjs.
+export const COUNTRIES = countriesJson as SeoCountry[];
 export const SUBJECTS = subjectsJson as SeoSubject[];
 export const HUBS = hubsJson as SeoHub[];
 
