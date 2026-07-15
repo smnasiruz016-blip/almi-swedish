@@ -85,6 +85,11 @@ const MISSION_LINE =
   "25% of AlmiSwedish proceeds fund the Shamool Foundation's social mission.";
 const CTA_LINE =
   "Reading and Listening practice is free; AI feedback on Writing and Speaking and the full timed mock become available with a 7-day free trial ($12/month after, cancel anytime).";
+// Medborgarskapsprovet has no Writing/Speaking — it is a single KNOWLEDGE module.
+// Offering "AI feedback on Writing and Speaking" on that page would be selling
+// something the exam does not contain.
+const CTA_LINE_KNOWLEDGE =
+  "The civic practice questions are free and unlimited — no card needed. A subscription ($12/month after a 7-day free trial) covers the Swedish language ladder: AI feedback on Writing and Speaking, and the full timed mock.";
 
 // Swedish-taught degree programmes require Svenska 3 / Svenska som andraspråk 3 as
 // a GENERAL entry requirement, and Tisus is accepted as equivalent to Svenska 3.
@@ -326,7 +331,7 @@ export function buildLevelPage(exam: ExamMeta): SeoPage {
           isKnowledge
             ? `Every question is auto-marked so you see exactly where you stand. Because UHR has not published a pass mark, we do not show one — we show what you got right and where the gaps are. ${READINESS_LINE}`
             : `Reading and Listening are auto-marked to a clear per-skill band — Clear or Borderline — against the real criteria. Writing and Speaking get AI feedback labelled an estimate. ${READINESS_LINE}`,
-          CTA_LINE,
+          isKnowledge ? CTA_LINE_KNOWLEDGE : CTA_LINE,
         ],
       },
       {

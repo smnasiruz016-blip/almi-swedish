@@ -8,7 +8,7 @@ import { ALL_EXAMS } from "@/lib/sv/registry";
 
 const SITE = "https://almiswedish.almiworld.com";
 const PER = 50_000; // Google's max URLs per sitemap
-const LASTMOD = "2026-07-12";
+const LASTMOD = "2026-07-15";
 
 // Only the TAUGHT study leaves are indexable, so only those go in the sitemap —
 // the untaught majority render noindex and must not burn crawl budget / ISR writes.
@@ -33,7 +33,7 @@ export default async function sitemap({ id }: { id: Promise<string> }): Promise<
   const shard = Number(await id);
   // Shard 0 — core marketing + auth + Swedish-exam hub/levels.
   if (shard === 0) {
-    const core = ["", "/pricing", "/signup", "/login", "/exams", "/study-in-norway", "/work-in-norway", "/requirements/norway/norskprove-b1b2-citizenship"]
+    const core = ["", "/pricing", "/signup", "/login", "/exams", "/study-in-sweden", "/work-in-sweden", "/requirements/sweden/medborgarskapsprov"]
       .map((p) => entry(p, p === "" ? 1 : 0.7));
     const levels = ALL_EXAMS.map((e) => entry(`/exams/${e.slug}`, 0.8));
     return [...core, ...levels];

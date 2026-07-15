@@ -91,8 +91,8 @@ export default async function SkillRunnerPage({
       )}
 
       <p className="text-xs text-almi-text-muted">
-        Original to AlmiSwedish. Every readout is a practice estimate, not an official Directorate
-        UHR result.
+        Original to AlmiSwedish. Every readout is a per-skill readiness band for practice, not an
+        official UHR result.
       </p>
     </div>
   );

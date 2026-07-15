@@ -14,9 +14,9 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const r = ROLE_BY_SLUG.get(role);
   if (!r) return { title: "Not found" };
   return {
-    title: { absolute: `Work in Norway as a ${r.name} — Norwegian you'll need | AlmiSwedish` },
-    description: `How much Norwegian a ${r.name} needs in Norway, which CEFR level, and honest readiness practice — by country of origin and city.`,
-    alternates: { canonical: `/work-in-norway/${r.slug}` },
+    title: { absolute: `Work in Sweden as a ${r.name} — Swedish you'll need | AlmiSwedish` },
+    description: `How much Swedish a ${r.name} needs in Sweden, which CEFR level, and honest readiness practice — by country of origin and city.`,
+    alternates: { canonical: `/work-in-sweden/${r.slug}` },
   };
 }
 
@@ -25,20 +25,28 @@ export default async function RoleHub({ params }: { params: Params }) {
   const r = ROLE_BY_SLUG.get(role);
   if (!r) notFound();
   const sample = COUNTRIES.slice(0, 60);
+  // Hub names come from the axis data so the city list can never drift.
+  const hubNames = HUBS.map((h) => h.name).join(", ");
+  // The working-level Swedish exam — read from the registry, not hardcoded.
+  const working = examBySlug("svenska-b1b2");
   return (
     <main className="bg-almi-bg text-almi-text">
       <div className="mx-auto max-w-4xl px-6 py-12">
         <nav aria-label="Breadcrumb" className="mb-6 text-xs text-almi-text-muted">
-          <Link href="/work-in-norway" className="hover:text-almi-coral">Work in Norway</Link> / {r.name}
+          <Link href="/work-in-sweden" className="hover:text-almi-coral">Work in Sweden</Link> / {r.name}
         </nav>
-        <h1 className="text-3xl font-semibold text-almi-ink sm:text-4xl">Work in Norway as a {r.name}</h1>
+        <h1 className="text-3xl font-semibold text-almi-ink sm:text-4xl">Work in Sweden as a {r.name}</h1>
         <p className="mt-3 max-w-2xl text-base text-almi-text">
-          The Norwegian you need as a {r.name} depends on the setting and city. Pick where you're coming from and the
-          hub you're targeting — Oslo, Bergen, Trondheim and other regions — or start practising Norwegian now.
+          The Swedish you need as a {r.name} depends on the setting and city. Pick where you&apos;re
+          coming from and the hub you&apos;re targeting — {hubNames} — or start practising Swedish now.
         </p>
-        <div className="mt-6">
-          <Link href="/exams/norskprove-b1b2" className="text-sm font-semibold text-almi-coral hover:underline">Norskprøven B1–B2 (B1–B2) — citizenship language test →</Link>
-        </div>
+        {working && (
+          <div className="mt-6">
+            <Link href={`/exams/${working.slug}`} className="text-sm font-semibold text-almi-coral hover:underline">
+              {working.name} ({working.cefr}) — the level most workplaces expect →
+            </Link>
+          </div>
+        )}
         <h2 className="mt-10 text-lg font-semibold text-almi-ink">By country of origin</h2>
         <ul className="mt-3 flex flex-wrap gap-2">
           {sample.map((c) => (

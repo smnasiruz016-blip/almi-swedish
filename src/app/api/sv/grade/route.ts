@@ -1,8 +1,8 @@
 // AI grading for the gated productive skills (Writing / Speaking). Sends the task
 // + the learner's written answer to Sonnet and returns an HONEST practice
 // readiness band (CLEAR / BORDERLINE / BELOW) with constructive, level-aware
-// feedback against the exam's own criteria — never an official Directorate of
-// Education or UHR (the Swedish Council for Higher Education) result.
+// feedback against the exam's own criteria — never an official result from UHR
+// (Universitets- och högskolerådet) or any other Swedish authority.
 //
 // Graceful degradation: if ANTHROPIC_API_KEY is not yet provisioned the route
 // returns { ok: true, available: false } (HTTP 200) so the client falls back to
@@ -146,7 +146,7 @@ export async function POST(req: Request): Promise<NextResponse> {
 
     await recordCost({
       userId: user.id,
-      feature: "is.grade.productive",
+      feature: "sv.grade.productive",
       model: MODELS.SONNET,
       usage: {
         inputTokens: msg.usage.input_tokens,
@@ -162,7 +162,7 @@ export async function POST(req: Request): Promise<NextResponse> {
   } catch (e) {
     await recordCost({
       userId: user.id,
-      feature: "is.grade.productive",
+      feature: "sv.grade.productive",
       model: MODELS.SONNET,
       usage: { inputTokens: 0, outputTokens: 0 },
       success: false,

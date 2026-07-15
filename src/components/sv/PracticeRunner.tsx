@@ -3,7 +3,7 @@
 // Objective practice runner. Steps through auto-marked items (Reading/Listening),
 // submits each to /api/sv/submit for deterministic grading, shows per-item
 // correctness, and closes with an honest per-skill readiness readout. All labels
-// are framed as a "practice estimate" — never an official Directorate result.
+// are framed as a "practice estimate" — never an official UHR result.
 
 import { useState } from "react";
 import type { SwedishSkill } from "@/lib/sv/types";

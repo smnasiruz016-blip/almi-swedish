@@ -2,8 +2,8 @@
 
 // Full-mock runner. Sequences every section in exam order with NO marking until
 // the end, then shows one honest aggregate estimate via aggregateReadout() over
-// per-skill readouts. Always labelled "estimate, not the official Directorate /
-// Ministry result". Objective skills are auto-graded; productive skills
+// per-skill readouts. Always labelled "estimate, not an official UHR result".
+// Objective skills are auto-graded; productive skills
 // (Writing/Speaking) are self-rated for now (AI grading arrives in a later phase).
 
 import { useMemo, useState } from "react";

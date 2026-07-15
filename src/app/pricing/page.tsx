@@ -4,18 +4,20 @@ import { getCurrentUser } from "@/lib/auth";
 import { isBillingEnabled } from "@/lib/billing/plans";
 // Family GlobalHeader + GlobalFooter come from the root layout.
 import { PricingCheckoutButton } from "./PricingCheckoutButton";
+import { ALL_EXAMS } from "@/lib/sv/registry";
 
 export const metadata: Metadata = {
   title: "Pricing — 7-day free trial",
   description:
-    "AlmiSwedish Pro — $12/month, cancel anytime. 7-day free trial. Honest AI feedback on writing and speaking, full-length practice, and honest readiness estimates across the Norskprøven ladder, Bergenstesten and the Swedish society knowledge tests.",
+    "AlmiSwedish Pro — $12/month, cancel anytime. 7-day free trial. Honest AI feedback on writing and speaking, full-length practice, and honest readiness estimates across the Swedish ladder — SFI Courses A–B and C–D, Swedish B1–B2, Tisus — and Medborgarskapsprovet.",
 };
 
 const FEATURES = [
   "Honest AI feedback on writing and speaking",
   "Full-length timed mock across all skills, in exam order",
   "Honest readiness — a per-skill band against the real criteria (never a fabricated official result)",
-  "Every track — Norskprøven A1–A2–3, Bergenstesten, and the Statsborgerprøven / Samfunnskunnskapsprøven knowledge tests",
+  // Listed from the registry so the plan can never advertise an exam we do not ship.
+  `Every track — ${ALL_EXAMS.map((e) => e.name).join(", ")}`,
   "100% original material — never copied from official exam papers",
   "Cancel anytime from your account",
 ];
