@@ -15,6 +15,8 @@ import { prisma } from "@/lib/prisma";
 import { getAnthropicClient, recordCost } from "@/lib/ai/anthropic-client";
 import { MODELS } from "@/lib/ai/models";
 import { examBySlug } from "@/lib/sv/registry";
+import { isCefrLevel, levelInstruction } from "@smnasiruz016-blip/almi-data";
+import type { CefrLevel } from "@smnasiruz016-blip/almi-data";
 import type { SwedishSkill, SwedishTaskType } from "@/lib/sv/types";
 
 export const runtime = "nodejs";
@@ -25,6 +27,9 @@ interface GradeBody {
   exam?: string;
   skill?: SwedishSkill;
   taskType?: SwedishTaskType;
+  /** The level THIS task is pitched at. The exam's `cefr` is a display label and may be
+   *  a range ("A1–B1") or not a level at all ("Knowledge test") — see below. */
+  cefr?: CefrLevel;
   title?: string;
   prompt?: string;
   criteria?: string[];
@@ -109,19 +114,37 @@ export async function POST(req: Request): Promise<NextResponse> {
 
   const exam = body.exam ? examBySlug(body.exam) : undefined;
   const examName = exam?.name ?? "the Swedish exam";
-  const cefr = exam?.cefr ?? "the target";
+  // The level to judge THIS task at.
+  //
+  // This was `exam?.cefr`, which is the registry entry's DISPLAY LABEL — and the labels
+  // are not levels. Here they include "A1–A2", "A2–B1", "B1–B2" and "Knowledge test",
+  // so the model was told things like "(CEFR A2–B1)" — a two-level span no single task
+  // sits at — or, worse, "(CEFR Knowledge test)", which means nothing at all. A range
+  // cannot be a standard: the same answer passes as A2 and fails as B1 depending on
+  // where the model happens to aim.
+  //
+  // Order: the task's own level; else the exam's label ONLY IF it really is a single
+  // CEFR level (isCefrLevel rejects "A2–B1" and "Knowledge test"); else no level, and
+  // the model is told to assume none rather than be handed a guess.
+  const cefr: CefrLevel | null = isCefrLevel(body.cefr)
+    ? body.cefr
+    : isCefrLevel(exam?.cefr)
+      ? (exam.cefr as CefrLevel)
+      : null;
+  const levelPhrase = cefr ?? "the task's own criteria";
   const isSpeaking = body.taskType === "SPEAKING_PROMPT";
   const criteria = (body.criteria ?? []).filter((c) => typeof c === "string" && c.trim().length > 0);
 
   const system = [
-    `You are an experienced Swedish-language examiner for ${examName} (CEFR ${cefr}).`,
+    `You are an experienced Swedish-language examiner for ${examName}.`,
+    levelInstruction(cefr ?? undefined),
     `You give an HONEST practice readiness estimate against the task's own criteria — this is a study aid, never an official UHR result, and you never claim otherwise.`,
     isSpeaking
       ? `This is a SPEAKING task; the learner has typed the answer they would say aloud, so judge content, structure, range and appropriacy, not pronunciation.`
-      : `This is a WRITING task; judge task fulfilment, coherence, range and accuracy at the ${cefr} level.`,
+      : `This is a WRITING task; judge task fulfilment, coherence, range and accuracy at ${levelPhrase}.`,
     `Be constructive, specific and level-aware. Do not inflate. Reply with STRICT JSON only, no prose, no code fences, in this exact shape:`,
     `{"band":"CLEAR|BORDERLINE|BELOW","summary":"1-2 sentence honest estimate","strengths":["..."],"improvements":["..."]}`,
-    `Bands: CLEAR = comfortably meets the criteria at ${cefr}; BORDERLINE = partially meets them, could go either way; BELOW = does not yet meet them.`,
+    `Bands: CLEAR = comfortably meets the criteria at ${levelPhrase}; BORDERLINE = partially meets them, could go either way; BELOW = does not yet meet them.`,
   ].join(" ");
 
   const userMsg = [
