@@ -1,7 +1,13 @@
 // Engine selftests — run with `npm run selftest:engine` (tsx).
 // Proves the per-skill readiness bands and objective grading are correct.
 
-import { gradeObjective, readinessFromPct, skillReadout, aggregateReadout } from "./grading";
+import {
+  gradeObjective,
+  readinessFromPct,
+  skillReadout,
+  aggregateReadout,
+  achievedReadout,
+} from "./grading";
 
 let pass = 0;
 let fail = 0;
@@ -58,6 +64,67 @@ eq(skillReadout("READING", 8, 10).readiness, "CLEAR", "reading 80% clear");
     skillReadout("LISTENING", 8, 10),
   ]);
   eq(agg.allClear, true, "agg all clear");
+}
+
+// ---- No pass mark anywhere: report the level REACHED, never a readiness verdict ----
+{
+  // Cleared B1, missed B2 → working at B1, reaching for B2. Clearing the lower level
+  // must never imply the higher one.
+  const r = achievedReadout([
+    { cefr: "B1", points: 4, maxPoints: 4 },
+    { cefr: "B1", points: 3, maxPoints: 4 },
+    { cefr: "B1", points: 3, maxPoints: 4 },
+    { cefr: "B2", points: 1, maxPoints: 4 },
+    { cefr: "B2", points: 1, maxPoints: 4 },
+    { cefr: "B2", points: 0, maxPoints: 4 },
+  ]);
+  eq(r.workingAt, "B1", "achieved: cleared B1 reported");
+  eq(r.reachingFor, "B2", "achieved: missed B2 is what they reach for");
+}
+{
+  // Clearing BOTH reports the higher one — the point of a level ladder.
+  const r = achievedReadout([
+    { cefr: "B1", points: 4, maxPoints: 4 },
+    { cefr: "B1", points: 4, maxPoints: 4 },
+    { cefr: "B1", points: 3, maxPoints: 4 },
+    { cefr: "B2", points: 4, maxPoints: 4 },
+    { cefr: "B2", points: 3, maxPoints: 4 },
+    { cefr: "B2", points: 3, maxPoints: 4 },
+  ]);
+  eq(r.workingAt, "B2", "achieved: cleared both → higher level reported");
+  eq(r.reachingFor, null, "achieved: nothing above to reach for");
+}
+{
+  // One aced B2 task is not evidence of B2 — below the evidence floor.
+  const r = achievedReadout([
+    { cefr: "B1", points: 4, maxPoints: 4 },
+    { cefr: "B1", points: 4, maxPoints: 4 },
+    { cefr: "B1", points: 3, maxPoints: 4 },
+    { cefr: "B2", points: 4, maxPoints: 4 },
+  ]);
+  eq(r.workingAt, "B1", "achieved: a single aced B2 cannot crown B2");
+  eq(r.byLevel.find((l) => l.cefr === "B2")?.sufficient, false, "achieved: thin B2 flagged");
+}
+{
+  // Nothing cleared → claim nothing, rather than crowning the level they touched.
+  const r = achievedReadout([
+    { cefr: "B1", points: 1, maxPoints: 4 },
+    { cefr: "B1", points: 1, maxPoints: 4 },
+    { cefr: "B1", points: 0, maxPoints: 4 },
+  ]);
+  eq(r.workingAt, null, "achieved: nothing cleared → no level claimed");
+  eq(r.reachingFor, "B1", "achieved: B1 is what they are reaching for");
+}
+{
+  // Untagged tasks claim no level at all.
+  const r = achievedReadout([
+    { points: 4, maxPoints: 4 },
+    { points: 4, maxPoints: 4 },
+    { points: 4, maxPoints: 4 },
+  ]);
+  eq(r.workingAt, null, "achieved: undeclared tasks claim no level");
+  eq(r.undeclaredCount, 3, "achieved: undeclared counted");
+  eq(r.byLevel.length, 0, "achieved: no level buckets from undeclared");
 }
 
 console.log(`\nAlmiSwedish engine selftest: ${pass} passed, ${fail} failed`);

@@ -45,6 +45,15 @@ export type SwedishTaskType =
 
 export type SwedishDifficulty = "FOUNDATION" | "CORE" | "STRETCH";
 
+// The CEFR level a single task is PITCHED at — distinct from `difficulty`, which is a
+// FOUNDATION/CORE/STRETCH ladder *inside* an exam and crosses levels freely.
+//
+// Sweden leans on this harder than any sibling. There is no language pass mark in
+// force to band against (see LANGUAGE_TEST_HEDGE), so the level tag is not a step
+// toward a verdict — it IS the result. Optional: an untagged task is UNDECLARED and
+// never silently folded into a level.
+export type { CefrLevel } from "@smnasiruz016-blip/almi-data";
+
 export const OBJECTIVE_TASK_TYPES: SwedishTaskType[] = [
   "MCQ_SINGLE",
   "MATCHING",

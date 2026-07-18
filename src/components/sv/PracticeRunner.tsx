@@ -7,7 +7,7 @@
 
 import { useState } from "react";
 import type { SwedishSkill } from "@/lib/sv/types";
-import { skillReadout, readinessFromPct } from "@/lib/sv/grading";
+import { achievedReadout } from "@/lib/sv/grading";
 import { SKILL_LABELS } from "@/lib/sv/registry";
 import { ObjectiveTask } from "./ObjectiveTask";
 import { submitAttempt, type RunnerItem, type SubmitResult } from "./shared";
@@ -68,8 +68,16 @@ export function PracticeRunner({
   if (done) {
     const points = results.reduce((s, r) => s + r.points, 0);
     const maxPoints = results.reduce((s, r) => s + r.maxPoints, 0);
-    const readout = skillReadout(skill, points, maxPoints);
-    const band = READINESS_LABEL[readout.readiness] ?? READINESS_LABEL.BELOW;
+    // Sweden has no language pass mark in force, so there is no target to band
+    // against — "are you ready?" has no referent. Report the level reached instead.
+    // results are in item order, so results[i] pairs with items[i].
+    const achieved = achievedReadout(
+      results.map((r, i) => ({
+        cefr: items[i]?.cefr,
+        points: r.points,
+        maxPoints: r.maxPoints,
+      })),
+    );
     return (
       <div className="space-y-5 rounded-2xl border border-almi-bg-peach bg-almi-paper p-6">
         <div>
@@ -81,15 +89,37 @@ export function PracticeRunner({
           </h2>
         </div>
         <div className="flex flex-wrap items-center gap-3">
-          <span className={`rounded-full px-3 py-1 text-sm font-semibold ${band.cls}`}>
-            {band.text}
-          </span>
-          <span className="text-sm text-almi-text-muted">
-            {readout.pct}% · readiness band {readinessFromPct(readout.pct)}
-          </span>
+          {achieved.workingAt ? (
+            <span className="rounded-full bg-almi-teal/15 px-3 py-1 text-sm font-semibold text-almi-teal">
+              Working at {achieved.workingAt}
+            </span>
+          ) : (
+            <span className="text-sm text-almi-text-muted">
+              No level reached in this set yet.
+            </span>
+          )}
+          {achieved.reachingFor && (
+            <span className="text-sm text-almi-text-muted">
+              reaching for {achieved.reachingFor}
+            </span>
+          )}
         </div>
+        {achieved.byLevel.length > 0 && (
+          <p className="text-sm text-almi-text-muted">
+            {achieved.byLevel
+              .map(
+                (l) =>
+                  `${l.cefr}: ${l.points}/${l.maxPoints} on ${l.count} task${
+                    l.count === 1 ? "" : "s"
+                  }${l.sufficient ? "" : " (too few to judge)"}`,
+              )
+              .join(" · ")}
+          </p>
+        )}
         <p className="text-xs text-almi-text-muted">
-          This is a practice estimate against the level&apos;s criteria, not an official UHR result.
+          There is no Swedish language pass mark to measure this against — so this reports
+          the level you are working at, not whether you passed. A practice estimate from the
+          tasks you were served, not an official UHR, Skolverket or Tisus result.
         </p>
         <button
           type="button"

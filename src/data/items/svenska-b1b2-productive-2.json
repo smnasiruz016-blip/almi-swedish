@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Complaint to a company",
     "prompt": "Write a formal complaint based on the task.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Opinion text on food waste",
     "prompt": "Write an opinion text based on the task.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Email to a teacher about absence",
     "prompt": "Write an email based on the task.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Argue for a new tool at work",
     "prompt": "Write a persuasive text based on the task.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Reply to an invitation",
     "prompt": "Write a reply based on the task.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Text on language and everyday life",
     "prompt": "Write a reflective text based on the task.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Handover note to a colleague",
     "prompt": "Write a handover note based on the task.",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Interrupt politely and take the floor",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Give critical feedback",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Explain your background at an interview",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -165,6 +175,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Discuss AI in your field",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -181,6 +192,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Small talk at fika",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -197,6 +209,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Defend an unpopular decision",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -213,6 +226,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Describe a place and why it matters",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -229,6 +243,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Weigh a choice out loud",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {

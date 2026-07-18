@@ -36,6 +36,19 @@ export interface ExamMeta {
   slug: string; // URL slug
   name: string; // display name (official Swedish exam name)
   cefr: string; // CEFR level label, or "Knowledge test" for the MCQ test
+  // NOTE — there is deliberately NO goal level field on this interface, and that
+  // absence is a finding rather than unfinished work.
+  //
+  // The siblings each band readiness against a verified pass mark: danish B2, dutch
+  // A2, icelandic A2, norwegian B1 in the oral part alone. Sweden has none. No binding
+  // language pass mark is in force (see LANGUAGE_TEST_HEDGE), and the `cefr` strings
+  // below are approximations of where a course or test SITS ("≈A2–B1+"), not a
+  // standard anyone is measured against. Collapsing one into a goal would manufacture
+  // the very requirement this product refuses to invent.
+  //
+  // So every language skill here reports the level REACHED (achievedReadout in
+  // grading.ts) instead of a readiness band. When a real standard is finally set,
+  // add the goal then — sourced, not inferred from these labels.
   blurb: string; // one-line description
   skills: SwedishSkill[];
   knowledge?: boolean; // true = society/citizenship MCQ test (single KNOWLEDGE module)

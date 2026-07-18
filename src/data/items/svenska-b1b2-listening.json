@@ -5,6 +5,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Team meeting on deadlines",
     "prompt": "Listen to the meeting extract and choose the correct answer.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Radio segment on cycling in Malmö",
     "prompt": "Listen to the radio segment and choose the correct answer.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Colleagues discussing a new tool",
     "prompt": "Listen to the dialogue and choose the correct answer.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Voicemail from a health centre",
     "prompt": "Listen to the voicemail and choose the correct answer.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Panel discussion on housing",
     "prompt": "Listen to the panel extract and choose the correct answer.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Union representative at a workplace",
     "prompt": "Listen to the announcement and choose the correct answer.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Interview with a researcher",
     "prompt": "Listen to the interview and choose the correct answer.",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Announcement at a train station",
     "prompt": "Listen to the announcement and choose the correct answer.",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Two colleagues on a new hire",
     "prompt": "Listen to the dialogue and choose the correct answer.",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Information at a parents' evening",
     "prompt": "Listen to the extract and choose the correct answer.",
     "payload": {
@@ -165,6 +175,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Radio commentary on food waste",
     "prompt": "Listen to the commentary and choose the correct answer.",
     "payload": {
@@ -181,6 +192,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Call to customer service",
     "prompt": "Listen to the call and choose the correct answer.",
     "payload": {
@@ -197,6 +209,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Manager on workplace culture",
     "prompt": "Listen to the extract and choose the correct answer.",
     "payload": {
@@ -213,6 +226,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Library workshop announcement",
     "prompt": "Listen to the announcement and choose the correct answer.",
     "payload": {
@@ -229,6 +243,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Podcast on winter darkness",
     "prompt": "Listen to the podcast extract and choose the correct answer.",
     "payload": {

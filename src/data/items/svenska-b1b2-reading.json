@@ -5,6 +5,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Internal memo on fika",
     "prompt": "Read the workplace memo and choose the correct answer.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Debate article on remote work",
     "prompt": "Read the debate article and choose the correct answer.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Notice about a performance review",
     "prompt": "Read the message and choose the correct answer.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Column on the word lagom",
     "prompt": "Read the column and choose the correct answer.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Housing association information",
     "prompt": "Read the notice and choose the correct answer.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Union newsletter on collective agreements",
     "prompt": "Read the newsletter and choose the correct answer.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Recycling in the municipality",
     "prompt": "Read the information and choose the correct answer.",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Letter to the editor on flat hierarchy",
     "prompt": "Read the letter and choose the correct answer.",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Adult education course description",
     "prompt": "Read the course description and choose the correct answer.",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Feature on screen time",
     "prompt": "Read the article and choose the correct answer.",
     "payload": {
@@ -165,6 +175,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Email about a consensus decision",
     "prompt": "Read the email and choose the correct answer.",
     "payload": {
@@ -181,6 +192,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Review of a small-town theatre",
     "prompt": "Read the review and choose the correct answer.",
     "payload": {
@@ -197,6 +209,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Health centre information on sick leave",
     "prompt": "Read the information and choose the correct answer.",
     "payload": {
@@ -213,6 +226,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Blog post on learning Swedish",
     "prompt": "Read the blog post and choose the correct answer.",
     "payload": {
@@ -229,6 +243,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Opinion piece on AI at work",
     "prompt": "Read the opinion piece and choose the correct answer.",
     "payload": {

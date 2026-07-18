@@ -5,6 +5,7 @@ import type {
   SwedishExam,
   SwedishSkill,
   SwedishTaskType,
+  CefrLevel,
   ObjectiveAnswer,
 } from "@/lib/sv/types";
 
@@ -14,6 +15,10 @@ export interface RunnerItem {
   exam: SwedishExam;
   skill: SwedishSkill;
   taskType: SwedishTaskType;
+  /** CEFR level this task is pitched at — carried so the runner can report the level
+   *  reached (there is no pass mark to band against) and the productive grader can
+   *  judge at the right level. */
+  cefr?: CefrLevel;
   payload: unknown;
   answer: ObjectiveAnswer | null;
   maxPoints: number;
@@ -71,6 +76,9 @@ export async function gradeProductive(body: {
   exam: SwedishExam;
   skill: SwedishSkill;
   taskType: SwedishTaskType;
+  /** The level THIS task is pitched at — the grade route judges the answer at this
+   *  level (via almi-data levelInstruction), never at the exam's "≈A2–B1+" label. */
+  cefr?: CefrLevel;
   title: string;
   prompt: string;
   criteria: string[];

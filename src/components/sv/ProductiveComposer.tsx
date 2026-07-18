@@ -93,6 +93,7 @@ export function ProductiveComposer({
       exam: item.exam,
       skill: item.skill,
       taskType: item.taskType,
+      cefr: item.cefr,
       title: item.title,
       prompt: item.prompt,
       criteria: d.criteria,

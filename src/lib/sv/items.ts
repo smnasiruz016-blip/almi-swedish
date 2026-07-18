@@ -14,6 +14,7 @@ import type {
   SwedishSkill,
   SwedishTaskType,
   SwedishDifficulty,
+  CefrLevel,
   ObjectiveAnswer,
 } from "./types";
 
@@ -24,6 +25,10 @@ export interface SwedishItemSeed {
   skill: SwedishSkill;
   taskType: SwedishTaskType;
   difficulty: SwedishDifficulty;
+  /** The CEFR level this task is pitched at (optional). Feeds the achieved-level
+   *  readout and the level-aware AI grader. Absent = UNDECLARED: never counted
+   *  toward a level, never allowed to imply one. */
+  cefr?: CefrLevel;
   title: string;
   prompt: string;
   payload: unknown;

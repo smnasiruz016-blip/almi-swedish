@@ -39,6 +39,7 @@ export default async function MockPage({
         exam: it.exam,
         skill: it.skill,
         taskType: it.taskType,
+        cefr: it.cefr,
         payload: it.payload,
         answer: it.answer,
         maxPoints: it.maxPoints,
