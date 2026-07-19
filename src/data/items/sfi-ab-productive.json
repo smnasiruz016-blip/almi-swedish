@@ -28,7 +28,7 @@
     "title": "Shopping note",
     "prompt": "Write a short shopping note to your family.",
     "payload": {
-      "stimulus": "Skriv en kort lapp till din familj. Skriv tre eller fyra saker de ska köpa på ICA.",
+      "stimulus": "Skriv en kort lapp till din familj. Skriv tre eller fyra saker de ska köpa i mataffären.",
       "criteria": [
         "Lists three to four everyday food or household items in Swedish",
         "Uses correct nouns and simple linking words (och)",
