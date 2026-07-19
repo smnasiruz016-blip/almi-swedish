@@ -14,8 +14,14 @@
 //     *utprövningsprov* (pilot), free of charge. Provisional format per UHR: ~60
 //     four-option MCQ, 90 minutes, Swedish, on paper, from UHR's "Sverige i fokus".
 //     PASS MARK NOT PUBLISHED.
-//   • LANGUAGE component: UHR indicates autumn 2028 at the earliest; no CEFR level
-//     set. We ship NO practice for it. Do not add one until UHR publishes a spec.
+//   • LANGUAGE component: the requirement applies from 6 June 2026, but the TEST
+//     does not exist. The law stages it: reading and listening from 1 Oct 2027 at
+//     the LATEST, writing and speaking on a date not yet set. UHR says only "vid
+//     senare tillfälle" and has published no date; 2028 is commentary, NOT an
+//     announcement. No CEFR level set for any part — the law says "functional"
+//     and "basic", not B1/A2. We ship NO practice for it. Do not add one until UHR
+//     publishes a spec. (This bullet said "autumn 2028 at the earliest" until
+//     #6 sourced it; the drift is why LANGUAGE_TEST_HEDGE below is the authority.)
 //   • Tisus: Stockholms universitet, ≈C1, for Swedish-taught university admission.
 //     It IS a real pass/fail examination — the one exam here that awards a verdict.
 //     VERIFIED 2026-07-19 against su.se's own Tisus pages (läsförståelse, muntlig
@@ -101,7 +107,7 @@ export const SOCIETY_FORMAT_HEDGE =
 // The language component. Stated plainly rather than implied, so nobody buys a
 // subscription expecting practice for a test that does not exist yet.
 export const LANGUAGE_TEST_HEDGE =
-  "The Swedish language component of the citizenship test does not exist yet. UHR indicates it cannot be ready before autumn 2028 at the earliest, and no CEFR level has been set for it. We do not offer practice for it, because there is nothing published to practise against. The general Swedish ladder below builds the language you will need either way — but it is not the citizenship language test, and we will not pretend otherwise.";
+  "The language test for citizenship does not exist yet — but the language requirement itself already applies, since 6 June 2026, for applicants aged 16 to 66. Until the test exists, Migrationsverket accepts other evidence instead, such as school grades, SFI course D, komvux or folk high school, so this is not something you have to wait for. The law brings the test in stages: reading and listening from 1 October 2027 at the latest (earlier if the government decides), and writing and speaking on a date the government has not yet set. UHR says only that the Swedish test comes \"vid senare tillfälle\" and has published no date of its own; some commentary expects it to slip to 2028, but that is an expectation, not an announcement. No CEFR level has been set for any part — the law says reading and listening at a \"functional\" level and writing and speaking at a \"basic\" level, not B1 or A2. We do not offer practice for the citizenship language test, because there is nothing published to practise against. The general Swedish ladder below builds the language you will need either way — but it is not the citizenship language test, and we will not pretend otherwise. Confirm your own case with Migrationsverket.";
 
 // Per-skill readiness thresholds (honest). We show a per-skill readiness band as
 // an estimate, clearly labelled — never an official UHR result.

@@ -40,7 +40,7 @@
     "title": "At the grocery store",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
-      "passage": "Anna handlar på ICA. Hon köper mjölk, bröd och ägg. Brödet kostar trettio kronor.",
+      "passage": "Anna handlar i mataffären. Hon köper mjölk, bröd och ägg. Brödet kostar trettio kronor.",
       "question": "Vad kostar brödet?",
       "options": ["Tio kronor", "Tjugo kronor", "Tjugofem kronor", "Trettio kronor"]
     },
