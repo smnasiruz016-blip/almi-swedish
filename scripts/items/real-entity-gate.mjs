@@ -47,7 +47,14 @@ const CATEGORY_NOUNS = [
   "apoteket", "sjukhuset", "biblioteket", "simhallen", "affären", "butiken", "mataffären",
   "hyresvärden", "bostadsbolaget", "föreningen", "klubben", "restaurangen", "caféet",
 ];
-const NAMED_BUSINESS = new RegExp(`\\b(${CATEGORY_NOUNS.join("|")})\\s+([A-ZÅÄÖ][a-zåäö]{2,})`, "g");
+// [ \t] rather than \s: an institution's name never sits on the line AFTER its category
+// noun, and allowing a newline between them invents violations. "Öppet hus i
+// biblioteket\n\nVarje tisdag…" matched as "biblioteket Varje" — Varje means "every" and
+// is capitalised only because it opens a sentence. Today's bank happens not to contain
+// such a heading, so the gate looked clean; the same shape in AlmiDutch produced a false
+// hit the moment it started scanning real strings. A gate that cries wolf gets switched
+// off, so precision matters as much as reach.
+const NAMED_BUSINESS = new RegExp(`\\b(${CATEGORY_NOUNS.join("|")})[ \\t]+([A-ZÅÄÖ][a-zåäö]{2,})`, "g");
 
 // Real Swedish companies — the Helvetia case: an invented letter signed by a real firm.
 const BRAND_DENYLIST = [
