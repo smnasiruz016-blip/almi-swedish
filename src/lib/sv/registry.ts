@@ -18,10 +18,15 @@
 //     set. We ship NO practice for it. Do not add one until UHR publishes a spec.
 //   • Tisus: Stockholms universitet, ≈C1, for Swedish-taught university admission.
 //     It IS a real pass/fail examination — the one exam here that awards a verdict.
-//     ⚠️ FOUNDER-SUPPLIED, NOT YET SOURCED TO A URL: that Tisus is judged pass/fail
-//     by Stockholms universitet. Treat as an assumption until confirmed against SU's
-//     own page. The ≈C1 label remains OUR approximation — SU publishes no CEFR level,
-//     so nothing may band a learner against C1.
+//     VERIFIED 2026-07-19 against su.se's own Tisus pages (läsförståelse, muntlig
+//     färdighet, FAQ): run by Stockholms universitet, THREE parts — reading,
+//     writing and oral — graded pass/fail (godkänd), taken for admission to
+//     Swedish-taught university study. This was carried as a founder-supplied
+//     assumption in the first pass; it is now sourced, and the flag is gone.
+//     STILL OURS, AND STILL NOT SU'S: the ≈C1. SU publishes no official CEFR level
+//     for Tisus, so that label is our approximation and nothing may band a learner
+//     against C1. Verifying the pass/fail did NOT verify a CEFR level — two
+//     different claims, and only one of them now has a source.
 //   • SFI: courses A–D over 3 study paths. Skolverket maps A/B ≈ A1–A2, C/D ≈
 //     B1/B1+. The SFI scale is NOT CEFR — always say "approximately".
 //   • Swedex is excluded: it cannot be taken after 31 Dec 2026.
