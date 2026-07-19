@@ -5,10 +5,11 @@
   "description": "AlmiSwedish — AI-powered Swedish exam practice in the AlmiWorld family. Medborgarskapsprovet (the new citizenship society test, administered by UHR), Tisus for university admission, and the SFI / CEFR ladder, with honest per-skill readiness bands and AI feedback — no fabricated composite. Separate product (swedish.almiworld.com). Original content — never copied from official exam material. Practice estimates only; confirm current requirements with UHR and Migrationsverket.",
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/seo/countries-axis-gate.mjs && node scripts/seo/fork-hygiene-gate.mjs && node scripts/seo/uniqueness-gate.mjs && prisma generate && prisma migrate deploy && next build",
+    "build": "npm run selftest:engine && node scripts/seo/countries-axis-gate.mjs && node scripts/seo/fork-hygiene-gate.mjs && node scripts/seo/uniqueness-gate.mjs && prisma generate && prisma migrate deploy && next build",
     "start": "next start",
     "postinstall": "prisma generate",
-    "gate:hygiene": "node scripts/seo/fork-hygiene-gate.mjs"
+    "gate:hygiene": "node scripts/seo/fork-hygiene-gate.mjs",
+    "selftest:engine": "tsx src/lib/sv/selftest.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.91.1",

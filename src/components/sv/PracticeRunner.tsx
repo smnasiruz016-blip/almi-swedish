@@ -2,30 +2,33 @@
 
 // Objective practice runner. Steps through auto-marked items (Reading/Listening),
 // submits each to /api/sv/submit for deterministic grading, shows per-item
-// correctness, and closes with an honest per-skill readiness readout. All labels
-// are framed as a "practice estimate" — never an official UHR result.
+// correctness, and closes with the LEVEL these tasks evidence — not a readiness band,
+// because there is no single threshold to band against. All labels are framed as a
+// "practice estimate" — never an official result.
 
 import { useState } from "react";
 import type { SwedishSkill } from "@/lib/sv/types";
-import { achievedReadout } from "@/lib/sv/grading";
+import {
+  achievedReadout,
+  NO_LEVEL_REACHED_TEXT,
+  UNDECLARED_LEVEL_TEXT,
+} from "@/lib/sv/grading";
 import { SKILL_LABELS } from "@/lib/sv/registry";
 import { ObjectiveTask } from "./ObjectiveTask";
 import { submitAttempt, type RunnerItem, type SubmitResult } from "./shared";
-
-const READINESS_LABEL: Record<string, { text: string; cls: string }> = {
-  CLEAR: { text: "On track", cls: "bg-almi-teal/15 text-almi-teal" },
-  BORDERLINE: { text: "Borderline", cls: "bg-almi-accent/20 text-almi-accent-deep" },
-  BELOW: { text: "Below target", cls: "bg-almi-coral/15 text-almi-coral-deep" },
-};
 
 export function PracticeRunner({
   examName,
   skill,
   items,
+  resultBasis,
 }: {
   examName: string;
   skill: SwedishSkill;
   items: RunnerItem[];
+  /** ExamMeta.resultBasis — what this exam's real result is. Optional: an exam with
+   *  no sourced basis says nothing rather than being given an invented sentence. */
+  resultBasis?: string;
 }) {
   const [step, setStep] = useState(0);
   const [response, setResponse] = useState<unknown>(null);
@@ -95,7 +98,9 @@ export function PracticeRunner({
             </span>
           ) : (
             <span className="text-sm text-almi-text-muted">
-              No level reached in this set yet.
+              {/* Two different facts, never conflated: tasks that carry no level at
+                  all (SFI, Tisus) vs. levelled tasks where none was cleared. */}
+              {achieved.levelGraded ? NO_LEVEL_REACHED_TEXT : UNDECLARED_LEVEL_TEXT}
             </span>
           )}
           {achieved.reachingFor && (
@@ -117,9 +122,12 @@ export function PracticeRunner({
           </p>
         )}
         <p className="text-xs text-almi-text-muted">
-          There is no Swedish language pass mark to measure this against — so this reports
-          the level you are working at, not whether you passed. A practice estimate from the
-          tasks you were served, not an official UHR, Skolverket or Tisus result.
+          {/* Exam-aware: what the real result IS differs per exam, so the blanket
+              "there is no pass mark" claim cannot be printed here — it is false of
+              Tisus. See ExamMeta.resultBasis. */}
+          {resultBasis ? `${resultBasis} ` : ""}
+          This reports the level these tasks evidence, not whether you passed — a practice
+          estimate from the tasks you were served, never an official result.
         </p>
         <button
           type="button"

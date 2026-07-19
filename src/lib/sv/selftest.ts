@@ -7,7 +7,10 @@ import {
   skillReadout,
   aggregateReadout,
   achievedReadout,
+  UNDECLARED_LEVEL_TEXT,
+  NO_LEVEL_REACHED_TEXT,
 } from "./grading";
+import { ALL_EXAMS, examBySlug } from "./registry";
 
 let pass = 0;
 let fail = 0;
@@ -125,6 +128,60 @@ eq(skillReadout("READING", 8, 10).readiness, "CLEAR", "reading 80% clear");
   eq(r.workingAt, null, "achieved: undeclared tasks claim no level");
   eq(r.undeclaredCount, 3, "achieved: undeclared counted");
   eq(r.byLevel.length, 0, "achieved: no level buckets from undeclared");
+}
+
+// ---- "no level reached" and "not level-graded" are DIFFERENT facts ----
+// The interface picks between these two sentences on `levelGraded`. If that flag
+// ever collapses, a learner who answered every SFI task correctly is told they
+// reached no level -- a false claim about them, caused by an absence in our data.
+{
+  const undeclared = achievedReadout([
+    { points: 4, maxPoints: 4 },
+    { points: 4, maxPoints: 4 },
+    { points: 4, maxPoints: 4 },
+  ]);
+  eq(undeclared.workingAt, null, "undeclared: no level claimed");
+  eq(undeclared.levelGraded, false, "undeclared: levelGraded false - tasks carry no level");
+
+  const missed = achievedReadout([
+    { cefr: "B1", points: 1, maxPoints: 4 },
+    { cefr: "B1", points: 1, maxPoints: 4 },
+    { cefr: "B1", points: 0, maxPoints: 4 },
+  ]);
+  eq(missed.workingAt, null, "missed: no level claimed");
+  eq(missed.levelGraded, true, "missed: levelGraded true - levels graded, none cleared");
+
+  // Both report workingAt === null, so the flag is the ONLY thing separating them.
+  eq(
+    undeclared.workingAt === missed.workingAt && undeclared.levelGraded !== missed.levelGraded,
+    true,
+    "the two null-level cases are distinguishable ONLY by levelGraded",
+  );
+  eq(UNDECLARED_LEVEL_TEXT, "These tasks aren't level-graded.", "undeclared wording is the agreed one");
+}
+
+// ---- resultBasis must not flatten the exams back into one claim ----
+{
+  // Tisus is a real pass/fail examination. Denying that is as dishonest as
+  // inventing a standard for the exams that have none.
+  const tisus = examBySlug("tisus");
+  eq(tisus?.resultBasis?.includes("pass/fail"), true, "tisus: its real verdict is stated");
+  eq(
+    /no pass mark|not an exam|no body awards/i.test(tisus?.resultBasis ?? ""),
+    false,
+    "tisus: never told it has no pass mark",
+  );
+  // ...and the C1 label must stay ours, so nothing bands a learner against C1.
+  eq(tisus?.resultBasis?.includes("no CEFR level"), true, "tisus: SU publishes no CEFR level");
+
+  // Medborgarskapsprovet's absence IS sourced: UHR has published no pass mark.
+  const med = examBySlug("medborgarskapsprov");
+  eq(med?.resultBasis?.includes("has not published a pass mark"), true, "medborgarskapsprov: no pass mark, sourced");
+
+  // No exam may be handed Tisus's sentence by copy-paste.
+  const bases = ALL_EXAMS.map((e) => e.resultBasis).filter(Boolean);
+  eq(bases.filter((b) => b === tisus?.resultBasis).length, 1, "tisus's sentence is not reused elsewhere");
+  eq(bases.length === ALL_EXAMS.length, true, "every exam states what its real result is");
 }
 
 console.log(`\nAlmiSwedish engine selftest: ${pass} passed, ${fail} failed`);

@@ -64,6 +64,7 @@ export default async function SkillRunnerPage({
         <PracticeRunner
           examName={exam.name}
           skill={skill}
+          resultBasis={exam.resultBasis}
           items={items.map((it) => ({
             title: it.title,
             prompt: it.prompt,

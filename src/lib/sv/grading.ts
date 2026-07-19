@@ -1,9 +1,19 @@
-// AlmiSwedish scoring engine — per-skill READINESS estimate. Tisus, the SFI ladder
-// and the CEFR levels are pass/fail against official criteria, and
-// Medborgarskapsprovet has no published pass mark at all; we do NOT fabricate an
-// official result for any of them. We score each skill's objective items
-// deterministically to a percentage and map it to an honest readiness band, and
-// we label productive skills (Writing/Speaking) as AI estimates.
+// AlmiSwedish scoring engine.
+//
+// What each exam's real result actually is differs, and this file must not flatten
+// them (the per-exam sentence lives in ExamMeta.resultBasis):
+//   • Tisus — a real pass/fail examination judged by Stockholms universitet. The
+//     only verdict in this product. SU publishes no CEFR level, so ≈C1 is ours.
+//   • SFI A–B / C–D — courses assessed by a school, on a Skolverket scale that is
+//     NOT CEFR. Not a single exam with a mark.
+//   • Swedish B1–B2 — our own ladder. No body awards a result for it at all.
+//   • Medborgarskapsprovet — UHR has published NO pass mark.
+//   • The citizenship LANGUAGE component — does not exist; we ship no practice.
+//
+// So there is no single target to band every skill against, and this engine no
+// longer pretends otherwise: it reports the level REACHED (achievedReadout) rather
+// than readiness against an imagined threshold. Productive skills (Writing/Speaking)
+// are labelled as estimates. Nothing here is ever an official result.
 
 import { READY_PCT, BORDERLINE_PCT } from "./registry";
 import type { ObjectiveAnswer, SwedishTaskType, SwedishSkill } from "./types";
@@ -148,7 +158,22 @@ export interface AchievedReadout {
   reachingFor: CefrLevel | null;
   byLevel: LevelBreakdown[];
   undeclaredCount: number;
+  /** False when NOT ONE task in the set carried a level.
+   *
+   *  This is a different fact from "no level was reached", and the interface must
+   *  not say the second when the first is true. Only svenska-b1b2 is level-tagged;
+   *  SFI A–B, SFI C–D and Tisus are not. Collapsing the two would tell a learner
+   *  who answered everything correctly that they reached no level, when the truth
+   *  is that these tasks were never graded to a level in the first place. */
+  levelGraded: boolean;
 }
+
+/** What to say when the tasks carry no level at all. Not a failure — an absence.
+ *  Shared so the practice runner and the mock runner cannot drift apart on it. */
+export const UNDECLARED_LEVEL_TEXT = "These tasks aren't level-graded.";
+
+/** What to say when levels WERE graded but none was cleared on enough evidence. */
+export const NO_LEVEL_REACHED_TEXT = "No level reached in this set yet.";
 
 /**
  * The readout for a skill with NO pass mark — which in Sweden is every skill.
@@ -211,5 +236,5 @@ export function achievedReadout(scored: readonly LevelScored[]): AchievedReadout
   );
   const reachingFor = above.length > 0 ? above[0].cefr : null;
 
-  return { workingAt, reachingFor, byLevel, undeclaredCount };
+  return { workingAt, reachingFor, byLevel, undeclaredCount, levelGraded: byLevel.length > 0 };
 }

@@ -1,8 +1,10 @@
 "use client";
 
 // Full-mock runner. Sequences every section in exam order with NO marking until
-// the end, then shows one honest aggregate estimate via aggregateReadout() over
-// per-skill readouts. Always labelled "estimate, not an official UHR result".
+// the end, then reports what was scored and the LEVEL the auto-marked tasks
+// evidence — not a readiness verdict, because the exams in this product do not
+// share a threshold to be ready against (see ExamMeta.resultBasis).
+// Always labelled "estimate, never an official result".
 // Objective skills are auto-graded; productive skills
 // (Writing/Speaking) are self-rated for now (AI grading arrives in a later phase).
 
@@ -14,9 +16,13 @@ import type {
 import {
   aggregateReadout,
   skillReadout,
-  readinessFromPct,
+  achievedReadout,
+  NO_LEVEL_REACHED_TEXT,
+  UNDECLARED_LEVEL_TEXT,
   type SkillReadout,
+  type AchievedReadout,
 } from "@/lib/sv/grading";
+import type { LevelScored } from "@smnasiruz016-blip/almi-data";
 import { SKILL_LABELS } from "@/lib/sv/registry";
 import { ObjectiveTask } from "./ObjectiveTask";
 import { submitAttempt, type RunnerItem } from "./shared";
@@ -44,11 +50,16 @@ export function MockRunner({
   examName,
   mockMinutes,
   sections,
+  resultBasis,
 }: {
   examName: string;
   exam: SwedishExam;
   mockMinutes: number;
   sections: MockSection[];
+  /** ExamMeta.resultBasis — what THIS exam's real result is. Optional on purpose:
+   *  an exam with no sourced basis stays silent rather than being handed a
+   *  one-size-fits-all sentence that is false for some of the list. */
+  resultBasis?: string;
 }) {
   const flat = useMemo<FlatStep[]>(() => {
     let n = 0;
@@ -79,6 +90,10 @@ export function MockRunner({
     setGrading(true);
     const perSkill: Partial<Record<SwedishSkill, { points: number; max: number }>> = {};
     const prodPct: Partial<Record<SwedishSkill, number[]>> = {};
+    // Level evidence, gathered from OBJECTIVE items only. A self-rating is the
+    // learner's own opinion of their writing; letting it crown a CEFR level would
+    // make the level claim softer than the sentence that reports it.
+    const levelScored: LevelScored[] = [];
 
     for (const f of flat) {
       if (f.objective) {
@@ -94,6 +109,7 @@ export function MockRunner({
         const max = g?.maxPoints ?? f.item.maxPoints ?? 1;
         const acc = perSkill[f.skill] ?? { points: 0, max: 0 };
         perSkill[f.skill] = { points: acc.points + points, max: acc.max + max };
+        levelScored.push({ cefr: f.item.cefr, points, maxPoints: max });
       } else {
         const r = ratings[f.index];
         if (typeof r === "string") {
@@ -124,7 +140,15 @@ export function MockRunner({
       }
     }
     const agg = aggregateReadout(readouts);
-    setResult(<MockResult examName={examName} readouts={readouts} agg={agg} />);
+    setResult(
+      <MockResult
+        examName={examName}
+        readouts={readouts}
+        agg={agg}
+        achieved={achievedReadout(levelScored)}
+        resultBasis={resultBasis}
+      />,
+    );
     setGrading(false);
   }
 
@@ -237,23 +261,63 @@ function MockResult({
   examName,
   readouts,
   agg,
+  achieved,
+  resultBasis,
 }: {
   examName: string;
   readouts: SkillReadout[];
   agg: { meanPct: number; overall: string; label: string; weakest: SwedishSkill | null; allClear: boolean };
+  achieved: AchievedReadout;
+  resultBasis?: string;
 }) {
+  const points = readouts.reduce((s, r) => s + r.points, 0);
+  const maxPoints = readouts.reduce((s, r) => s + r.maxPoints, 0);
   return (
     <div className="space-y-5 rounded-2xl border border-almi-bg-peach bg-almi-paper p-6">
       <div>
         <p className="text-xs font-bold uppercase tracking-wider text-almi-accent-deep">
           {examName} · full mock · estimate
         </p>
-        <h2 className="mt-1 text-2xl font-semibold text-almi-ink">{agg.label}</h2>
+        {/* Was agg.label ("On track (practice estimate)") over a readiness band.
+            That banded against a threshold no exam here publishes. Report what was
+            actually scored, then the level it evidences. */}
+        <h2 className="mt-1 text-2xl font-semibold text-almi-ink">
+          {points} / {maxPoints} correct
+        </h2>
         <p className="text-sm text-almi-text-muted">
-          Mean {agg.meanPct}% · overall readiness {readinessFromPct(agg.meanPct)}
+          Mean {agg.meanPct}% across the graded parts
           {agg.weakest ? ` · focus on ${SKILL_LABELS[agg.weakest].en}` : ""}
         </p>
       </div>
+      <div className="flex flex-wrap items-center gap-3">
+        {achieved.workingAt ? (
+          <span className="rounded-full bg-almi-teal/15 px-3 py-1 text-sm font-semibold text-almi-teal">
+            Working at {achieved.workingAt}
+          </span>
+        ) : (
+          <span className="text-sm text-almi-text-muted">
+            {achieved.levelGraded ? NO_LEVEL_REACHED_TEXT : UNDECLARED_LEVEL_TEXT}
+          </span>
+        )}
+        {achieved.reachingFor && (
+          <span className="text-sm text-almi-text-muted">
+            reaching for {achieved.reachingFor}
+          </span>
+        )}
+      </div>
+      {achieved.byLevel.length > 0 && (
+        <p className="text-sm text-almi-text-muted">
+          {achieved.byLevel
+            .map(
+              (l) =>
+                `${l.cefr}: ${l.points}/${l.maxPoints} on ${l.count} task${
+                  l.count === 1 ? "" : "s"
+                }${l.sufficient ? "" : " (too few to judge)"}`,
+            )
+            .join(" · ")}
+          {" · from the auto-marked parts only"}
+        </p>
+      )}
       <ul className="space-y-2">
         {readouts.map((r) => (
           <li key={r.skill} className="flex items-center justify-between rounded-xl border border-almi-bg-peach px-4 py-2 text-sm">
@@ -261,13 +325,17 @@ function MockResult({
               {SKILL_LABELS[r.skill].en}
               {r.isEstimate ? <span className="ml-2 text-xs text-almi-text-muted">(self-rated)</span> : null}
             </span>
-            <span className="font-semibold text-almi-text">{r.pct}% · {r.readiness}</span>
+            {/* The CLEAR/BORDERLINE/BELOW verdict is gone: ready for what? */}
+            <span className="font-semibold text-almi-text">{r.points}/{r.maxPoints} · {r.pct}%</span>
           </li>
         ))}
       </ul>
       <p className="text-xs text-almi-text-muted">
-        This is a practice estimate, not an official Migrationsverket or UHR (the Swedish Council for Higher Education)
-        result. The real exam is judged pass/fail across all four skills against the official criteria.
+        {/* Exam-aware. The old blanket line — "the real exam is judged pass/fail
+            across all four skills against the official criteria" — was printed on
+            the SFI ladder and on our own B1–B2 ladder, where no such exam exists. */}
+        {resultBasis ? `${resultBasis} ` : ""}
+        This is a practice estimate from the tasks you were served, never an official result.
       </p>
     </div>
   );
