@@ -71,7 +71,7 @@
     "title": "Voicemail from the preschool",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
-      "transcript": "Hej, det här är Petra från förskolan Videt. Jag ringer om Noah. Han har haft feber sedan lunch och är ganska trött nu, så han behöver hämtas i dag. Det verkar inte allvarligt, men han ska stanna hemma tills han har varit feberfri ett helt dygn. Ring gärna upp mig och säg vem som kommer och när. Om du inte kan ringa så skicka ett meddelande i appen i stället.",
+      "transcript": "Hej, det här är Petra från förskolan. Jag ringer om Noah. Han har haft feber sedan lunch och är ganska trött nu, så han behöver hämtas i dag. Det verkar inte allvarligt, men han ska stanna hemma tills han har varit feberfri ett helt dygn. Ring gärna upp mig och säg vem som kommer och när. Om du inte kan ringa så skicka ett meddelande i appen i stället.",
       "question": "När får Noah komma tillbaka till förskolan?",
       "options": [
         "Redan nästa morgon",
