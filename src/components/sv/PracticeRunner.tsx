@@ -2,30 +2,33 @@
 
 // Objective practice runner. Steps through auto-marked items (Reading/Listening),
 // submits each to /api/sv/submit for deterministic grading, shows per-item
-// correctness, and closes with an honest per-skill readiness readout. All labels
-// are framed as a "practice estimate" — never an official UHR result.
+// correctness, and closes with the LEVEL these tasks evidence — not a readiness band,
+// because there is no single threshold to band against. All labels are framed as a
+// "practice estimate" — never an official result.
 
 import { useState } from "react";
 import type { SwedishSkill } from "@/lib/sv/types";
-import { skillReadout, readinessFromPct } from "@/lib/sv/grading";
+import {
+  achievedReadout,
+  NO_LEVEL_REACHED_TEXT,
+  UNDECLARED_LEVEL_TEXT,
+} from "@/lib/sv/grading";
 import { SKILL_LABELS } from "@/lib/sv/registry";
 import { ObjectiveTask } from "./ObjectiveTask";
 import { submitAttempt, type RunnerItem, type SubmitResult } from "./shared";
-
-const READINESS_LABEL: Record<string, { text: string; cls: string }> = {
-  CLEAR: { text: "On track", cls: "bg-almi-teal/15 text-almi-teal" },
-  BORDERLINE: { text: "Borderline", cls: "bg-almi-accent/20 text-almi-accent-deep" },
-  BELOW: { text: "Below target", cls: "bg-almi-coral/15 text-almi-coral-deep" },
-};
 
 export function PracticeRunner({
   examName,
   skill,
   items,
+  resultBasis,
 }: {
   examName: string;
   skill: SwedishSkill;
   items: RunnerItem[];
+  /** ExamMeta.resultBasis — what this exam's real result is. Optional: an exam with
+   *  no sourced basis says nothing rather than being given an invented sentence. */
+  resultBasis?: string;
 }) {
   const [step, setStep] = useState(0);
   const [response, setResponse] = useState<unknown>(null);
@@ -68,8 +71,16 @@ export function PracticeRunner({
   if (done) {
     const points = results.reduce((s, r) => s + r.points, 0);
     const maxPoints = results.reduce((s, r) => s + r.maxPoints, 0);
-    const readout = skillReadout(skill, points, maxPoints);
-    const band = READINESS_LABEL[readout.readiness] ?? READINESS_LABEL.BELOW;
+    // Sweden has no language pass mark in force, so there is no target to band
+    // against — "are you ready?" has no referent. Report the level reached instead.
+    // results are in item order, so results[i] pairs with items[i].
+    const achieved = achievedReadout(
+      results.map((r, i) => ({
+        cefr: items[i]?.cefr,
+        points: r.points,
+        maxPoints: r.maxPoints,
+      })),
+    );
     return (
       <div className="space-y-5 rounded-2xl border border-almi-bg-peach bg-almi-paper p-6">
         <div>
@@ -81,15 +92,42 @@ export function PracticeRunner({
           </h2>
         </div>
         <div className="flex flex-wrap items-center gap-3">
-          <span className={`rounded-full px-3 py-1 text-sm font-semibold ${band.cls}`}>
-            {band.text}
-          </span>
-          <span className="text-sm text-almi-text-muted">
-            {readout.pct}% · readiness band {readinessFromPct(readout.pct)}
-          </span>
+          {achieved.workingAt ? (
+            <span className="rounded-full bg-almi-teal/15 px-3 py-1 text-sm font-semibold text-almi-teal">
+              Working at {achieved.workingAt}
+            </span>
+          ) : (
+            <span className="text-sm text-almi-text-muted">
+              {/* Two different facts, never conflated: tasks that carry no level at
+                  all (SFI, Tisus) vs. levelled tasks where none was cleared. */}
+              {achieved.levelGraded ? NO_LEVEL_REACHED_TEXT : UNDECLARED_LEVEL_TEXT}
+            </span>
+          )}
+          {achieved.reachingFor && (
+            <span className="text-sm text-almi-text-muted">
+              reaching for {achieved.reachingFor}
+            </span>
+          )}
         </div>
+        {achieved.byLevel.length > 0 && (
+          <p className="text-sm text-almi-text-muted">
+            {achieved.byLevel
+              .map(
+                (l) =>
+                  `${l.cefr}: ${l.points}/${l.maxPoints} on ${l.count} task${
+                    l.count === 1 ? "" : "s"
+                  }${l.sufficient ? "" : " (too few to judge)"}`,
+              )
+              .join(" · ")}
+          </p>
+        )}
         <p className="text-xs text-almi-text-muted">
-          This is a practice estimate against the level&apos;s criteria, not an official UHR result.
+          {/* Exam-aware: what the real result IS differs per exam, so the blanket
+              "there is no pass mark" claim cannot be printed here — it is false of
+              Tisus. See ExamMeta.resultBasis. */}
+          {resultBasis ? `${resultBasis} ` : ""}
+          This reports the level these tasks evidence, not whether you passed — a practice
+          estimate from the tasks you were served, never an official result.
         </p>
         <button
           type="button"

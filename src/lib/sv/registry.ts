@@ -14,9 +14,25 @@
 //     *utprövningsprov* (pilot), free of charge. Provisional format per UHR: ~60
 //     four-option MCQ, 90 minutes, Swedish, on paper, from UHR's "Sverige i fokus".
 //     PASS MARK NOT PUBLISHED.
-//   • LANGUAGE component: UHR indicates autumn 2028 at the earliest; no CEFR level
-//     set. We ship NO practice for it. Do not add one until UHR publishes a spec.
+//   • LANGUAGE component: the requirement applies from 6 June 2026, but the TEST
+//     does not exist. The law stages it: reading and listening from 1 Oct 2027 at
+//     the LATEST, writing and speaking on a date not yet set. UHR says only "vid
+//     senare tillfälle" and has published no date; 2028 is commentary, NOT an
+//     announcement. No CEFR level set for any part — the law says "functional"
+//     and "basic", not B1/A2. We ship NO practice for it. Do not add one until UHR
+//     publishes a spec. (This bullet said "autumn 2028 at the earliest" until
+//     #6 sourced it; the drift is why LANGUAGE_TEST_HEDGE below is the authority.)
 //   • Tisus: Stockholms universitet, ≈C1, for Swedish-taught university admission.
+//     It IS a real pass/fail examination — the one exam here that awards a verdict.
+//     VERIFIED 2026-07-19 against su.se's own Tisus pages (läsförståelse, muntlig
+//     färdighet, FAQ): run by Stockholms universitet, THREE parts — reading,
+//     writing and oral — graded pass/fail (godkänd), taken for admission to
+//     Swedish-taught university study. This was carried as a founder-supplied
+//     assumption in the first pass; it is now sourced, and the flag is gone.
+//     STILL OURS, AND STILL NOT SU'S: the ≈C1. SU publishes no official CEFR level
+//     for Tisus, so that label is our approximation and nothing may band a learner
+//     against C1. Verifying the pass/fail did NOT verify a CEFR level — two
+//     different claims, and only one of them now has a source.
 //   • SFI: courses A–D over 3 study paths. Skolverket maps A/B ≈ A1–A2, C/D ≈
 //     B1/B1+. The SFI scale is NOT CEFR — always say "approximately".
 //   • Swedex is excluded: it cannot be taken after 31 Dec 2026.
@@ -36,7 +52,33 @@ export interface ExamMeta {
   slug: string; // URL slug
   name: string; // display name (official Swedish exam name)
   cefr: string; // CEFR level label, or "Knowledge test" for the MCQ test
+  // NOTE — there is deliberately NO goal level field on this interface, and that
+  // absence is a finding rather than unfinished work.
+  //
+  // The siblings each band readiness against a verified pass mark: danish B2, dutch
+  // A2, icelandic A2, norwegian B1 in the oral part alone. Sweden has none. No binding
+  // language pass mark is in force (see LANGUAGE_TEST_HEDGE), and the `cefr` strings
+  // below are approximations of where a course or test SITS ("≈A2–B1+"), not a
+  // standard anyone is measured against. Collapsing one into a goal would manufacture
+  // the very requirement this product refuses to invent.
+  //
+  // So every language skill here reports the level REACHED (achievedReadout in
+  // grading.ts) instead of a readiness band. When a real standard is finally set,
+  // add the goal then — sourced, not inferred from these labels.
   blurb: string; // one-line description
+  // What the REAL result for this exam is, in one sentence — rendered under every
+  // score so the estimate is framed against the right thing.
+  //
+  // This exists because a single blanket footer cannot be honest across this list.
+  // "There is no pass mark to measure this against" is true of the citizenship
+  // LANGUAGE component (which we deliberately ship no practice for) and vacuously
+  // true of our own B1–B2 ladder — but it is FALSE of Tisus, which is a real
+  // examination with a real verdict. Asserting it there would be the mirror image
+  // of inventing a standard: denying one that exists.
+  //
+  // Optional on purpose. An exam whose result basis is not yet sourced must be able
+  // to say nothing rather than be forced into a sentence someone made up.
+  resultBasis?: string;
   skills: SwedishSkill[];
   knowledge?: boolean; // true = society/citizenship MCQ test (single KNOWLEDGE module)
   lead?: boolean; // the citizenship hook — Medborgarskapsprovet
@@ -89,21 +131,32 @@ export const LANGUAGE_EXAMS: ExamMeta[] = [
   {
     exam: "SFI_AB", track: "GETTING_STARTED", slug: "sfi-ab", name: "SFI Courses A–B", cefr: "≈A1–A2",
     blurb: "The first steps in Svenska för invandrare — everyday Swedish for work, family and daily life.",
+    resultBasis:
+      "SFI is a course, not a single exam — the result that counts comes from your school's assessment of the course, and Skolverket's SFI scale is not CEFR.",
     skills: ["READING", "LISTENING", "WRITING", "SPEAKING"], mockMinutes: 150,
   },
   {
     exam: "SFI_CD", track: "PROFICIENCY", slug: "sfi-cd", name: "SFI Courses C–D", cefr: "≈A2–B1+",
     blurb: "The SFI exit courses — Skolverket places Course D at roughly B1/B1+, the level most people aim to finish on.",
+    resultBasis:
+      "SFI is a course, not a single exam — the result that counts comes from your school's assessment of the course, and Skolverket's SFI scale is not CEFR.",
     skills: ["READING", "LISTENING", "WRITING", "SPEAKING"], mockMinutes: 180,
   },
   {
     exam: "SVENSKA_B1B2", track: "PROFICIENCY", slug: "svenska-b1b2", name: "Swedish B1–B2", cefr: "B1–B2",
     blurb: "General Swedish beyond SFI — the level that makes work, study and daily life in Sweden genuinely comfortable.",
+    resultBasis:
+      "This ladder is not an exam and no body awards a result for it — the level shown is only what these tasks evidence.",
     skills: ["READING", "LISTENING", "WRITING", "SPEAKING"], mockMinutes: 240,
   },
   {
     exam: "TISUS", track: "UNIVERSITY", slug: "tisus", name: "Tisus", cefr: "≈C1",
     blurb: "Test i svenska för universitets- och högskolestudier — the established route into Swedish-taught degree programmes, run by Stockholms universitet.",
+    // The one exam here with a real verdict. Say so — denying it would be as
+    // dishonest as inventing a standard elsewhere. But the ≈C1 is ours, not SU's,
+    // so nothing may band a learner against C1.
+    resultBasis:
+      "Tisus is a real examination, judged pass/fail by Stockholms universitet against its own criteria. Stockholms universitet publishes no CEFR level for it — the ≈C1 label is our approximation, not a mark you are measured against.",
     skills: ["READING", "LISTENING", "WRITING", "SPEAKING"], mockMinutes: 300,
   },
 ];
@@ -115,6 +168,8 @@ export const KNOWLEDGE_EXAMS: ExamMeta[] = [
   {
     exam: "MEDBORGARSKAPSPROV", track: "CITIZENSHIP", slug: "medborgarskapsprov", name: "Medborgarskapsprovet", cefr: "Knowledge test",
     blurb: "Sweden's new citizenship test — knowledge of Swedish society, in multiple-choice form, developed and marked by UHR. Mandatory for applicants aged 16–66. The first sitting, on 15 August 2026, is a pilot.",
+    resultBasis:
+      "UHR has not published a pass mark for Medborgarskapsprovet, so there is no threshold to measure a score against yet.",
     skills: ["KNOWLEDGE"], knowledge: true, lead: true, isNew: true, mockMinutes: 90,
   },
 ];

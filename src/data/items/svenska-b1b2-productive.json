@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Email declining extra work",
     "prompt": "Write a workplace email based on the task.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Debate reply on remote work",
     "prompt": "Write a reply to a debate article based on the task.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Written input before a performance review",
     "prompt": "Write a preparation text based on the task.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Letter to the housing association board",
     "prompt": "Write a formal letter based on the task.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Summary and comment on a meeting",
     "prompt": "Write a summary email based on the task.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Application letter for an internal position",
     "prompt": "Write an application based on the task.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Opinion text on screen time",
     "prompt": "Write an opinion text based on the task.",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Message about a sick day",
     "prompt": "Write two short messages based on the task.",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Present a proposal at a meeting",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Disagree with a colleague",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -165,6 +175,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Explain a decision to a customer",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -181,6 +192,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Argue for or against a car-free city centre",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -197,6 +209,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Describe your working culture",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -213,6 +226,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "React to a hypothetical",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {
@@ -229,6 +243,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Ask for help without apologising",
     "prompt": "Speak for at least 90 seconds on the task.",
     "payload": {

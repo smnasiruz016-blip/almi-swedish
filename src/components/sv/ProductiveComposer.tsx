@@ -4,7 +4,10 @@
 // stimulus + criteria, a writing textarea with a live length counter (or a
 // speaking notes area with timing guidance). Writing / Speaking answers get an
 // honest AI readiness estimate (CLEAR/BORDERLINE/BELOW) with feedback against the
-// exam's own criteria — NEVER an official Directorate / Ministry score. When AI
+// exam's own criteria — NEVER an official result. NOTE: this file previously named
+// a "Directorate / Ministry", which are not Swedish bodies at all — a leak from the
+// product this was forked from. Sweden's are UHR, Stockholms universitet and
+// Migrationsverket (see AUTHORITY in registry.ts). When AI
 // grading isn't available (key not provisioned yet, or a transient hiccup) it
 // falls back to a clearly-labelled self-rating.
 
@@ -93,6 +96,7 @@ export function ProductiveComposer({
       exam: item.exam,
       skill: item.skill,
       taskType: item.taskType,
+      cefr: item.cefr,
       title: item.title,
       prompt: item.prompt,
       criteria: d.criteria,
@@ -297,7 +301,7 @@ function AiFeedbackCard({ feedback }: { feedback: AiFeedback }) {
         </div>
       )}
       <p className="text-xs text-almi-text-muted">
-        An honest practice estimate against the exam&apos;s criteria — not an official Directorate or Ministry result.
+        An honest practice estimate against the exam&apos;s criteria — not an official result from UHR, Stockholms universitet or Migrationsverket.
       </p>
     </div>
   );
@@ -329,7 +333,7 @@ function Summary({
         <p className="text-sm text-almi-text-muted">Your own self-rating across {ratings.length || "the"} task(s)</p>
       </div>
       <p className="text-xs text-almi-text-muted">
-        This is a self-assessment for practice only — an estimate, not an official Directorate or Ministry result.
+        This is a self-assessment for practice only — an estimate, not an official result from UHR, Stockholms universitet or Migrationsverket.
       </p>
       <button type="button" onClick={onReset} className="inline-flex min-h-[44px] items-center rounded-full bg-almi-coral px-6 py-2 text-sm font-semibold text-almi-ink hover:bg-almi-coral-deep">
         Practise again

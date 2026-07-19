@@ -6,10 +6,11 @@
   "scripts": {
     "gate:items": "node scripts/items/real-entity-gate.mjs && tsx scripts/items/rule7-gate.mts",
     "dev": "next dev",
-    "build": "node scripts/seo/countries-axis-gate.mjs && node scripts/seo/fork-hygiene-gate.mjs && node scripts/seo/uniqueness-gate.mjs && node scripts/items/real-entity-gate.mjs && tsx scripts/items/rule7-gate.mts && prisma generate && prisma migrate deploy && next build",
+"build": "npm run selftest:engine && node scripts/seo/countries-axis-gate.mjs && node scripts/seo/fork-hygiene-gate.mjs && node scripts/seo/uniqueness-gate.mjs && node scripts/items/real-entity-gate.mjs && tsx scripts/items/rule7-gate.mts && prisma generate && prisma migrate deploy && next build",
     "start": "next start",
     "postinstall": "prisma generate",
-    "gate:hygiene": "node scripts/seo/fork-hygiene-gate.mjs"
+    "gate:hygiene": "node scripts/seo/fork-hygiene-gate.mjs",
+    "selftest:engine": "tsx src/lib/sv/selftest.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.91.1",
