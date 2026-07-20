@@ -50,7 +50,7 @@
     "title": "Information from the health centre",
     "prompt": "Read the text and choose the correct answer.",
     "payload": {
-      "passage": "Vårdcentralen i Rosengård har ändrat sina rutiner. Du behöver inte längre ringa tidigt på morgonen för att få en tid. I stället kan du beskriva dina besvär i ett formulär på 1177.se när som helst på dygnet. En sjuksköterska läser vad du har skrivit och hör av sig inom ett dygn. Om du blir akut sjuk på natten ska du inte använda formuläret utan ringa 1177 direkt.",
+      "passage": "Vårdcentralen i Rosengård har ändrat sina rutiner. Du behöver inte längre ringa tidigt på morgonen för att få en tid. I stället kan du beskriva dina besvär i ett formulär på 1177.se när som helst på dygnet. En sjuksköterska läser vad du har skrivit och hör av sig inom ett dygn. Om du blir akut sjuk på natten ska du inte använda formuläret utan ringa 1177 direkt. Vid livshotande tillstånd ringer du alltid 112.",
       "question": "Vad ska du göra om du blir akut sjuk mitt i natten?",
       "options": [
         "Fylla i formuläret och vänta på svar",
