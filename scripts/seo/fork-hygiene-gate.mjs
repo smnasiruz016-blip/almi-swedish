@@ -185,9 +185,13 @@ for (const dir of SCAN_DIRS) {
       text = stripComments(raw);
     }
     const lines = text.split(/\r?\n/);
+    // The per-line escape lives in a TRAILING COMMENT, so it must be read from the
+    // RAW line, not the stripped one. Stripping comments removed the marker along
+    // with them, which silently disarmed every escaped CODE line.
+    const rawLines = raw.split(/\r?\n/);
 
     lines.forEach((line, i) => {
-      if (line.includes(LINE_ESCAPE)) return;
+      if ((rawLines[i] ?? "").includes(LINE_ESCAPE)) return;
       for (const term of BANNED) {
         if (line.includes(term)) {
           violations.push(`${rel}:${i + 1}  banned ancestor noun "${term}"\n      ${line.trim().slice(0, 120)}`);
