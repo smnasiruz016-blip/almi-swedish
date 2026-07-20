@@ -86,9 +86,53 @@ const BANNED = [
   // — Earlier ancestors (German / Portuguese / Dutch / CELPIP) —
   "Goethe-Institut", "AlmiGoethe", "Schreiben", "Sprechen",
   "CAPLE", "Celpe-Bras", "AlmiPortuguese",
-  "AlmiCELPIP", "AlmiDanish", "AlmiNorwegian", "AlmiIcelandic",
-  "almi-danish", "almi-norwegian", "almi-icelandic",
+  "AlmiCELPIP",
 ];
+
+// ── Product-slug forms, generated rather than listed ─────────────────────────────
+//
+// The hand-written list carried "almi-danish", "almi-norwegian", "almi-icelandic"
+// and stopped there — the hyphen form only. A slug ships in four shapes, and the
+// underscore one is not hypothetical: AlmiSwiss holds "almi_norwegian_session" in
+// src/lib/auth.ts as a legacy cookie name, deliberately escaped. The same string
+// arriving here would have passed this gate silently.
+//
+// Generating the forms means a new ancestor is one word, not four entries with one
+// quietly forgotten.
+const ANCESTOR_PRODUCTS = [
+  "celpip", "goethe", "icelandic", "danish", "norwegian", "portuguese", "dutch",
+];
+/** Every form a product slug ships in: almi-x · almi_x · almix · AlmiX. */
+function productNameForms(prod) {
+  return [
+    `almi-${prod}`,
+    `almi_${prod}`,
+    `almi${prod}`,
+    `Almi${prod[0].toUpperCase()}${prod.slice(1)}`,
+  ];
+}
+for (const prod of ANCESTOR_PRODUCTS) BANNED.push(...productNameForms(prod));
+
+// SELF-CHECK — this product's own name must never end up in BANNED.
+//
+// A generator is precisely what a careless global find-replace rewrites. AlmiSwiss
+// hit this on 2026-07-16: a blanket rename of the ancestor's product name also
+// rewrote its ban list, so the gate began banning "AlmiSwiss" itself and reported 90
+// false positives that looked exactly like a real leak storm. The irony is the
+// lesson — a careless global replace is the very thing this gate exists to catch,
+// and it was noticed only because the count moved the wrong way. Assert it instead.
+const SELF_NAMES = ["AlmiSwedish", "almi-swedish", "almi_swedish", "almiswedish"];
+for (const n of SELF_NAMES) {
+  if (BANNED.some((b) => b.toLowerCase() === n.toLowerCase())) {
+    console.error(
+      `\n\u2717 FORK HYGIENE GATE MISCONFIGURED — "${n}" is this product's own name` +
+        " and must not be in BANNED.\n\n  This is what a blanket find-replace across the" +
+        " repo looks like when it reaches\n  this file: the gate starts reporting the" +
+        " product as a leak from itself.\n",
+    );
+    process.exit(1);
+  }
+}
 
 // `SIRI` and `UDI` need word boundaries — they collide with ordinary substrings.
 const BANNED_WORD = ["UDI", "SIRI"];
