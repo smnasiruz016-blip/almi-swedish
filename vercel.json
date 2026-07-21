@@ -1,4 +1,4 @@
 {
   "framework": "nextjs",
-  "ignoreCommand": "git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} HEAD -- . ':(exclude)*.md' ':(exclude)docs/**' ':(exclude)**/*.test.ts' ':(exclude)**/*.test.tsx' ':(exclude)**/*.spec.ts' ':(exclude).github/**' ':(exclude)README*' ':(exclude)LICENSE*' ':(exclude).vscode/**'"
+  "ignoreCommand": "bash scripts/vercel-skip.sh"
 }
