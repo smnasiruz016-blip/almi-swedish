@@ -184,10 +184,11 @@ function stripComments(text) {
   return out;
 }
 
-// Prisma and CSS use their own comment syntax; # is prisma's.
-function stripHashComments(text) {
-  return text.split(/\r?\n/).map((l) => l.replace(/#.*$/, "")).join("\n");
-}
+// Prisma comments are `//` and `///` — NOT `#`. Stripping `#` left prisma's `//`
+// provenance comments (e.g. "forked from AlmiCELPIP") scanned as if they were shipping
+// copy: green here only by luck, since this repo's schema has no ancestor noun in a
+// comment yet. stripComments handles `//` while respecting string literals, so prisma
+// reuses it — caught in the almi-norwegian backport 2026-07-21.
 
 // JSON is scanned as PARSED STRING VALUES, the real-entity-gate design: scanning raw
 // JSON text matches escape sequences rather than content, and a gate that scans the
@@ -224,7 +225,7 @@ for (const dir of SCAN_DIRS) {
       try { text = jsonStrings(JSON.parse(raw)).join("\n"); }
       catch { text = raw; }   // malformed JSON: fall back rather than skip silently
     } else if (rel.endsWith(".prisma")) {
-      text = stripHashComments(raw);
+      text = stripComments(raw);   // prisma comments are // — see note above
     } else {
       text = stripComments(raw);
     }
