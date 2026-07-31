@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Note for the neighbour",
     "prompt": "Write a short note in Swedish to a neighbour.",
     "payload": {
@@ -25,6 +26,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Text message to a colleague",
     "prompt": "Write a short text message in Swedish.",
     "payload": {
@@ -45,6 +47,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Filling in a form",
     "prompt": "Write short answers about yourself for a simple form.",
     "payload": {
@@ -65,6 +68,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Your favourite food",
     "prompt": "Write about food you like in Swedish.",
     "payload": {
@@ -85,6 +89,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "A message to the preschool",
     "prompt": "Write a short message to your child's preschool.",
     "payload": {
@@ -105,6 +110,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Your work or studies",
     "prompt": "Write about your work or your studies in Swedish.",
     "payload": {
@@ -125,6 +131,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Asking about an appointment",
     "prompt": "Write a short message asking to change an appointment.",
     "payload": {
@@ -145,6 +152,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Ask for the way",
     "prompt": "Ask for directions out loud in Swedish.",
     "payload": {
@@ -165,6 +173,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Order in a café",
     "prompt": "Order food and drink out loud in Swedish.",
     "payload": {
@@ -185,6 +194,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Talk about the weather",
     "prompt": "Describe the weather out loud in Swedish.",
     "payload": {
@@ -205,6 +215,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Call in sick to work",
     "prompt": "Make a short sick call out loud.",
     "payload": {
@@ -225,6 +236,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Your free time",
     "prompt": "Talk about your free time in Swedish.",
     "payload": {
@@ -245,6 +257,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Ask a colleague a question",
     "prompt": "Ask a work question out loud in Swedish.",
     "payload": {
@@ -265,6 +278,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Why you study Swedish",
     "prompt": "Explain why you are learning Swedish.",
     "payload": {
@@ -285,6 +299,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Describe a photo of a family meal",
     "prompt": "Describe a simple everyday scene out loud.",
     "payload": {

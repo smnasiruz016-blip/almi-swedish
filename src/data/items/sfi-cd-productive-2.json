@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Email to the employment service",
     "prompt": "Write a short email in Swedish based on the situation.",
     "payload": {
@@ -26,6 +27,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Invitation to a neighbours' meeting",
     "prompt": "Write a short text in Swedish based on the situation.",
     "payload": {
@@ -47,6 +49,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Message about a delayed payment",
     "prompt": "Write a short message in Swedish based on the situation.",
     "payload": {
@@ -68,6 +71,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Reply to a friend's question",
     "prompt": "Write a short reply in Swedish based on the situation.",
     "payload": {
@@ -89,6 +93,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Opinion about working from home",
     "prompt": "Write a short text in Swedish giving your opinion.",
     "payload": {
@@ -110,6 +115,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Message about a lost item",
     "prompt": "Write a short message in Swedish based on the situation.",
     "payload": {
@@ -131,6 +137,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Letter about a course",
     "prompt": "Write a short letter in Swedish based on the situation.",
     "payload": {
@@ -152,6 +159,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Explain a misunderstanding at work",
     "prompt": "Speak in Swedish for at least one minute.",
     "payload": {
@@ -172,6 +180,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Book an appointment on the phone",
     "prompt": "Speak in Swedish for at least one minute.",
     "payload": {
@@ -192,6 +201,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Talk about a person who has helped you",
     "prompt": "Speak in Swedish for at least one minute.",
     "payload": {
@@ -212,6 +222,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Discuss school and homework",
     "prompt": "Speak in Swedish for at least one minute.",
     "payload": {
@@ -232,6 +243,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Compare two places you have lived",
     "prompt": "Speak in Swedish for at least one minute.",
     "payload": {
@@ -252,6 +264,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Explain a decision to a colleague",
     "prompt": "Speak in Swedish for at least one minute.",
     "payload": {
@@ -272,6 +285,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Describe a photo of a family meal",
     "prompt": "Speak in Swedish for at least one minute.",
     "payload": {
@@ -292,6 +306,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Talk about health and everyday habits",
     "prompt": "Speak in Swedish for at least one minute.",
     "payload": {

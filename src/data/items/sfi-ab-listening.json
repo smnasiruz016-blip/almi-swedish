@@ -5,6 +5,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "A phone greeting",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "What time is it?",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "At the till",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Where do you live now?",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "The train announcement",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "A sick child",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "In the café",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Asking the way",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Working hours",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "The bus card",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -165,6 +175,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "The weather forecast",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -181,6 +192,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "A doctor's appointment",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -197,6 +209,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "A message from the landlord",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -213,6 +226,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "At Arbetsförmedlingen",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -229,6 +243,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Plans with a friend",
     "prompt": "Listen and choose the correct answer.",
     "payload": {

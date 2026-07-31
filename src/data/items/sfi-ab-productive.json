@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Introduce yourself",
     "prompt": "Write a short introduction about yourself in Swedish.",
     "payload": {
@@ -25,6 +26,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Shopping note",
     "prompt": "Write a short shopping note to your family.",
     "payload": {
@@ -45,6 +47,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Message to your teacher",
     "prompt": "Write a short message to your SFI teacher.",
     "payload": {
@@ -65,6 +68,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Your family",
     "prompt": "Write a few sentences about your family in Swedish.",
     "payload": {
@@ -85,6 +89,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Your day",
     "prompt": "Describe an ordinary day in Swedish.",
     "payload": {
@@ -105,6 +110,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Booking a health centre visit",
     "prompt": "Write a short message to the health centre.",
     "payload": {
@@ -125,6 +131,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Where you live",
     "prompt": "Write about your home in Swedish.",
     "payload": {
@@ -145,6 +152,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Invite a friend",
     "prompt": "Write a short invitation in Swedish.",
     "payload": {
@@ -165,6 +173,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Present yourself",
     "prompt": "Introduce yourself out loud in Swedish.",
     "payload": {
@@ -185,6 +194,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Talk about your family",
     "prompt": "Talk about your family in Swedish.",
     "payload": {
@@ -205,6 +215,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Buying food",
     "prompt": "Speak about shopping for food.",
     "payload": {
@@ -225,6 +236,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "How you travel",
     "prompt": "Talk about how you travel in Swedish.",
     "payload": {
@@ -245,6 +257,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "At the doctor",
     "prompt": "Explain a health problem out loud.",
     "payload": {
@@ -265,6 +278,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Your week",
     "prompt": "Talk about your week in Swedish.",
     "payload": {
@@ -285,6 +299,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Your home town",
     "prompt": "Describe the place where you live.",
     "payload": {

@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: individual or structural responsibility",
     "prompt": "Write an argumentative essay defending a clear thesis.",
     "payload": {
@@ -26,6 +27,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: densification of cities",
     "prompt": "Write an argumentative essay taking a position on urban densification.",
     "payload": {
@@ -47,6 +49,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: English as the language of research",
     "prompt": "Write an argumentative essay on language choice in academia.",
     "payload": {
@@ -68,6 +71,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: grading and selection",
     "prompt": "Write an argumentative essay on the function of grades.",
     "payload": {
@@ -89,6 +93,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Essay: preventive health care",
     "prompt": "Write an argumentative essay on health care priorities.",
     "payload": {
@@ -110,6 +115,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: algorithms and editorial responsibility",
     "prompt": "Write an argumentative essay on platform responsibility.",
     "payload": {
@@ -131,6 +137,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: recognition of foreign qualifications",
     "prompt": "Write an argumentative essay on the labour market and qualifications.",
     "payload": {
@@ -152,6 +159,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: evidence and political choice",
     "prompt": "Write an argumentative essay on evidence in policy-making.",
     "payload": {
@@ -173,6 +181,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: consumer responsibility",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -194,6 +203,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Seminar discussion: densification",
     "prompt": "Take part in an academic discussion.",
     "payload": {
@@ -215,6 +225,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: language of research",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -236,6 +247,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Seminar discussion: remote work",
     "prompt": "Take part in an academic discussion.",
     "payload": {
@@ -257,6 +269,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: research ethics",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -278,6 +291,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Seminar discussion: rural depopulation",
     "prompt": "Take part in an academic discussion.",
     "payload": {
@@ -299,6 +313,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: publication metrics",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {

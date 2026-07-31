@@ -5,6 +5,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Sustainability and consumption",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -26,6 +27,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Urban densification",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -47,6 +49,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Digitalisation of public administration",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -68,6 +71,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Grading and equivalence",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -89,6 +93,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Preventive public health",
     "prompt": "Read the article and choose the best answer.",
     "payload": {
@@ -110,6 +115,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "English in academic Swedish",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -131,6 +137,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Recognition of foreign qualifications",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -152,6 +159,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Research ethics and consent",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -173,6 +181,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Remote work and the office",
     "prompt": "Read the article and choose the best answer.",
     "payload": {
@@ -194,6 +203,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Rural depopulation",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -215,6 +225,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Algorithms and editorial responsibility",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -236,6 +247,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Publication pressure in research",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -257,6 +269,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "The library as public space",
     "prompt": "Read the article and choose the best answer.",
     "payload": {
@@ -278,6 +291,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Skills forecasting",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -299,6 +313,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Evidence in policy",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {

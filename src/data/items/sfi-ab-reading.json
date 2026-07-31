@@ -5,6 +5,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Meeting Fatima",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Erik's family",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "At the grocery store",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "The weather today",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Bus to work",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "A note from school",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "At the health centre",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "The new flat",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Work at the restaurant",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "A letter from the tax office",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -165,6 +175,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Breakfast",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -181,6 +192,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Sign in the laundry room",
     "prompt": "Read the notice and choose the correct answer.",
     "payload": {
@@ -197,6 +209,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "A message about the class",
     "prompt": "Read the message and choose the correct answer.",
     "payload": {
@@ -213,6 +226,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Looking for a job",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -229,6 +243,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Weekend plans",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {

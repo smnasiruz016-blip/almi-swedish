@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: digitalisation of public services",
     "prompt": "Write an argumentative essay defending a clear thesis.",
     "payload": {
@@ -26,6 +27,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: higher education and admission",
     "prompt": "Write an argumentative essay on university admission.",
     "payload": {
@@ -47,6 +49,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: the library as public space",
     "prompt": "Write an argumentative essay on public institutions.",
     "payload": {
@@ -68,6 +71,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Essay: skills forecasting",
     "prompt": "Write an argumentative essay on planning and prediction.",
     "payload": {
@@ -89,6 +93,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: school segregation",
     "prompt": "Write an argumentative essay on education policy.",
     "payload": {
@@ -110,6 +115,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: screening programmes",
     "prompt": "Write an argumentative essay on public health measures.",
     "payload": {
@@ -131,6 +137,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay: language change and norms",
     "prompt": "Write an argumentative essay on language and standards.",
     "payload": {
@@ -152,6 +159,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: automated decisions",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -173,6 +181,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Seminar discussion: admission criteria",
     "prompt": "Take part in an academic discussion.",
     "payload": {
@@ -194,6 +203,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: correlation and policy",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -215,6 +225,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Seminar discussion: the library",
     "prompt": "Take part in an academic discussion.",
     "payload": {
@@ -236,6 +247,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: screening programmes",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -257,6 +269,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Seminar discussion: evidence and values",
     "prompt": "Take part in an academic discussion.",
     "payload": {
@@ -278,6 +291,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: language norms",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -299,6 +313,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Seminar discussion: infrastructure decisions",
     "prompt": "Take part in an academic discussion.",
     "payload": {

@@ -5,6 +5,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Lecture: memory and reconstruction",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -26,6 +27,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Seminar: correlation and causation",
     "prompt": "Listen to the seminar discussion and choose the best answer.",
     "payload": {
@@ -47,6 +49,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Lecture: the rebound effect",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -68,6 +71,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Lecture: peer review",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -89,6 +93,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Seminar: sample selection",
     "prompt": "Listen to the seminar discussion and choose the best answer.",
     "payload": {
@@ -110,6 +115,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Lecture: language change",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -131,6 +137,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Lecture: screening and false positives",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -152,6 +159,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Seminar: choosing a research question",
     "prompt": "Listen to the supervision discussion and choose the best answer.",
     "payload": {
@@ -173,6 +181,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Lecture: the commons",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -194,6 +203,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Lecture: educational segregation",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -215,6 +225,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Seminar: interview methodology",
     "prompt": "Listen to the seminar discussion and choose the best answer.",
     "payload": {
@@ -236,6 +247,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Lecture: migration and labour markets",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -257,6 +269,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Lecture: citation practice",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -278,6 +291,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Lecture: cycling infrastructure",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -299,6 +313,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Seminar: replication",
     "prompt": "Listen to the seminar discussion and choose the best answer.",
     "payload": {

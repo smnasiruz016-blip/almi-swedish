@@ -5,6 +5,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Announcement at the station",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -26,6 +27,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Phone call to the health centre",
     "prompt": "Listen to the dialogue and choose the correct answer.",
     "payload": {
@@ -47,6 +49,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Instructions at work",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -68,6 +71,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Voicemail from the preschool",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -89,6 +93,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Conversation about housing",
     "prompt": "Listen to the dialogue and choose the correct answer.",
     "payload": {
@@ -110,6 +115,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Message in the supermarket",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -131,6 +137,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Meeting at the employment service",
     "prompt": "Listen to the dialogue and choose the correct answer.",
     "payload": {
@@ -152,6 +159,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Local radio news",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -173,6 +181,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Conversation with a teacher",
     "prompt": "Listen to the dialogue and choose the correct answer.",
     "payload": {
@@ -194,6 +203,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Call to the landlord",
     "prompt": "Listen to the dialogue and choose the correct answer.",
     "payload": {
@@ -215,6 +225,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Information at the pharmacy",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -236,6 +247,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Message to a friend",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -257,6 +269,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Job interview",
     "prompt": "Listen to the dialogue and choose the correct answer.",
     "payload": {
@@ -278,6 +291,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Information at the library",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -299,6 +313,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Colleagues discussing a schedule",
     "prompt": "Listen to the dialogue and choose the correct answer.",
     "payload": {
