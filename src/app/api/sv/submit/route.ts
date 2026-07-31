@@ -1,32 +1,18 @@
-// Practice submit endpoint. Grades objective items deterministically via the
-// Swedish engine and echoes productive self-ratings. DB persistence of attempts is
-// best-effort: bundled items have no DB id, so unless a resolvable itemId is
-// supplied we simply return the grade — this never 500s on an empty database.
+// PRACTICE submit endpoint. Grades objective items deterministically against the
+// SERVER-held answer key, re-loaded by the posted itemId — the client never supplies a
+// key and never states the standard it is marked against. See lib/sv/grade-attempt.ts
+// for what this replaced and why.
+//
+// This is the REVEAL path: the correct answer is returned in the response, AFTER the
+// submission has been scored, so the practice runner can show it. The mock path
+// (/api/sv/mock/submit) runs the identical grading and withholds it. Which behaviour a
+// caller gets is decided by which route it reached, never by a flag in its body.
 
 import { NextResponse } from "next/server";
 import { getCurrentUser } from "@/lib/auth";
-import { hasPaidAccess } from "@/lib/billing/plans";
-import { prisma } from "@/lib/prisma";
-import { gradeObjective } from "@/lib/sv/grading";
-import { isObjectiveTask, isFreeSkill } from "@/lib/sv/types";
-import type {
-  ObjectiveAnswer,
-  SwedishSkill,
-  SwedishTaskType,
-} from "@/lib/sv/types";
+import { gradeAttempt, type AttemptBody } from "@/lib/sv/grade-attempt";
 
 export const runtime = "nodejs";
-
-interface SubmitBody {
-  itemId?: string;
-  exam?: string;
-  skill?: SwedishSkill;
-  taskType?: SwedishTaskType;
-  answer?: ObjectiveAnswer | null;
-  maxPoints?: number;
-  response?: unknown;
-  selfScore?: number | string | null;
-}
 
 export async function POST(req: Request): Promise<NextResponse> {
   const user = await getCurrentUser();
@@ -34,65 +20,25 @@ export async function POST(req: Request): Promise<NextResponse> {
     return NextResponse.json({ ok: false, error: "Not authenticated" }, { status: 401 });
   }
 
-  let body: SubmitBody;
+  let body: AttemptBody;
   try {
-    body = (await req.json()) as SubmitBody;
+    body = (await req.json()) as AttemptBody;
   } catch {
     return NextResponse.json({ ok: false, error: "Invalid body" }, { status: 400 });
   }
 
-  const { itemId, skill, taskType, answer, response, selfScore } = body;
-  if (!taskType) {
-    return NextResponse.json({ ok: false, error: "Missing taskType" }, { status: 400 });
+  const graded = await gradeAttempt(body, user);
+  if (!graded.ok) {
+    return NextResponse.json({ ok: false, error: graded.error }, { status: graded.status });
   }
 
-  const objective = isObjectiveTask(taskType);
-  const productive = !objective || (skill !== undefined && !isFreeSkill(skill));
-
-  // Gate: productive / AI tasks require paid access (owner + comp bypass inside).
-  if (productive && !hasPaidAccess(user)) {
-    return NextResponse.json(
-      { ok: false, error: "Productive feedback is a Pro feature" },
-      { status: 402 },
-    );
-  }
-
-  let points = 0;
-  let maxPoints = typeof body.maxPoints === "number" ? body.maxPoints : 0;
-  let correct = false;
-  let readiness: string | null = null;
-
-  if (objective && answer) {
-    const graded = gradeObjective(answer, response);
-    points = graded.points;
-    maxPoints = graded.maxPoints;
-    correct = maxPoints > 0 && points === maxPoints;
-    readiness = correct ? "CLEAR" : "BELOW";
-  } else {
-    // Productive: nothing sensitive stored; echo the self-rating.
-    readiness = typeof selfScore === "string" ? selfScore : null;
-  }
-
-  // Best-effort persistence — only when a real DB item id is supplied. Any DB
-  // failure (missing item, empty database) is swallowed so grading still returns.
-  if (itemId) {
-    try {
-      await prisma.swedishAttempt.create({
-        data: {
-          userId: user.id,
-          itemId,
-          status: objective ? "SCORED" : "EVALUATED",
-          response: (response ?? { selfScore: selfScore ?? null }) as object,
-          points: objective ? points : null,
-          maxPoints: objective ? maxPoints : null,
-          readiness,
-          submittedAt: new Date(),
-        },
-      });
-    } catch {
-      // ignore — attempts are optional this pass
-    }
-  }
-
-  return NextResponse.json({ ok: true, points, maxPoints, correct, selfScore: selfScore ?? null });
+  return NextResponse.json({
+    ok: true,
+    points: graded.points,
+    maxPoints: graded.maxPoints,
+    correct: graded.correct,
+    selfScore: graded.selfScore,
+    // Post-scoring reveal — the practice runner shows this once the answer is in.
+    answer: graded.correctAnswer,
+  });
 }

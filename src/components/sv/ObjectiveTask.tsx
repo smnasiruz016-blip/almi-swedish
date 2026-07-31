@@ -11,6 +11,7 @@ import type {
   MatchingPayload,
   ClozePayload,
   OrderingPayload,
+  ObjectiveAnswer,
 } from "@/lib/sv/types";
 import type { RunnerItem } from "./shared";
 import { TtsAudio } from "./TtsAudio";
@@ -36,6 +37,75 @@ export function ObjectiveTask({
       return <OrderingTask item={item} disabled={disabled} onChange={onChange} />;
     default:
       return null;
+  }
+}
+
+/**
+ * Post-submit reveal of the correct answer.
+ *
+ * `answer` is NOT a property of the item — the served item no longer carries its key.
+ * It arrives in the response to /api/sv/submit, after that submission has been scored,
+ * and is passed in here. The mock route never returns one, so a mock never renders this.
+ * Keep the prop separate from `item` for exactly that reason: an answer that lived on
+ * the item again would be in the page again.
+ */
+export function AnswerReveal({
+  item,
+  answer,
+}: {
+  item: RunnerItem;
+  answer: ObjectiveAnswer;
+}) {
+  const lines = describeAnswer(item, answer);
+  if (lines.length === 0) return null;
+  return (
+    <div className="rounded-xl border border-almi-bg-peach bg-almi-paper px-4 py-3 text-sm">
+      <p className="font-semibold text-almi-ink">Correct answer</p>
+      <ul className="mt-1 space-y-1 text-almi-text">
+        {lines.map((l, i) => (
+          <li key={i}>{l}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+/** Turn a key into readable text against the item's own payload. Returns [] rather than
+ *  a half-rendered line when a payload does not carry what the key points at. */
+function describeAnswer(item: RunnerItem, answer: ObjectiveAnswer): string[] {
+  switch (answer.type) {
+    case "MCQ_SINGLE":
+    case "TRUE_FALSE": {
+      const p = item.payload as McqPayload;
+      const opt = p?.options?.[answer.correctIndex];
+      return opt === undefined ? [] : [opt];
+    }
+    case "MATCHING": {
+      const p = item.payload as MatchingPayload;
+      return answer.pairs
+        .map(([l, r]) =>
+          p?.left?.[l] === undefined || p?.right?.[r] === undefined
+            ? null
+            : `${p.left[l]} → ${p.right[r]}`,
+        )
+        .filter((x): x is string => x !== null);
+    }
+    case "CLOZE": {
+      const p = item.payload as ClozePayload;
+      return answer.correct
+        .map((c) => {
+          const opt = p?.gaps?.find((g) => g.id === c.id)?.options?.[c.index];
+          return opt === undefined ? null : `Gap ${c.id}: ${opt}`;
+        })
+        .filter((x): x is string => x !== null);
+    }
+    case "ORDERING": {
+      const p = item.payload as OrderingPayload;
+      const seq = answer.order.map((i) => p?.items?.[i]);
+      return seq.some((s) => s === undefined)
+        ? []
+        : seq.map((s, i) => `${i + 1}. ${s}`);
+    }
   }
 }
 

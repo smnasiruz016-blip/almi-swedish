@@ -8,7 +8,7 @@ import { requireUser } from "@/lib/auth";
 import { hasPaidAccess } from "@/lib/billing/plans";
 import { examBySlug } from "@/lib/sv/registry";
 import { isFreeSkill } from "@/lib/sv/types";
-import { pickPractice } from "@/lib/sv/items";
+import { pickPractice, stableItemId } from "@/lib/sv/items";
 import { MockRunner, type MockSection } from "@/components/sv/MockRunner";
 
 export default async function MockPage({
@@ -34,6 +34,10 @@ export default async function MockPage({
       skill,
       objective,
       items: items.map((it) => ({
+        // No answer key — see RunnerItem in components/sv/shared.ts. In a mock the key is
+        // withheld twice over: it is not in this payload, and /api/sv/mock/submit does not
+        // return it either.
+        id: stableItemId(it),
         title: it.title,
         prompt: it.prompt,
         exam: it.exam,
@@ -41,7 +45,6 @@ export default async function MockPage({
         taskType: it.taskType,
         cefr: it.cefr,
         payload: it.payload,
-        answer: it.answer,
         maxPoints: it.maxPoints,
       })),
     };

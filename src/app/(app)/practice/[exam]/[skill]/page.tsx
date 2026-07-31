@@ -9,7 +9,7 @@ import { hasPaidAccess } from "@/lib/billing/plans";
 import { examBySlug, SKILL_LABELS } from "@/lib/sv/registry";
 import { isFreeSkill } from "@/lib/sv/types";
 import type { SwedishSkill } from "@/lib/sv/types";
-import { pickPractice } from "@/lib/sv/items";
+import { pickPractice, stableItemId } from "@/lib/sv/items";
 import { PracticeRunner } from "@/components/sv/PracticeRunner";
 import { ProductiveComposer } from "@/components/sv/ProductiveComposer";
 
@@ -66,6 +66,10 @@ export default async function SkillRunnerPage({
           skill={skill}
           resultBasis={exam.resultBasis}
           items={items.map((it) => ({
+            // The answer key is NOT mapped here — see RunnerItem in components/sv/shared.ts.
+            // Everything this object holds is rendered to the learner; anything added to it
+            // ships in the page payload.
+            id: stableItemId(it),
             title: it.title,
             prompt: it.prompt,
             exam: it.exam,
@@ -73,7 +77,6 @@ export default async function SkillRunnerPage({
             taskType: it.taskType,
             cefr: it.cefr,
             payload: it.payload,
-            answer: it.answer,
             maxPoints: it.maxPoints,
           }))}
         />
@@ -82,6 +85,7 @@ export default async function SkillRunnerPage({
           examName={exam.name}
           skill={skill}
           items={items.map((it) => ({
+            id: stableItemId(it),
             title: it.title,
             prompt: it.prompt,
             exam: it.exam,

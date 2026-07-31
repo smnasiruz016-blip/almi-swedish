@@ -14,7 +14,7 @@ import {
   UNDECLARED_LEVEL_TEXT,
 } from "@/lib/sv/grading";
 import { SKILL_LABELS } from "@/lib/sv/registry";
-import { ObjectiveTask } from "./ObjectiveTask";
+import { AnswerReveal, ObjectiveTask } from "./ObjectiveTask";
 import { submitAttempt, type RunnerItem, type SubmitResult } from "./shared";
 
 export function PracticeRunner({
@@ -43,14 +43,9 @@ export function PracticeRunner({
   async function submit() {
     if (result || busy) return;
     setBusy(true);
-    const graded = await submitAttempt({
-      exam: item.exam,
-      skill: item.skill,
-      taskType: item.taskType,
-      answer: item.answer,
-      maxPoints: item.maxPoints,
-      response,
-    });
+    // Only the item's id and the learner's response. The key is not ours to send — the
+    // server re-loads it and marks against its own copy.
+    const graded = await submitAttempt({ itemId: item.id, response });
     setBusy(false);
     const r: SubmitResult =
       graded ?? { ok: false, points: 0, maxPoints: item.maxPoints || 1, correct: false };
@@ -167,15 +162,21 @@ export function PracticeRunner({
       </div>
 
       {result && (
-        <div
-          className={`rounded-xl px-4 py-3 text-sm font-semibold ${
-            result.correct
-              ? "bg-almi-teal/15 text-almi-teal"
-              : "bg-almi-coral/15 text-almi-coral-deep"
-          }`}
-        >
-          {result.correct ? "Correct" : "Not quite"} · {result.points}/{result.maxPoints} point
-          {result.maxPoints === 1 ? "" : "s"}
+        <div className="space-y-3">
+          <div
+            className={`rounded-xl px-4 py-3 text-sm font-semibold ${
+              result.correct
+                ? "bg-almi-teal/15 text-almi-teal"
+                : "bg-almi-coral/15 text-almi-coral-deep"
+            }`}
+          >
+            {result.correct ? "Correct" : "Not quite"} · {result.points}/{result.maxPoints} point
+            {result.maxPoints === 1 ? "" : "s"}
+          </div>
+          {/* The key came back from the server WITH this score, not with the question. */}
+          {!result.correct && result.answer ? (
+            <AnswerReveal item={item} answer={result.answer} />
+          ) : null}
         </div>
       )}
 
