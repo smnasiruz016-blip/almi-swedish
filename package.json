@@ -6,9 +6,11 @@
   "scripts": {
     "gate:items": "node scripts/items/real-entity-gate.mjs && tsx scripts/items/rule7-gate.mts",
     "gate:item-id": "tsx scripts/items/item-id-collision-gate.mts",
+    "gate:civics-coverage": "tsx scripts/items/civics-coverage-gate.mts",
+    "gate:answer-distribution": "tsx scripts/items/answer-distribution-gate.mts",
     "proof:grade-integrity": "tsx scripts/items/grade-integrity-proof.mts",
     "dev": "next dev",
-"build": "npm run selftest:engine && node scripts/seo/countries-axis-gate.mjs && node scripts/seo/fork-hygiene-gate.mjs && node scripts/seo/uniqueness-gate.mjs && node scripts/items/real-entity-gate.mjs && tsx scripts/items/rule7-gate.mts && tsx scripts/items/item-id-collision-gate.mts && prisma generate && prisma migrate deploy && next build",
+"build": "npm run selftest:engine && node scripts/seo/countries-axis-gate.mjs && node scripts/seo/fork-hygiene-gate.mjs && node scripts/seo/uniqueness-gate.mjs && node scripts/items/real-entity-gate.mjs && tsx scripts/items/rule7-gate.mts && tsx scripts/items/item-id-collision-gate.mts && tsx scripts/items/civics-coverage-gate.mts && tsx scripts/items/answer-distribution-gate.mts && prisma generate && prisma migrate deploy && next build",
     "start": "next start",
     "postinstall": "prisma generate",
     "gate:hygiene": "node scripts/seo/fork-hygiene-gate.mjs",
