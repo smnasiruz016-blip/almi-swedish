@@ -550,5 +550,677 @@
       "correctIndex": 1
     },
     "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Landet Sverige",
+    "title": "Huvudstaden",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad heter Sveriges huvudstad?",
+      "options": [
+        "Göteborg",
+        "Malmö",
+        "Stockholm",
+        "Uppsala"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Landet Sverige",
+    "title": "Grannländer",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vilka två länder gränsar till Sverige på land?",
+      "options": [
+        "Danmark och Tyskland",
+        "Norge och Finland",
+        "Finland och Ryssland",
+        "Norge och Danmark"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Landet Sverige",
+    "title": "Näst största stad",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vilken är Sveriges näst största stad?",
+      "options": [
+        "Göteborg",
+        "Uppsala",
+        "Malmö",
+        "Linköping"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Demokrati",
+    "title": "Demokrati",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad betyder ordet demokrati ungefär?",
+      "options": [
+        "Kungen bestämmer",
+        "Kyrkan bestämmer",
+        "Militären bestämmer",
+        "Folket bestämmer"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Demokrati",
+    "title": "Rösträttsålder",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Från vilken ålder får man rösta i allmänna val i Sverige?",
+      "options": [
+        "15 år",
+        "16 år",
+        "18 år",
+        "21 år"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Demokrati",
+    "title": "Kännetecken",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad är ett kännetecken för en demokrati?",
+      "options": [
+        "Bara ett parti är tillåtet",
+        "Domstolarna väljer regeringen",
+        "Kungen stiftar lagarna",
+        "Alla vuxna medborgare får rösta"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Så styrs Sverige",
+    "title": "Riksdagen",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad heter Sveriges folkvalda parlament?",
+      "options": [
+        "Regeringen",
+        "Riksdagen",
+        "Landstinget",
+        "Kungahuset"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Så styrs Sverige",
+    "title": "Regeringschef",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad kallas den som leder Sveriges regering?",
+      "options": [
+        "Statsministern",
+        "Presidenten",
+        "Talmannen",
+        "Kungen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Val och politiska partier",
+    "title": "Rösta på parti",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "I ett riksdagsval röstar man i första hand på ett...",
+      "options": [
+        "parti",
+        "kung",
+        "domare",
+        "president"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Lag och rätt",
+    "title": "Straffmyndig",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Från vilken ålder kan man bli straffad för brott (straffmyndig) i Sverige?",
+      "options": [
+        "13 år",
+        "15 år",
+        "18 år",
+        "21 år"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Lag och rätt",
+    "title": "Utreder brott",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vilken myndighet utreder brott?",
+      "options": [
+        "Polisen",
+        "Domstolen",
+        "Riksdagen",
+        "Kommunen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Lag och rätt",
+    "title": "Grundlagar",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Hur många grundlagar har Sverige?",
+      "options": [
+        "En",
+        "Två",
+        "Fyra",
+        "Sex"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Mediernas roll",
+    "title": "Tryckfrihet",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad innebär tryckfrihet?",
+      "options": [
+        "Rätten att uttrycka sig och publicera utan censur från staten",
+        "Att staten bestämmer vad tidningar skriver",
+        "Att bara kungen får ge ut tidningar",
+        "Att alla medier är gratis"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Mediernas roll",
+    "title": "Public service",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vilka av dessa är svenska public service-medier?",
+      "options": [
+        "TV4 och Aftonbladet",
+        "Netflix och HBO",
+        "SVT, Sveriges Radio och UR",
+        "Facebook och Google"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Mediernas roll",
+    "title": "Källkritik",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Varför är källkritik viktigt?",
+      "options": [
+        "För att avgöra om information är sann och pålitlig",
+        "För att göra nyheter roligare",
+        "För att spara pengar",
+        "För att slippa läsa"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Mänskliga rättigheter",
+    "title": "Minoriteter",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Hur många nationella minoriteter har Sverige?",
+      "options": [
+        "Fem",
+        "Tre",
+        "Sju",
+        "Tio"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Mänskliga rättigheter",
+    "title": "De fem minoriteterna",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vilka är Sveriges fem nationella minoriteter?",
+      "options": [
+        "Engelsmän, fransmän, italienare, spanjorer och greker",
+        "Danskar, norrmän, finnar, tyskar och polacker",
+        "Kurder, araber, somalier, syrier och afghaner",
+        "Judar, romer, samer, sverigefinnar och tornedalingar"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Mänskliga rättigheter",
+    "title": "Jämställdhet",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad betyder jämställdhet mellan kvinnor och män?",
+      "options": [
+        "Att kvinnor och män har samma rättigheter och möjligheter",
+        "Att män bestämmer mer",
+        "Att bara kvinnor får arbeta",
+        "Att män och kvinnor aldrig arbetar tillsammans"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Mänskliga rättigheter",
+    "title": "Minoritetsspråk",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vilket av dessa är INTE ett nationellt minoritetsspråk i Sverige?",
+      "options": [
+        "Spanska",
+        "Meänkieli",
+        "Finska",
+        "Jiddisch"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Arbetsmarknad och privatekonomi",
+    "title": "Fackförbund",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad är ett fackförbund?",
+      "options": [
+        "En myndighet som utreder brott",
+        "En organisation som tar tillvara arbetstagarnas intressen",
+        "En bank för företag",
+        "En del av regeringen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Arbetsmarknad och privatekonomi",
+    "title": "A-kassa",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad är a-kassa?",
+      "options": [
+        "En sorts pension",
+        "En skatt på mat",
+        "En försäkring som ger ersättning om man blir arbetslös",
+        "Ett busskort"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Välfärd",
+    "title": "Finansiering",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Hur finansieras den svenska välfärden i huvudsak?",
+      "options": [
+        "Genom kyrkan",
+        "Genom lån från utlandet",
+        "Genom kungens pengar",
+        "Genom skatter"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Välfärd",
+    "title": "Arbetsförmedlingen",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vilken myndighet hjälper personer att söka arbete?",
+      "options": [
+        "Arbetsförmedlingen",
+        "Domstolen",
+        "Riksdagen",
+        "Tullverket"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Välfärd",
+    "title": "Pension",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad är allmän pension?",
+      "options": [
+        "Pengar man lånar av banken",
+        "En avgift till kommunen",
+        "En skatt på pension",
+        "Pengar man får som äldre efter att ha arbetat och bott i Sverige"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Sveriges moderna historia",
+    "title": "Emigration",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Till vilket land emigrerade många svenskar under 1800-talet?",
+      "options": [
+        "USA",
+        "Australien",
+        "Ryssland",
+        "Kina"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Sveriges moderna historia",
+    "title": "Folkhemmet",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad kallas ibland den svenska välfärdsmodell som byggdes upp under 1900-talet?",
+      "options": [
+        "Vikingatiden",
+        "Kungariket",
+        "Folkhemmet",
+        "Stormaktstiden"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Sverige och omvärlden",
+    "title": "Nato",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Blev Sverige medlem i försvarsalliansen Nato år 2024?",
+      "options": [
+        "Ja, 1995",
+        "Nej, aldrig",
+        "Ja, redan 1949",
+        "Ja, 2024"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "En sekulär stat och ett mångreligiöst land",
+    "title": "Religionsfrihet",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad innebär religionsfrihet i Sverige?",
+      "options": [
+        "Alla måste tillhöra Svenska kyrkan",
+        "Bara en religion är tillåten",
+        "Man får själv välja religion eller att inte tro",
+        "Religion är förbjuden"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "En sekulär stat och ett mångreligiöst land",
+    "title": "Sekulär stat",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vad betyder det att Sverige är en sekulär stat?",
+      "options": [
+        "Att kungen är påve",
+        "Att alla är kristna",
+        "Att staten och religionen är åtskilda",
+        "Att religion styr lagarna"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Traditioner och högtider",
+    "title": "Midsommar",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vilken högtid firas i Sverige i slutet av juni med midsommarstång?",
+      "options": [
+        "Jul",
+        "Påsk",
+        "Lucia",
+        "Midsommar"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Traditioner och högtider",
+    "title": "Valborg",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vilken tradition firas den 30 april med brasor och vårsånger?",
+      "options": [
+        "Kräftskiva",
+        "Midsommar",
+        "Nationaldagen",
+        "Valborg"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "MEDBORGARSKAPSPROV",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Traditioner och högtider",
+    "title": "Julafton",
+    "prompt": "Välj rätt svar.",
+    "payload": {
+      "question": "Vilken högtid firar många i Sverige den 24 december (julafton)?",
+      "options": [
+        "Påsk",
+        "Jul",
+        "Midsommar",
+        "Halloween"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
   }
 ]
