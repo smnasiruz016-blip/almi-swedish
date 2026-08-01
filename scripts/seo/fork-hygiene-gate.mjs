@@ -62,6 +62,29 @@ const ALLOWLIST = new Map([
 // review: a line carrying this marker is asserting "I mean this on purpose".
 const LINE_ESCAPE = "hygiene-allow";
 
+// A file may be allowed SPECIFIC nouns without being allowlisted wholesale. The whole-file
+// ALLOWLIST above is the blunt instrument this header warns about, and using it here would
+// open a hole in exactly the file most likely to receive fork-leaked content: a Swedish
+// society bank descended from a Norwegian one. This is the narrow version of the same idea.
+//
+// Medborgarskapsprovet is drawn from Sverige i fokus, whose "Landet Sverige" chapter covers
+// Sweden's geography. A bank that may not name Sweden's neighbours cannot cover it — the
+// true answer to "Vilka två länder gränsar till Sverige på land?" is Norway and Finland,
+// and the plausible wrong answers have to be Denmark and Germany. The same reasoning
+// already allowlists hubs.json, where Malmö genuinely borders Denmark via the Öresund link.
+//
+// ONLY the bare country nouns, and ONLY in this file. Every product-specific ancestor noun
+// — Norskprøven, Bergenstesten, Statsborgerprøven, Samfunnskunnskapsprøven, Norskprov —
+// stays banned here, which is where a real leak would actually show up. A geography answer
+// naming Norway is a fact about Sweden; an exam name from Norway is a fork leak, and this
+// keeps the gate able to tell the two apart instead of forcing a choice between them.
+const NOUN_ALLOW = new Map([
+  ["src/data/items/medborgarskapsprov.json", {
+    nouns: new Set(["Norge", "Danmark"]),
+    why: "Sweden's land borders and neighbours are part of the Landet Sverige syllabus",
+  }],
+]);
+
 // Ancestor proper nouns. A Swedish product naming any of these is a fork leak.
 const BANNED = [
   // — Norwegian —
@@ -237,12 +260,15 @@ for (const dir of SCAN_DIRS) {
 
     lines.forEach((line, i) => {
       if ((rawLines[i] ?? "").includes(LINE_ESCAPE)) return;
+      const allowed = NOUN_ALLOW.get(rel)?.nouns;
       for (const term of BANNED) {
+        if (allowed?.has(term)) continue;
         if (line.includes(term)) {
           violations.push(`${rel}:${i + 1}  banned ancestor noun "${term}"\n      ${line.trim().slice(0, 120)}`);
         }
       }
       for (const term of BANNED_WORD) {
+        if (allowed?.has(term)) continue;
         if (new RegExp(`\\b${term}\\b`).test(line)) {
           violations.push(`${rel}:${i + 1}  banned ancestor noun "${term}"\n      ${line.trim().slice(0, 120)}`);
         }
