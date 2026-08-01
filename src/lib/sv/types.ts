@@ -54,6 +54,43 @@ export type SwedishDifficulty = "FOUNDATION" | "CORE" | "STRETCH";
 // never silently folded into a level.
 export type { CefrLevel } from "@smnasiruz016-blip/almi-data";
 
+/**
+ * The thirteen areas of Swedish society covered by UHR's own free study material,
+ * Sverige i fokus — the syllabus Medborgarskapsprovet is drawn from. The product already
+ * names this material and this count in its FAQ and requirements pages; this makes it a
+ * structure the data can be measured against rather than a sentence in the copy.
+ *
+ * It is a TAXONOMY, not a label list: every KNOWLEDGE item carries one, so "which parts
+ * of the syllabus does this bank cover, and how deeply" becomes a question with an answer.
+ * Before it existed the topic lived only as a prefix in each item's title — readable by a
+ * person, invisible to any gate, and with no denominator to be short against.
+ *
+ * It is the OFFICIAL list, not one derived from what happens to be authored. A taxonomy
+ * invented from the items it is meant to audit can never report a gap, because every item
+ * lands in a bucket that exists only because that item exists.
+ */
+export const CIVICS_AREAS = [
+  "Landet Sverige",
+  "Demokrati",
+  "Så styrs Sverige",
+  "Val och politiska partier",
+  "Lag och rätt",
+  "Mediernas roll",
+  "Mänskliga rättigheter",
+  "Arbetsmarknad och privatekonomi",
+  "Välfärd",
+  "Sveriges moderna historia",
+  "Sverige och omvärlden",
+  "En sekulär stat och ett mångreligiöst land",
+  "Traditioner och högtider",
+] as const;
+
+export type SwedishCivicsArea = (typeof CIVICS_AREAS)[number];
+
+export function isCivicsArea(v: unknown): v is SwedishCivicsArea {
+  return typeof v === "string" && (CIVICS_AREAS as readonly string[]).includes(v);
+}
+
 export const OBJECTIVE_TASK_TYPES: SwedishTaskType[] = [
   "MCQ_SINGLE",
   "MATCHING",

@@ -16,6 +16,7 @@ import type {
   SwedishTaskType,
   SwedishDifficulty,
   CefrLevel,
+  SwedishCivicsArea,
   ObjectiveAnswer,
 } from "./types";
 
@@ -30,6 +31,13 @@ export interface SwedishItemSeed {
    *  readout and the level-aware AI grader. Absent = UNDECLARED: never counted
    *  toward a level, never allowed to imply one. */
   cefr?: CefrLevel;
+  /** For KNOWLEDGE items only: which of the thirteen Sverige i fokus areas this question
+   *  belongs to. Optional because the language skills have no such syllabus - absent on
+   *  every READING/LISTENING/WRITING/SPEAKING item by design, and present on every civics
+   *  item, which is what makes per-area coverage measurable rather than merely readable
+   *  off a title. NOT part of stableItemId: keying an item to its area is classification,
+   *  not a change to the question, so it must not move the id. */
+  area?: SwedishCivicsArea;
   title: string;
   prompt: string;
   payload: unknown;

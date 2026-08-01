@@ -5,6 +5,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Landet Sverige",
     "title": "Landet Sverige — län",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -28,6 +29,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Landet Sverige",
     "title": "Landet Sverige — landsdelar",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -51,6 +53,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Landet Sverige",
     "title": "Landet Sverige — allemansrätten",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -74,6 +77,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Demokrati",
     "title": "Demokrati — rösträttsålder",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -97,6 +101,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Så styrs Sverige",
     "title": "Så styrs Sverige — riksdagen",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -120,6 +125,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Så styrs Sverige",
     "title": "Så styrs Sverige — statschefen",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -143,6 +149,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Så styrs Sverige",
     "title": "Så styrs Sverige — Skatteverket",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -166,6 +173,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Så styrs Sverige",
     "title": "Så styrs Sverige — regionernas ansvar",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -189,6 +197,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Val och politiska partier",
     "title": "Politiska val — valperiod",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -212,6 +221,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Val och politiska partier",
     "title": "Politiska val — spärren till riksdagen",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -235,6 +245,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Lag och rätt",
     "title": "Lag och rätt — domstolarna",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -258,6 +269,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "area": "Mediernas roll",
     "title": "Mediernas roll — offentlighetsprincipen",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -281,6 +293,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Mänskliga rättigheter",
     "title": "Mänskliga rättigheter — diskriminering",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -304,6 +317,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Arbetsmarknad och privatekonomi",
     "title": "Arbetsmarknad — kollektivavtal",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -327,6 +341,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Arbetsmarknad och privatekonomi",
     "title": "Arbetsmarknad — Arbetsförmedlingen",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -350,6 +365,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Välfärd",
     "title": "Välfärd — Försäkringskassan",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -373,6 +389,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Välfärd",
     "title": "Välfärd — skolplikt",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -396,6 +413,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Sveriges moderna historia",
     "title": "Modern historia — kvinnors rösträtt",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -419,6 +437,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Sverige och omvärlden",
     "title": "Sverige och omvärlden — EU",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -442,6 +461,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Sverige och omvärlden",
     "title": "Sverige och omvärlden — valuta",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -465,6 +485,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "area": "En sekulär stat och ett mångreligiöst land",
     "title": "En sekulär stat — kyrka och stat",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -488,6 +509,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Traditioner och högtider",
     "title": "Traditioner — nationaldagen",
     "prompt": "Välj rätt svar.",
     "payload": {
@@ -511,6 +533,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Traditioner och högtider",
     "title": "Traditioner — Lucia",
     "prompt": "Välj rätt svar.",
     "payload": {
