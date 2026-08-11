@@ -21,7 +21,7 @@ import { hasPaidAccess } from "@/lib/billing/plans";
 import { prisma } from "@/lib/prisma";
 import { gradeObjective } from "@/lib/sv/grading";
 import { getItemById } from "@/lib/sv/items";
-import { isObjectiveTask, isFreeSkill } from "@/lib/sv/types";
+import { isObjectiveTask, isObjectiveSkill } from "@/lib/sv/types";
 import type { ObjectiveAnswer } from "@/lib/sv/types";
 
 type PaidUser = Parameters<typeof hasPaidAccess>[0] & { id: string };
@@ -57,7 +57,9 @@ export async function gradeAttempt(body: AttemptBody, user: PaidUser): Promise<G
   if (!item) return { ok: false, status: 404, error: "Unknown item" };
 
   const objective = isObjectiveTask(item.taskType);
-  const productive = !objective || !isFreeSkill(item.skill);
+  // Everything is paid now; `productive` only decides whether an AI grader
+  // runs, not whether the user is allowed in.
+  const productive = !objective || !isObjectiveSkill(item.skill);
 
   // Gate: productive / AI tasks require paid access (owner + comp bypass inside).
   // Derived from the LOADED item's skill and taskType — a client that claimed

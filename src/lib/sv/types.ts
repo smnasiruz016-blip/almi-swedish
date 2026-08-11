@@ -108,10 +108,11 @@ export function isObjectiveTask(t: SwedishTaskType): boolean {
   return OBJECTIVE_TASK_TYPES.includes(t);
 }
 
-/** A skill is "free to taste" (auto-graded) vs gated (AI-graded / mock).
+/** A skill is objectively auto-graded vs AI-graded. This is a SCORING
+ * distinction only -- every skill needs a subscription.
  *  Free taste = Reading + Listening + Knowledge (all objective, auto-graded).
  *  Gated = Writing + Speaking (AI-graded) + the full mock. */
-export function isFreeSkill(skill: SwedishSkill): boolean {
+export function isObjectiveSkill(skill: SwedishSkill): boolean {
   return skill === "READING" || skill === "LISTENING" || skill === "KNOWLEDGE";
 }
 

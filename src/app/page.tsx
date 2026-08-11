@@ -77,7 +77,7 @@ const FAQ = [
   },
   {
     q: "How much does AlmiSwedish cost?",
-    a: "$12 per month with a 7-day free trial, monthly only, cancel anytime. Reading, Listening and civic practice are free; AI feedback on Writing and Speaking and the full timed mock are part of the subscription.",
+    a: "$12 per month with a 7-day free trial, monthly only, cancel anytime. Reading, Listening and civic practice, AI feedback on Writing and Speaking and the full timed mock are part of the subscription.",
   },
 ] as const;
 
