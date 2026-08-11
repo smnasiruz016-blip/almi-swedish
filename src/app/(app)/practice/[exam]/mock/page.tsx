@@ -7,7 +7,7 @@ import { notFound, redirect } from "next/navigation";
 import { requireUser } from "@/lib/auth";
 import { hasPaidAccess } from "@/lib/billing/plans";
 import { examBySlug } from "@/lib/sv/registry";
-import { isFreeSkill } from "@/lib/sv/types";
+import { isObjectiveSkill } from "@/lib/sv/types";
 import { pickPractice, stableItemId } from "@/lib/sv/items";
 import { MockRunner, type MockSection } from "@/components/sv/MockRunner";
 
@@ -28,7 +28,7 @@ export default async function MockPage({
   }
 
   const sections: MockSection[] = exam.skills.map((skill) => {
-    const objective = isFreeSkill(skill);
+    const objective = isObjectiveSkill(skill);
     const items = pickPractice(exam.exam, skill, objective ? 6 : 2);
     return {
       skill,

@@ -173,9 +173,9 @@ export default function Page() {
             href="/practice/medborgarskapsprov"
             className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded-full bg-almi-coral px-7 py-3 text-base font-semibold text-almi-ink hover:bg-almi-coral-deep"
           >
-            Try the free practice questions
+            Start your 7-day free trial
           </Link>
-          <p className="mt-3 text-xs text-almi-text-muted">Society practice is free · no card needed</p>
+          <p className="mt-3 text-xs text-almi-text-muted">7-day free trial · $12/month · cancel anytime</p>
         </section>
 
         <section className="mt-10 rounded-2xl border border-almi-accent/40 bg-almi-accent/10 p-5">

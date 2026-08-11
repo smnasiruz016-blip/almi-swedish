@@ -109,7 +109,7 @@ export default async function AccountPage({
         </div>
         {!proActive && (
           <p className="mt-3 text-sm text-almi-text-muted">
-            Reading and Listening practice is free. Writing, Speaking and the full timed mock open
+            Every skill, and the full timed mock, open
             with the 7-day free trial — $12/month after, cancel anytime.
           </p>
         )}
