@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ROLES } from "@/lib/seo/axes";
 
 export const metadata: Metadata = {
@@ -34,9 +33,9 @@ export default function WorkHub() {
             <ul className="mt-2 flex flex-wrap gap-2">
               {byIndustry.get(ind)!.map((r) => (
                 <li key={r.slug}>
-                  <Link href={`/work-in-sweden/${r.slug}`} className="inline-block rounded-full border border-almi-bg-peach bg-almi-paper px-3 py-1.5 text-sm text-almi-ink hover:border-almi-coral">
+                  <span className="inline-block rounded-full border border-almi-bg-peach bg-almi-paper px-3 py-1.5 text-sm text-almi-ink">
                     {r.name}
-                  </Link>
+                  </span>
                 </li>
               ))}
             </ul>

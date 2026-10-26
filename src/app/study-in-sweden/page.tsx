@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { SUBJECTS } from "@/lib/seo/axes";
 
 export const metadata: Metadata = {
@@ -25,9 +24,9 @@ export default function StudyHub() {
         <ul className="mt-8 grid gap-3 sm:grid-cols-2">
           {SUBJECTS.map((s) => (
             <li key={s.slug}>
-              <Link href={`/study-in-sweden/${s.slug}`} className="block rounded-2xl border border-almi-bg-peach bg-almi-paper p-4 text-almi-ink hover:border-almi-coral">
+              <span className="block rounded-2xl border border-almi-bg-peach bg-almi-paper p-4 text-almi-ink">
                 {s.name}
-              </Link>
+              </span>
             </li>
           ))}
         </ul>
