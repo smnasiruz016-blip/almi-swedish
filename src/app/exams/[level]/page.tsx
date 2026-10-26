@@ -6,6 +6,7 @@ import { FunnelPage } from "@/components/seo/FunnelPage";
 
 // Citizenship + University + CEFR levels — pre-render all at build.
 export const dynamicParams = false;
+export const revalidate = false;
 export function generateStaticParams() {
   return ALL_EXAMS.map((e) => ({ level: e.slug }));
 }
