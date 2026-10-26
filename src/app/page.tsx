@@ -3,8 +3,8 @@ import Link from "next/link";
 import { TRACKS, examsByTrack } from "@/lib/sv/registry";
 import { TestimonialsSection } from "@/components/reviews/TestimonialsSection";
 
-// Re-render hourly so newly approved testimonials appear without a redeploy.
-export const revalidate = 3600;
+// Re-render daily so newly approved testimonials appear without a redeploy (COST FIX 2026-10-26: was hourly).
+export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: {
