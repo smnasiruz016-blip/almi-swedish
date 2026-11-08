@@ -91,10 +91,9 @@ export async function gradeAttempt(
     readiness = typeof selfScore === "string" ? selfScore : null;
   }
 
-  // Best-effort persistence. itemId is now a stable server id rather than a client
-  // token, but SwedishAttempt.itemId is still a required FK to SwedishItem — a table
-  // nothing populates, because items are served from JSON bundles. So this write still
-  // fails into its own catch; that was true before this change and is unchanged by it.
+  // Persistence. itemId is a stable server id rather than a client token. RR-399 A1:
+  // SwedishAttempt.itemId is a plain string (no foreign key to the empty SwedishItem
+  // table), so this write now saves and the learner's history and progress are kept.
   try {
     await prisma.swedishAttempt.create({
       data: {
@@ -108,8 +107,9 @@ export async function gradeAttempt(
         submittedAt: new Date(),
       },
     });
-  } catch {
-    // attempts are optional this pass
+  } catch (e) {
+    // RR-399 A1: the learner keeps the result if the database fails, but the failure is logged loudly, never swallowed.
+    console.error("[sv/attempt] SwedishAttempt insert FAILED: the learner's history did not save", e);
   }
 
   return {

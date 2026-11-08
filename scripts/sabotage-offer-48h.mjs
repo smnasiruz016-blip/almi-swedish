@@ -8,6 +8,7 @@ const pick = (c) => c.find((p) => existsSync(p));
 const PAGE = pick(["src/app/pricing/page.tsx", "src/app/(marketing)/pricing/page.tsx", "src/app/page.tsx"]);
 const gate = () => spawnSync(process.execPath, ["scripts/gates/offer-48h.mjs"], { encoding: "utf8" });
 const test = () => spawnSync(process.platform === "win32" ? "npx.cmd tsx scripts/verify-offer-48h.ts" : "npx tsx scripts/verify-offer-48h.ts", { encoding: "utf8", shell: true });
+const claimTest = () => spawnSync(process.platform === "win32" ? "npx.cmd tsx scripts/verify-free-ai-claim.ts" : "npx tsx scripts/verify-free-ai-claim.ts", { encoding: "utf8", shell: true });
 /* an AI route that uses aiGate (found at run time) — the case removes the door from it */
 import { readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
@@ -21,6 +22,9 @@ const CASES = [
   { name: "the checkout gives a card trial again", file: `${DIR}/stripe.ts`, append: "\nexport const sabotageTrial = { trial_period_days: 2 };\n", run: [gate, test], fail: ["[FAIL] the checkout code names no trial", "FAIL checkout has no trial"] },
   { name: "the free time stops being free after 48 hours", file: `${DIR}/taste.ts`, from: "return end !== null && end.getTime() > now;", to: "return end !== null;", run: [test], fail: ["FAIL after 48 hours the unlock screen appears"] },
   { name: "a page sells a card trial again", file: PAGE, append: "\n// Card not charged during the 48-hour trial\n", run: [gate], fail: ["[FAIL] no customer-facing line"] },
+  /* RR-399 A3: the "1 free" is atomic */
+  { name: "a second claim of the same free use is let through", file: `${DIR}/free-ai-claim.ts`, from: 'if (isUniqueViolation(e)) return "USED";', to: 'if (isUniqueViolation(e)) return "RESERVED";', run: [claimTest], fail: ["FAIL two requests at the same moment"] },
+  { name: "the free door stops reserving the free use", file: `${DIR}/free-access.ts`, from: "await claimFreeAi(user.id, kind);", to: '"UNAVAILABLE" as const;', run: [gate], fail: ["[FAIL] the free door reserves the free use atomically"] },
 ];
 const out = [];
 for (const c of CASES) {
@@ -33,9 +37,9 @@ for (const c of CASES) {
   } finally { writeFileSync(c.file, raw); }
   if (readFileSync(c.file, "utf8") !== raw) throw new Error(`${c.file} NOT restored`);
 }
-const g = gate(), t = test();
+const g = gate(), t = test(), ct = claimTest();
 for (const o of out) console.log(`  [${o.red ? "RED as required" : "STAYED GREEN — BLIND"}] ${o.name}`);
-console.log(`  restored: gate ${g.status === 0 ? "GREEN" : "NOT GREEN"}, test ${t.status === 0 ? "GREEN" : "NOT GREEN"}`);
-const pass = out.every((o) => o.red) && g.status === 0 && t.status === 0;
+console.log(`  restored: gate ${g.status === 0 ? "GREEN" : "NOT GREEN"}, test ${t.status === 0 ? "GREEN" : "NOT GREEN"}, claim test ${ct.status === 0 ? "GREEN" : "NOT GREEN"}`);
+const pass = out.every((o) => o.red) && g.status === 0 && t.status === 0 && ct.status === 0;
 console.log(pass ? `\nSABOTAGE PASS — ${out.length}/${out.length} RED` : "\nSABOTAGE FAIL");
 process.exitCode = pass ? 0 : 1;

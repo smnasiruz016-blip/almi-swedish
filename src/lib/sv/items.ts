@@ -136,8 +136,10 @@ export function getItems(filter: {
 // leaves every id untouched. The trade, stated rather than implied: editing a title,
 // prompt or payload DOES change that item's id. That is safe here because the id is a
 // round-trip handle (served with the item, posted straight back) and is never persisted
-// as a foreign key that has to survive — SwedishAttempt.itemId points at SwedishItem, a
-// table nothing populates, so that write already fails into its own catch.
+// as a foreign key that has to survive. RR-399: SwedishAttempt.itemId is now saved as a
+// plain string (no key to SwedishItem), so an attempt made before an item was edited keeps
+// the item's OLD id: the attempt is still in the learner's history, it just no longer
+// matches the edited item.
 
 /** Stable, content-derived id for a bundle item — the handle the client posts back. */
 export function stableItemId(

@@ -38,7 +38,12 @@ const aiRoutes = code.filter(([p, t]) => /^src\/app\/api\//.test(p) && /from "@\
 const unguarded = aiRoutes.filter(([, t]) => !/\baiGate\(/.test(t) && !/RR-397: paid only/.test(t));
 const freeAccess = code.find(([p]) => /free-access\.ts$/.test(p));
 ok(Boolean(freeAccess) && /tasteMayUseAi/.test(freeAccess[1]) && /freeAiAllowedToday/.test(freeAccess[1]), "the free door (free-access.ts) applies the 1-per-kind rule and today's free-AI budget");
-ok(unguarded.length === 0, `every AI route goes through aiGate() or is marked paid only (${aiRoutes.length} AI routes, ${unguarded.length} unguarded)`);
+/* RR-399 A3: the free use is reserved atomically: the free door calls claimFreeAi( and the table has the unique (userId, kind) key */
+const schemaFile = existsSync(join(ROOT, "prisma/schema.prisma")) ? read("prisma/schema.prisma") : "";
+const freeAiUseModel = (/^model FreeAiUse \{([\s\S]*?)^\}/m.exec(schemaFile) ?? [])[1] ?? "";
+ok(Boolean(freeAccess) && /\bclaimFreeAi\(/.test(strip(freeAccess[1])), "the free door reserves the free use atomically (free-access.ts calls claimFreeAi()");
+ok(/@@unique\(\[userId, kind\]\)/.test(freeAiUseModel), "schema.prisma has model FreeAiUse with @@unique([userId, kind])");
+ok(unguarded.length === 0,`every AI route goes through aiGate() or is marked paid only (${aiRoutes.length} AI routes, ${unguarded.length} unguarded)`);
 for (const [p] of unguarded) console.log(`      unguarded: ${p}`);
 
 /* the customer-facing lines: app code and copy under src/ and public/, exam material excluded */

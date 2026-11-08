@@ -1,10 +1,15 @@
 // Exam page — lists the skills for one exam (each → a runner) plus a full timed
-// mock link. Reading/Listening are free; productive skills carry a Pro badge.
+// mock link. Reading/Listening are free. RR-399 A5: Writing/Speaking carry an honest badge
+// (the free AI check in the 48 hours, then "Unlock"), never "Pro"; paid users see none.
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUser } from "@/lib/auth";
 import { FreeTimeBanner } from "@/components/FreeTimeBanner";
+import { hasPaidAccess } from "@/lib/billing/plans";
+import { isTasteActive } from "@/lib/billing/taste";
+import { aiBadge } from "@/lib/billing/ai-badge";
+import { countAiScored } from "@/lib/sv/free-ai-used";
 import { examBySlug, SKILL_LABELS, TRACKS } from "@/lib/sv/registry";
 import { isFreeSkill } from "@/lib/sv/types";
 import type { SwedishSkill, SwedishTrack } from "@/lib/sv/types";
@@ -23,6 +28,17 @@ export default async function ExamPage({
   const { exam: examSlug } = await params;
   const exam = examBySlug(examSlug);
   if (!exam) notFound();
+
+  // RR-399 A5: the honest Writing/Speaking badge. The used count (the AI route's own ledger count) is read only inside the free 48 hours.
+  const paid = hasPaidAccess(user);
+  const tasteActive = !paid && isTasteActive(user);
+  const [usedWriting, usedSpeaking] = tasteActive
+    ? await Promise.all([countAiScored(user.id, "WRITING"), countAiScored(user.id, "SPEAKING")])
+    : [0, 0];
+  const badgeFor = (skill: SwedishSkill) =>
+    skill === "WRITING" || skill === "SPEAKING"
+      ? aiBadge({ paid, tasteActive, kind: skill, used: skill === "WRITING" ? usedWriting : usedSpeaking })
+      : null;
 
   return (
     <div className="space-y-8">
@@ -51,6 +67,7 @@ export default async function ExamPage({
           {exam.skills.map((skill: SwedishSkill) => {
             const free = isFreeSkill(skill);
             const label = SKILL_LABELS[skill];
+            const badge = badgeFor(skill);
             return (
               <Link
                 key={skill}
@@ -63,11 +80,18 @@ export default async function ExamPage({
                     <span className="rounded-full bg-almi-teal/15 px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-almi-teal">
                       Free
                     </span>
-                  ) : (
-                    <span className="rounded-full bg-almi-coral px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-almi-ink">
-                      Pro
+                  ) : badge ? (
+                    <span
+                      data-ai-badge={badge.tone}
+                      className={
+                        badge.tone === "free"
+                          ? "rounded-full bg-almi-teal/15 px-2 py-0.5 text-right text-[11px] font-bold text-almi-teal"
+                          : "rounded-full bg-almi-coral px-2 py-0.5 text-right text-[11px] font-bold text-almi-ink"
+                      }
+                    >
+                      {badge.label}
                     </span>
-                  )}
+                  ) : null}
                 </div>
                 <p className="mt-1 text-sm text-almi-text-muted">{label.sv}</p>
                 <p className="mt-3 text-sm font-semibold text-almi-coral">Practise →</p>
