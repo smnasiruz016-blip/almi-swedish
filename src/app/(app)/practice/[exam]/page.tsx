@@ -4,6 +4,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUser } from "@/lib/auth";
+import { FreeTimeBanner } from "@/components/FreeTimeBanner";
 import { examBySlug, SKILL_LABELS, TRACKS } from "@/lib/sv/registry";
 import { isFreeSkill } from "@/lib/sv/types";
 import type { SwedishSkill, SwedishTrack } from "@/lib/sv/types";
@@ -18,7 +19,7 @@ export default async function ExamPage({
 }: {
   params: Promise<{ exam: string }>;
 }) {
-  await requireUser();
+  const user = await requireUser();
   const { exam: examSlug } = await params;
   const exam = examBySlug(examSlug);
   if (!exam) notFound();
@@ -40,6 +41,9 @@ export default async function ExamPage({
         </div>
         <p className="mt-2 max-w-2xl text-sm text-almi-text">{exam.blurb}</p>
       </header>
+
+      {/* RR-397: hours left in the free 48 hours (no card), or the honest unlock line; nothing for paying users */}
+      <FreeTimeBanner user={user} />
 
       <section>
         <h2 className="text-lg font-semibold text-almi-ink">Practise by skill</h2>

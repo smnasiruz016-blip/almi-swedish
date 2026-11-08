@@ -28,6 +28,7 @@ export async function POST(req: Request): Promise<NextResponse> {
     return NextResponse.json({ ok: false, error: "Invalid body" }, { status: 400 });
   }
 
+  // RR-397: paid only — the full mock is not part of the free 48 hours (no freeTime option here).
   const graded = await gradeAttempt(body, user);
   if (!graded.ok) {
     return NextResponse.json({ ok: false, error: graded.error }, { status: graded.status });

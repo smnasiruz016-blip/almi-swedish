@@ -3,9 +3,10 @@
 // practice set, and renders the objective runner or the productive composer.
 
 import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { requireUser } from "@/lib/auth";
-import { hasPaidAccess } from "@/lib/billing/plans";
+import { hasPracticeAccess } from "@/lib/billing/free-access";
+import { FreeTimeBanner } from "@/components/FreeTimeBanner";
 import { examBySlug, SKILL_LABELS } from "@/lib/sv/registry";
 import { isFreeSkill } from "@/lib/sv/types";
 import type { SwedishSkill } from "@/lib/sv/types";
@@ -29,10 +30,16 @@ export default async function SkillRunnerPage({
   ) as SwedishSkill | undefined;
   if (!skill) notFound();
 
-  // SKILL-SPLIT GUARD: objective skills (Reading/Listening) are free to taste;
-  // productive skills (Writing/Speaking) require paid access.
-  if (!isFreeSkill(skill) && !hasPaidAccess(user)) {
-    redirect("/account");
+  // SKILL-SPLIT GUARD: objective skills (Reading/Listening/Knowledge) stay free for everyone, as before;
+  // productive skills (Writing/Speaking) need paid access OR the free 48 hours (RR-397, no card; AI is limited in /api/sv/grade).
+  // When shut, the page says so honestly ("Your free 48 hours are over" + "Unlock for $12/month") instead of redirecting.
+  if (!isFreeSkill(skill) && !hasPracticeAccess(user)) {
+    return (
+      <div className="mx-auto max-w-3xl space-y-6">
+        <h1 className="text-3xl font-semibold text-almi-ink">{SKILL_LABELS[skill].en}</h1>
+        <FreeTimeBanner user={user} />
+      </div>
+    );
   }
 
   const label = SKILL_LABELS[skill];
@@ -54,6 +61,8 @@ export default async function SkillRunnerPage({
         <h1 className="mt-1 text-3xl font-semibold text-almi-ink">{label.en}</h1>
         <p className="mt-1 text-sm text-almi-text-muted">{label.sv}</p>
       </header>
+
+      {!objective && <FreeTimeBanner user={user} ai={skill === "SPEAKING" ? "SPEAKING" : "WRITING"} />}
 
       {items.length === 0 ? (
         <div className="rounded-2xl border border-almi-accent/40 bg-almi-accent/10 px-4 py-6 text-sm text-almi-ink">
