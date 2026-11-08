@@ -37,6 +37,8 @@ const SCAN_EXT = /\.(ts|tsx|js|mjs|json|prisma|css|md)$/;
 const ALLOWLIST = new Map([
   // The family nav legitimately links to sibling products by name.
   ["src/lib/nav/family.ts", "links to sibling AlmiWorld products by name"],
+  // RR-398: the generated AlmiWorld family kit (the same menus as almiworld.com) links to every sibling product by name.
+  ["src/lib/almiworld-family.ts", "links to sibling AlmiWorld products by name (generated kit, RR-398)"],
   // This gate documents the exact leaks it prevents.
   ["scripts/seo/fork-hygiene-gate.mjs", "documents the banned nouns"],
   // REMOVED 2026-07-20: scripts/seo/countries-axis-gate.mjs. It was allowlisted in
