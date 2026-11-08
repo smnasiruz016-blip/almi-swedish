@@ -26,10 +26,12 @@ ok(/^\s*itemId\s+String\s*$/m.test(noComments(attempt)), `${attemptName}.itemId 
 ok(/@@index\(\[itemId\]\)/.test(attempt), `${attemptName}.itemId keeps its index`);
 ok(!models[itemName] || !new RegExp(`\\b${attemptName}\\[\\]`).test(noComments(models[itemName])), `${itemName} has no back-relation to ${attemptName}`);
 
-const migDir = join(ROOT, "prisma/migrations");
-const migs = existsSync(migDir) ? readdirSync(migDir).filter((d) => statSync(join(migDir, d)).isDirectory() && existsSync(join(migDir, d, "migration.sql"))) : [];
-ok(migs.some((d) => new RegExp(`DROP CONSTRAINT (IF EXISTS )?"${attemptName}_itemId_fkey"`).test(readFileSync(join(migDir, d, "migration.sql"), "utf8"))),
-  `a migration drops "${attemptName}_itemId_fkey"`);
+/* the migration lives in prisma/migrations, OR (when the build runs `prisma migrate deploy`, so a preview would apply it) in the
+   owner's folder C:\Projects\_handoffs\rr399-tools\owner-migrations\<repo>\, which the owner runs and then adds */
+const migDirs = [join(ROOT, "prisma/migrations"), join(ROOT, "..", "_handoffs", "rr399-tools", "owner-migrations", ROOT.split(/[\\/]/).pop())];
+const migFiles = migDirs.filter((d) => existsSync(d)).flatMap((d) => readdirSync(d).map((n) => join(d, n, "migration.sql")).filter((f) => existsSync(f)));
+const dropping = migFiles.filter((f) => new RegExp(`DROP CONSTRAINT (IF EXISTS )?"${attemptName}_itemId_fkey"`).test(readFileSync(f, "utf8")));
+ok(dropping.length > 0, `a migration drops "${attemptName}_itemId_fkey" (${dropping.map((f) => relative(join(ROOT, ".."), f).split(sep).join("/")).join(", ") || "none"})`);
 
 const SKIP = /node_modules|\.next|[\\/]generated[\\/]/;
 const walk = (d) => !existsSync(d) ? [] : readdirSync(d).flatMap((n) => { const f = join(d, n); if (SKIP.test(f)) return []; return statSync(f).isDirectory() ? walk(f) : /\.(tsx?|mts)$/.test(n) ? [f] : []; });
