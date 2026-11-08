@@ -77,7 +77,7 @@ const FAQ = [
   },
   {
     q: "How much does AlmiSwedish cost?",
-    a: "$12 per month with a 7-day free trial, monthly only, cancel anytime. Reading, Listening and civic practice are free; AI feedback on Writing and Speaking and the full timed mock are part of the subscription.",
+    a: "Try free for 48 hours, then $12/month. Cancel anytime. Reading, Listening and civic practice are free; AI feedback on Writing and Speaking and the full timed mock are part of the subscription.",
   },
 ] as const;
 
@@ -164,14 +164,14 @@ export default function Home() {
                 href="/signup"
                 className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-almi-coral px-7 py-3 text-base font-semibold text-almi-ink hover:bg-almi-coral-deep focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-almi-coral/30"
               >
-                Start your 7-day free trial
+                Try free for 48 hours
               </Link>
               <Link href="/login" className="text-sm font-medium text-almi-coral hover:underline">
                 Already have an account? Log in →
               </Link>
             </div>
             <p className="mt-4 text-sm text-almi-text-muted">
-              $12/month, 7-day free trial, cancel anytime · Reading &amp; Listening free · Original material, never copied
+              Try free for 48 hours, then $12/month · Cancel anytime · Reading &amp; Listening free · Original material, never copied
             </p>
           </div>
           <ReadinessMockup />
@@ -291,7 +291,7 @@ export default function Home() {
       <section className="border-t border-almi-bg-peach bg-almi-paper px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-semibold text-almi-ink">Simple, honest pricing</h2>
-          <p className="mt-3 text-xl font-semibold text-almi-ink">$12/month — 7-day free trial, cancel anytime.</p>
+          <p className="mt-3 text-xl font-semibold text-almi-ink">Try free for 48 hours, then $12/month. Cancel anytime.</p>
           <ul className="mx-auto mt-6 max-w-xl space-y-2 text-left text-sm text-almi-text">
             {PRICING_LINES.map((line) => (
               <li key={line} className="flex items-start gap-2">
@@ -305,7 +305,7 @@ export default function Home() {
           </p>
           <div className="mt-8">
             <Link href="/signup" className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-almi-coral px-7 py-3 text-base font-semibold text-almi-ink hover:bg-almi-coral-deep">
-              Start your 7-day free trial
+              Try free for 48 hours
             </Link>
           </div>
           <p className="mt-4 text-sm text-almi-text-muted">
@@ -336,12 +336,12 @@ export default function Home() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-semibold text-almi-ink">Practise honestly. Walk in ready.</h2>
           <p className="mt-3 text-base text-almi-text">
-            Every Swedish exam at your level, honest readiness estimates, 100% original material — for
-            $12/month with a 7-day free trial.
+            Every Swedish exam at your level, honest readiness estimates, 100% original material. Try
+            free for 48 hours, then $12/month.
           </p>
           <div className="mt-8">
             <Link href="/signup" className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-almi-coral px-7 py-3 text-base font-semibold text-almi-ink hover:bg-almi-coral-deep">
-              Start your 7-day free trial
+              Try free for 48 hours
             </Link>
           </div>
         </div>

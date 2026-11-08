@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s · AlmiSwedish",
   },
   description:
-    "Sweden's new 2026 citizenship rules add a civic test, with a language test to follow. Practise SFI, Tisus and the new Medborgarskapsprov with honest AI readiness bands. $12/month with a 7-day free trial. Original material, never copied from official exam papers. Not affiliated with UHR — confirm current requirements with UHR and Migrationsverket. Part of the AlmiWorld family.",
+    "Sweden's new 2026 citizenship rules add a civic test, with a language test to follow. Practise SFI, Tisus and the new Medborgarskapsprov with honest AI readiness bands. Try free for 48 hours, then $12/month. Original material, never copied from official exam papers. Not affiliated with UHR — confirm current requirements with UHR and Migrationsverket. Part of the AlmiWorld family.",
   applicationName: "AlmiSwedish",
   authors: [{ name: "AlmiWorld" }],
   keywords: ["SFI practice test online", "Swedish citizenship language test", "Tisus mock test", "Medborgarskapsprov Sweden preparation", "Svenska B1 B2 evaluation", "Medborgarskapsprovet", "SFI", "Tisus", "learn Swedish", "Swedish exam practice", "AlmiSwedish", "AlmiWorld"],
