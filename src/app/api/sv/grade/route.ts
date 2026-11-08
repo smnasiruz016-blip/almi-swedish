@@ -11,6 +11,7 @@
 import { NextResponse } from "next/server";
 import { getCurrentUser } from "@/lib/auth";
 import { aiGate } from "@/lib/billing/free-access";
+import { aiFeatureFor, countAiScored } from "@/lib/sv/free-ai-used";
 import { prisma } from "@/lib/prisma";
 import { getAnthropicClient, recordCost } from "@/lib/ai/anthropic-client";
 import { MODELS } from "@/lib/ai/models";
@@ -91,19 +92,6 @@ export async function POST(req: Request): Promise<NextResponse> {
     return NextResponse.json({ ok: false, error: "Invalid body" }, { status: 400 });
   }
 
-  // RR-397: paid users as before (owner + comp bypass live inside hasPaidAccess); a free account (48 hours, no card) gets ONE
-  // AI-scored Writing and ONE AI-scored Speaking, within today's free-AI budget. "Used" = the AI scorings this account already
-  // RECEIVED, read from the cost ledger (a success row is written only after the model answered). SwedishAttempt is not counted:
-  // its write fails by design (items are served from bundles, so its item FK never resolves).
-  const kind = body.taskType === "SPEAKING_PROMPT" ? "SPEAKING" : "WRITING";
-  const feature = kind === "SPEAKING" ? "sv.grade.productive.speaking" : "sv.grade.productive.writing";
-  const gate = await aiGate(user, kind, () =>
-    prisma.aICostLedger.count({
-      where: { userId: user.id, success: true, feature: { in: [feature, "sv.grade.productive"] } },
-    }),
-  );
-  if (!gate.ok) return NextResponse.json(gate.body, { status: gate.status });
-
   const response = (body.response ?? "").trim();
   if (response.length < 20) {
     return NextResponse.json(
@@ -116,6 +104,16 @@ export async function POST(req: Request): Promise<NextResponse> {
   if (!keyAvailable()) {
     return NextResponse.json({ ok: true, available: false });
   }
+
+  // RR-397: paid users as before (owner + comp bypass live inside hasPaidAccess); a free account (48 hours, no card) gets ONE
+  // AI-scored Writing and ONE AI-scored Speaking, within today's free-AI budget. "Used" = the AI scorings this account already
+  // RECEIVED, read from the cost ledger (a success row is written only after the model answered). RR-399: the ledger count stays
+  // (it is correct and simple); the real guard against two requests at once is the atomic FreeAiUse claim inside aiGate(). The
+  // gate is asked AFTER the answer and key checks above, so a free use reserved here is always followed by the AI call.
+  const kind = body.taskType === "SPEAKING_PROMPT" ? "SPEAKING" : "WRITING";
+  const feature = aiFeatureFor(kind);
+  const gate = await aiGate(user, kind, () => countAiScored(user.id, kind));
+  if (!gate.ok) return NextResponse.json(gate.body, { status: gate.status });
 
   const exam = body.exam ? examBySlug(body.exam) : undefined;
   const examName = exam?.name ?? "the Swedish exam";
@@ -196,16 +194,19 @@ export async function POST(req: Request): Promise<NextResponse> {
       success: false,
       errorMessage: e instanceof Error ? e.message : String(e),
     });
+    // RR-399 A3: the learner received nothing, so the free use is given back.
+    await gate.release();
     // Fall back to self-rating rather than 500 on a transient model error.
     return NextResponse.json({ ok: true, available: false });
   }
 
   if (!feedback) {
+    await gate.release(); // RR-399 A3: no usable feedback, so the free use is given back
     return NextResponse.json({ ok: true, available: false });
   }
 
-  // Best-effort persistence — bundled items have no DB id, so a missing/unknown
-  // itemId simply skips the write (never 500s on an empty database).
+  // Persistence. RR-399 A1: SwedishAttempt.itemId is a plain string (no foreign key to the
+  // empty SwedishItem table), so this write now saves. A request without an itemId skips it.
   if (body.itemId) {
     try {
       await prisma.swedishAttempt.create({
@@ -219,8 +220,9 @@ export async function POST(req: Request): Promise<NextResponse> {
           submittedAt: new Date(),
         },
       });
-    } catch {
-      // ignore — attempts are optional this pass
+    } catch (e) {
+      // RR-399 A1: the learner still gets the feedback if the database fails, but the failure is logged loudly, never swallowed.
+      console.error("[sv/grade] SwedishAttempt insert FAILED: the learner's history did not save", e);
     }
   }
 

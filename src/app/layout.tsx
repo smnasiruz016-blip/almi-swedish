@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Allura } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { GlobalHeader } from "@/components/GlobalHeader";
 import { GlobalFooter } from "@/components/GlobalFooter";
 
+// RR-400: the Allura script font was loaded (and preloaded, ~49 KB) on every page but no element uses `font-script`, so it only
+// competed with the page for bandwidth before the first big paint. Removed; Inter stays.
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"], display: "swap" });
-const allura = Allura({ variable: "--font-allura", subsets: ["latin"], weight: "400", display: "swap" });
 
 const SITE_URL = "https://almiswedish.almiworld.com";
 
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${allura.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <GlobalHeader />
         <div className="flex flex-1 flex-col">{children}</div>

@@ -164,6 +164,18 @@ model AICostLedger {
   @@index([feature, timestamp])
 }
 
+/// RR-399 A3: one free AI scoring per kind per account, reserved atomically BEFORE the AI call (unique userId + kind).
+/// No relation to User on purpose: adding this table changes nothing else in the schema.
+model FreeAiUse {
+  id        String   @id @default(cuid())
+  userId    String
+  kind      String
+  createdAt DateTime @default(now())
+
+  @@unique([userId, kind])
+  @@index([createdAt])
+}
+
 
 // ===================== Swedish practice item-bank =====================
 // AlmiSwedish covers FOUR goal tracks via ONE item-bank:
@@ -270,7 +282,6 @@ model SwedishItem {
   active     Boolean         @default(true)
   createdAt  DateTime        @default(now())
   updatedAt  DateTime        @updatedAt
-  attempts   SwedishAttempt[]
 
   @@index([track, exam, skill, active])
   @@index([exam, skill])
@@ -279,6 +290,8 @@ model SwedishItem {
 model SwedishAttempt {
   id        String             @id @default(cuid())
   userId    String
+  // RR-399 A1: the served item's id from the JSON bundles, a plain string with an index. It is NOT a foreign key to SwedishItem:
+  // that table is never filled, so a required key made every attempt insert fail (no history, no progress).
   itemId    String
   sessionId String?
   status    SwedishAttemptStatus @default(PENDING)
@@ -295,7 +308,6 @@ model SwedishAttempt {
   submittedAt DateTime?
 
   user    User          @relation(fields: [userId], references: [id], onDelete: Cascade)
-  item    SwedishItem     @relation(fields: [itemId], references: [id], onDelete: Cascade)
   session SwedishSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
 
   @@index([userId, createdAt])
