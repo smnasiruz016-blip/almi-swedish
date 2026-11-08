@@ -7,9 +7,9 @@ import { PricingCheckoutButton } from "./PricingCheckoutButton";
 import { ALL_EXAMS } from "@/lib/sv/registry";
 
 export const metadata: Metadata = {
-  title: "Pricing — 7-day free trial",
+  title: "Pricing — try free for 48 hours",
   description:
-    "AlmiSwedish Pro — $12/month, cancel anytime. 7-day free trial. Honest AI feedback on writing and speaking, full-length practice, and honest readiness estimates across the Swedish ladder — SFI Courses A–B and C–D, Swedish B1–B2, Tisus — and Medborgarskapsprovet.",
+    "AlmiSwedish Pro — try free for 48 hours, then $12/month. Cancel anytime. Honest AI feedback on writing and speaking, full-length practice, and honest readiness estimates across the Swedish ladder — SFI Courses A–B and C–D, Swedish B1–B2, Tisus — and Medborgarskapsprovet.",
 };
 
 const FEATURES = [
@@ -35,7 +35,7 @@ export default async function PricingPage({
     <div className="flex flex-1 flex-col bg-almi-bg">
       <main className="mx-auto w-full max-w-5xl flex-1 px-6 py-12">
         <div className="text-center">
-          <h1 className="text-4xl font-semibold text-almi-ink">Simple pricing. 7-day free trial.</h1>
+          <h1 className="text-4xl font-semibold text-almi-ink">Try free for 48 hours. Then $12/month.</h1>
           <p className="mt-3 text-base text-almi-text-muted">
             One subscription. Honest AI feedback and full-length practice. Cancel anytime.
           </p>
@@ -68,7 +68,7 @@ export default async function PricingPage({
         </div>
 
         <p className="mt-10 text-center text-xs text-almi-text-muted">
-          Card not charged during the 7-day trial. Cancel from your account before the trial ends and pay nothing.
+          Card not charged during the 48-hour trial. Cancel from your account before the trial ends and pay nothing.
         </p>
       </main>
     </div>
@@ -131,7 +131,7 @@ function PlanCard({
             className="inline-flex w-full min-h-[44px] items-center justify-center bg-almi-coral px-6 py-3 text-sm font-semibold text-almi-ink hover:bg-almi-coral-deep"
             style={{ borderRadius: 9999 }}
           >
-            Start 7-day free trial
+            Try free for 48 hours
           </Link>
         ) : (
           <PricingCheckoutButton plan={plan} disabled={!billingLive} />

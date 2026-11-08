@@ -51,7 +51,7 @@ export default async function AccountPage({
       )}
       {params.upgraded && (
         <div className="rounded-xl border border-almi-teal/30 bg-almi-teal/10 px-4 py-3 text-sm text-almi-ink">
-          Subscription active. Your 7-day trial has begun.
+          Subscription active. Your 48-hour free trial has started.
         </div>
       )}
       {params.saved && (
@@ -103,14 +103,14 @@ export default async function AccountPage({
               className="inline-flex min-h-[40px] items-center justify-center bg-almi-coral px-4 py-2 text-sm font-semibold text-almi-ink hover:bg-almi-coral-deep"
               style={{ borderRadius: 6 }}
             >
-              Start your 7-day free trial
+              Try free for 48 hours
             </Link>
           )}
         </div>
         {!proActive && (
           <p className="mt-3 text-sm text-almi-text-muted">
             Reading and Listening practice is free. Writing, Speaking and the full timed mock open
-            with the 7-day free trial — $12/month after, cancel anytime.
+            with the 48-hour free trial — $12/month after, cancel anytime.
           </p>
         )}
       </section>
