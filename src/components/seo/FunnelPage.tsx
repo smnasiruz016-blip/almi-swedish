@@ -46,7 +46,7 @@ export function FunnelPage({ page }: { page: SeoPage }) {
           </section>
         ))}
 
-        {/* Trial CTA band */}
+        {/* CTA band: try free for 48 hours, no card (RR-397) */}
         <section className="mt-10 rounded-2xl border border-almi-bg-peach bg-almi-paper p-6 text-center shadow-sm">
           <p className="text-base font-semibold text-almi-ink">Practise Swedish with honest readiness.</p>
           <Link
@@ -55,7 +55,7 @@ export function FunnelPage({ page }: { page: SeoPage }) {
           >
             Try free for 48 hours
           </Link>
-          <p className="mt-3 text-xs text-almi-text-muted">$12/month after the trial · cancel anytime · {MISSION_LINE}</p>
+          <p className="mt-3 text-xs text-almi-text-muted">No card · then $12/month · cancel anytime · {MISSION_LINE}</p>
         </section>
 
         {/* FAQ */}

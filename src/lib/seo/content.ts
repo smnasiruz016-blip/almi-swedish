@@ -84,12 +84,12 @@ const CITIZENSHIP_HEDGE =
 const MISSION_LINE =
   "25% of AlmiSwedish proceeds fund the Shamool Foundation's social mission.";
 const CTA_LINE =
-  "Reading and Listening practice is free; AI feedback on Writing and Speaking and the full timed mock become available with a 48-hour free trial ($12/month after, cancel anytime).";
+  "Reading and Listening practice is free. Try free for 48 hours, no card: Writing and Speaking practice with 1 AI-scored Writing and 1 AI-scored Speaking. Then $12/month for unlimited AI feedback and the full timed mock. Cancel anytime.";
 // Medborgarskapsprovet has no Writing/Speaking — it is a single KNOWLEDGE module.
 // Offering "AI feedback on Writing and Speaking" on that page would be selling
 // something the exam does not contain.
 const CTA_LINE_KNOWLEDGE =
-  "The civic practice questions are free and unlimited — no card needed. A subscription ($12/month after a 48-hour free trial) covers the Swedish language ladder: AI feedback on Writing and Speaking, and the full timed mock.";
+  "The civic practice questions are free and unlimited — no card needed. The Swedish language ladder is free to try for 48 hours, no card. Then $12/month covers AI feedback on Writing and Speaking, and the full timed mock.";
 
 // Swedish-taught degree programmes require Svenska 3 / Svenska som andraspråk 3 as
 // a GENERAL entry requirement, and Tisus is accepted as equivalent to Svenska 3.

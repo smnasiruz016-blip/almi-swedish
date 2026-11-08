@@ -130,7 +130,8 @@ export function Sidebar({
           rail is pinned at the fixed 64px top-16 offset, so the top padding has
           to clear the *worst-case* header — hence responsive padding that stays
           modest at md and opens up at lg+ where the header actually grows. */}
-      <aside className="fixed bottom-0 left-0 top-16 z-30 hidden w-60 flex-col border-r border-almi-bg-peach bg-almi-paper px-3 pb-4 pt-8 md:flex lg:pt-16">
+      {/* RR-398: the AlmiWorld bar (~52px) now sits on top of the header, so the md padding clears ~116px instead of ~64px. */}
+      <aside className="fixed bottom-0 left-0 top-16 z-30 hidden w-60 flex-col border-r border-almi-bg-peach bg-almi-paper px-3 pb-4 pt-14 md:flex lg:pt-16">
         <p className="px-3 pb-4 text-base font-semibold leading-tight text-almi-ink">AlmiSwedish</p>
         <NavBody items={items} active={active} email={email} logout={logout} />
       </aside>
